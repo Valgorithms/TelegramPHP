@@ -1,0 +1,66 @@
+{
+    "name": "vzgcoders/telegramphp",
+    "description": "An async ReactPHP framework for the Telegram Bot API — built like DiscordPHP, generated from the official Bot API spec.",
+    "keywords": ["telegram", "bot-api", "bot", "reactphp", "async", "api-client", "openapi"],
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Valithor Obsidion",
+            "email": "valithor@valgorithms.com"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/Valgorithms/TelegramPHP/issues",
+        "source": "https://github.com/Valgorithms/TelegramPHP"
+    },
+    "require": {
+        "php": "^8.4",
+        "discord-php-helpers/collection": "dev-main",
+        "evenement/evenement": "^3.0",
+        "nesbot/carbon": "^3.8 || ^2.72",
+        "psr/log": "^1.1 || ^2.0 || ^3.0",
+        "react/event-loop": "^1.5",
+        "react/http": "^1.10",
+        "react/promise": "^3.2 || ^2.11",
+        "react/socket": "^1.16",
+        "symfony/options-resolver": "^6.4 || ^7.0"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^3.64",
+        "monolog/monolog": "^3.0",
+        "phpunit/phpunit": "^11.0 || ^12.0",
+        "react/async": "^4.3 || ^3.2"
+    },
+    "suggest": {
+        "monolog/monolog": "A PSR-3 logger for the client's debug output",
+        "ext-uv": "A faster ReactPHP event loop"
+    },
+    "autoload": {
+        "psr-4": {
+            "Telegram\\": "src/Telegram"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Telegram\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "cs": "php-cs-fixer fix",
+        "test": "phpunit",
+        "spec:fetch": "php tools/fetch-spec.php",
+        "spec:openapi": "php tools/build-openapi.php",
+        "spec:generate": "php tools/generate.php",
+        "spec:build": [
+            "@spec:fetch",
+            "@spec:openapi",
+            "@spec:generate"
+        ]
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "config": {
+        "sort-packages": true
+    }
+}

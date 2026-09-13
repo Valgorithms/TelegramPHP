@@ -1,0 +1,47 @@
+<?php
+
+/*
+ * This file is a part of the TelegramPHP project.
+ *
+ * Copyright (c) 2026-present Valithor Obsidion <valithor@valgorithms.com>
+ *
+ * This file is subject to the MIT license that is bundled
+ * with this source code in the LICENSE file.
+ */
+
+namespace Telegram\Parts;
+
+/**
+ * This file is generated from spec/openapi.json (Bot API 10.3) by tools/generate.php.
+ * Do not edit it by hand - run `composer spec:build` instead.
+ *
+ * This object contains information about one member of a chat. Currently, the following 6 types of
+ * chat members are supported:
+ * - ChatMemberOwner
+ * - ChatMemberAdministrator
+ * - ChatMemberMember
+ * - ChatMemberRestricted
+ * - ChatMemberLeft
+ * - ChatMemberBanned
+ *
+ * One of: ChatMemberOwner, ChatMemberAdministrator, ChatMemberMember, ChatMemberRestricted, ChatMemberLeft, ChatMemberBanned.
+ *
+ * @link https://core.telegram.org/bots/api#chatmember
+ *
+ * @since Bot API 10.3
+ */
+abstract class ChatMember extends Part
+{
+    /** The attribute whose value names the concrete subtype. */
+    public const DISCRIMINATOR = 'status';
+
+    /** @var array<string, class-string<Part>>|list<class-string<Part>> */
+    public const SUBTYPES = [
+        'creator'       => ChatMemberOwner::class,
+        'administrator' => ChatMemberAdministrator::class,
+        'member'        => ChatMemberMember::class,
+        'restricted'    => ChatMemberRestricted::class,
+        'left'          => ChatMemberLeft::class,
+        'kicked'        => ChatMemberBanned::class,
+    ];
+}
