@@ -6,6 +6,15 @@ All notable changes to this project are documented here.
 
 ### Added
 
+- Documentation: a twelve-page guide under `guide/` (getting started, calling the
+  API, updates and events, parts, keyboards and files, commands, webhooks, error
+  handling, the caches, the generated code, and an FAQ) alongside the
+  phpDocumentor API reference, both built by `composer docs` and published to
+  GitHub Pages by `.github/workflows/docs.yml` on a release, a manual dispatch, or
+  a push whose commit message contains "build docs".
+- The guide's table of update types is generated from the spec with everything
+  else, so it cannot drift from the constants it documents.
+
 - First release of TelegramPHP: an async ReactPHP client for the Telegram Bot API,
   modelled on DiscordPHP.
 - `Telegram\Telegram` — the client. Owns the transport, the part factory, the

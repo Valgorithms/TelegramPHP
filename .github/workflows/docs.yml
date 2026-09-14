@@ -1,0 +1,49 @@
+name: Build Docs
+
+on:
+  release:
+    types: [published]
+  workflow_dispatch:
+  push:
+
+permissions:
+  contents: write
+
+jobs:
+  docs:
+    runs-on: ubuntu-latest
+    # A published release, a manual dispatch, or a push whose head commit message
+    # contains "build docs" - the convention DiscordPHP uses, so the site is not
+    # rebuilt and redeployed on every commit.
+    if: >-
+      github.event_name == 'release'
+      || github.event_name == 'workflow_dispatch'
+      || (github.event_name == 'push' && contains(github.event.head_commit.message, 'build docs'))
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.4'
+          extensions: iconv, mbstring
+          tools: phive
+
+      - name: Install phpDocumentor
+        run: phive install phpDocumentor --trust-gpg-keys 67F861C3D889C656,6DA3ACC4991FFAE5
+
+      - name: Build the reference and the guide
+        run: php tools/build-docs.php
+
+      - name: Disable Jekyll
+        # Without this, GitHub Pages hides every path beginning with an underscore.
+        run: touch build/.nojekyll
+
+      - name: Publish to gh-pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          branch: gh-pages
+          folder: build
+          clean: true

@@ -753,6 +753,31 @@ $eventBody .= "}\n";
 writeGenerated($root . '/src/Telegram/Events/Event.php', $eventBody);
 
 // ---------------------------------------------------------------------------
+// The update-type table in the guide
+// ---------------------------------------------------------------------------
+
+// The guide is hand-written, but this one table is a transcription of the spec,
+// and a transcription that nobody regenerates is a transcription that goes stale.
+// `:orphan:` keeps the builder from complaining that an included fragment is in
+// no toctree - it is part of events.rst, not a page of its own.
+$table = ":orphan:\n\n";
+$table .= ".. Generated from spec/openapi.json by tools/generate.php - do not edit.\n\n";
+$table .= ".. list-table::\n   :header-rows: 1\n\n";
+$table .= "   * - Constant\n     - Update type\n     - Carries\n";
+
+foreach ($updateTypes as $type) {
+    // A literal, not a :php:class: role: the guide builder renders that role as
+    // an empty link, which would leave this column blank.
+    $token = tokensOf($schemas['Update']['properties'][$type])[0];
+
+    $table .= '   * - ``Event::' . strtoupper($type) . "``\n";
+    $table .= '     - ``' . $type . "``\n";
+    $table .= '     - ``' . $token . "``\n";
+}
+
+writeGenerated($root . '/guide/_generated/update-types.rst', $table);
+
+// ---------------------------------------------------------------------------
 
 printf(
     "Generated %d parts, %d methods across %d traits, %d endpoints, %d update types.\n",
