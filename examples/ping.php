@@ -30,9 +30,15 @@ $telegram->on(Event::READY, function (Telegram $telegram): void {
 $telegram->on(Event::MESSAGE, function (Message $message): void {
     echo $message->from?->getHandle(), ' in ', $message->chat->id, ': ', $message->text, PHP_EOL;
 
-    if (strtolower((string) $message->text) === 'ping') {
-        $message->reply('pong');
+    // People type "Ping!", not "ping" - match the word, not the exact string.
+    if (preg_match('/^\s*ping\W*$/i', (string) $message->text) !== 1) {
+        return;
     }
+
+    $message->reply('pong')->then(
+        fn (Message $sent) => print('  replied, message ' . $sent->message_id . PHP_EOL),
+        fn (Throwable $e) => print('  reply failed: ' . $e->getMessage() . PHP_EOL),
+    );
 });
 
 $telegram->on(Event::ERROR, function (Throwable $e): void {
