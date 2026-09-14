@@ -36,6 +36,18 @@ $telegram = new Telegram([
 ]);
 ```
 
+## Running the examples
+
+```bash
+cp example.env .env     # then put your @BotFather token in it
+php examples/ping.php
+```
+
+[examples/bootstrap.php](examples/bootstrap.php) reads that `.env` and finds a CA bundle for Windows
+PHP builds; the environment wins over the file, so `TELEGRAM_TOKEN=… php examples/ping.php` works too.
+The library itself reads no configuration and needs no dotenv package — everything is passed to the
+constructor.
+
 ## Getting started
 
 ```php

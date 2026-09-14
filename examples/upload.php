@@ -7,7 +7,7 @@
  *   TELEGRAM_TOKEN=123:ABC php examples/upload.php
  */
 
-require __DIR__ . '/../vendor/autoload.php';
+require __DIR__ . '/bootstrap.php';
 
 use Telegram\Builders\InputFile;
 use Telegram\Events\Event;
@@ -16,7 +16,8 @@ use Telegram\Parts\Message;
 use Telegram\Telegram;
 
 $telegram = new Telegram([
-    'token' => getenv('TELEGRAM_TOKEN') ?: throw new RuntimeException('Set TELEGRAM_TOKEN.'),
+    'token' => bot_token(),
+    'socket_options' => socket_options(),
 ]);
 
 $telegram->on(Event::MESSAGE, function (Message $message) use ($telegram): void {

@@ -6,7 +6,7 @@
  *   TELEGRAM_TOKEN=123:ABC php examples/ping.php
  */
 
-require __DIR__ . '/../vendor/autoload.php';
+require __DIR__ . '/bootstrap.php';
 
 use Monolog\Handler\StreamHandler;
 use Monolog\Logger;
@@ -18,10 +18,9 @@ $logger = new Logger('telegram');
 $logger->pushHandler(new StreamHandler('php://stdout', Logger::INFO));
 
 $telegram = new Telegram([
-    'token' => getenv('TELEGRAM_TOKEN') ?: throw new RuntimeException('Set TELEGRAM_TOKEN.'),
+    'token' => bot_token(),
     'logger' => $logger,
-    // Windows PHP usually ships without a CA bundle:
-    // 'socket_options' => ['tls' => ['cafile' => 'C:/php/cacert.pem']],
+    'socket_options' => socket_options(),
 ]);
 
 $telegram->on(Event::READY, function (Telegram $telegram): void {

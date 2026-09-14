@@ -9,7 +9,7 @@
  *   TELEGRAM_WEBHOOK_SECRET=change-me php examples/webhook.php
  */
 
-require __DIR__ . '/../vendor/autoload.php';
+require __DIR__ . '/bootstrap.php';
 
 use Telegram\Events\Event;
 use Telegram\Parts\Message;
@@ -19,7 +19,8 @@ $secret = getenv('TELEGRAM_WEBHOOK_SECRET') ?: 'change-me';
 $url = getenv('TELEGRAM_WEBHOOK_URL') ?: throw new RuntimeException('Set TELEGRAM_WEBHOOK_URL.');
 
 $telegram = new Telegram([
-    'token' => getenv('TELEGRAM_TOKEN') ?: throw new RuntimeException('Set TELEGRAM_TOKEN.'),
+    'token' => bot_token(),
+    'socket_options' => socket_options(),
     'webhook' => [
         'listen' => getenv('TELEGRAM_WEBHOOK_LISTEN') ?: '0.0.0.0:8080',
         'path' => parse_url($url, PHP_URL_PATH) ?: '/',
