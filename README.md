@@ -316,10 +316,18 @@ parameters and types, then called with every field the spec lists to prove that 
 request, and every type is hydrated from a synthetic payload and serialised back. If Telegram adds a
 method or a field and nobody regenerates, the tests say so.
 
-`composer docs` needs [phpDocumentor](https://phpdoc.org) on the path — install it with
-`phive install phpDocumentor`, or point `PHPDOCUMENTOR` at a PHAR. The site is published to GitHub
-Pages by [.github/workflows/docs.yml](.github/workflows/docs.yml) on a release, on a manual dispatch,
-or on a push whose commit message contains `build docs`.
+`composer docs` builds with [discord-php/phpdoc-tool](https://github.com/discord-php/phpdoc-tool) —
+[phpDocumentor](https://phpdoc.org) carrying the DiscordPHP family's patches for `?T|null` types, the
+same builder DiscordPHP and TwitchPHP use. It is not on Packagist, so install it from its repository:
+
+```bash
+composer create-project discord-php/phpdoc-tool:^1.0 phpdoc-tool --no-interaction \
+  --repository='{"type":"vcs","url":"https://github.com/discord-php/phpdoc-tool"}'
+```
+
+An existing checkout works too — `PHPDOC=../phpdoc-tool/vendor/bin/phpdoc composer docs`. The site is
+published to GitHub Pages by [.github/workflows/docs.yml](.github/workflows/docs.yml) on a release, on
+a manual dispatch, or on a push whose commit message contains `build docs`.
 
 ## License
 

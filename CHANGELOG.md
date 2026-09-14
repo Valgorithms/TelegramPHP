@@ -11,7 +11,9 @@ All notable changes to this project are documented here.
   handling, the caches, the generated code, and an FAQ) alongside the
   phpDocumentor API reference, both built by `composer docs` and published to
   GitHub Pages by `.github/workflows/docs.yml` on a release, a manual dispatch, or
-  a push whose commit message contains "build docs".
+  a push whose commit message contains "build docs". The builder is
+  `discord-php/phpdoc-tool`, the same patched phpDocumentor DiscordPHP and
+  TwitchPHP document themselves with.
 - The guide's table of update types is generated from the spec with everything
   else, so it cannot drift from the constants it documents.
 

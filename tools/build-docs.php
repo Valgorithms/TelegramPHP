@@ -15,9 +15,14 @@
  *
  * Usage: composer docs
  *
- * phpDocumentor is not a Composer dependency (it is distributed as a PHAR, and
- * pulling it in as a library drags half of Symfony behind it), so this looks for
- * one in the usual places. Point PHPDOCUMENTOR at a PHAR to use a specific build.
+ * The builder is `discord-php/phpdoc-tool` - phpDocumentor with the DiscordPHP
+ * family's two patches, so that `?T|null` is read as a type rather than an error
+ * and printed back as `?T`. The generated parts document their attributes that
+ * way throughout, so plain phpDocumentor would render a good deal of this API
+ * surface wrongly. It is the same builder DiscordPHP and TwitchPHP use.
+ *
+ * This looks for it in the usual places; point PHPDOC at a `phpdoc` binary or a
+ * PHAR to use a specific build.
  *
  * Note that every page links relative to the site root and carries a
  * `<base href="../">` to make that work, so the site only resolves correctly when
@@ -31,24 +36,21 @@ $root = dirname(__DIR__);
 
 /** @return list<string> The command to run, or [] when nothing suitable was found. */
 $locate = static function () use ($root): array {
-    $configured = getenv('PHPDOCUMENTOR');
+    $candidates = [];
+
+    $configured = getenv('PHPDOC');
 
     if (is_string($configured) && $configured !== '') {
-        return str_ends_with($configured, '.phar') ? [PHP_BINARY, $configured] : [$configured];
+        $candidates[] = $configured;
     }
 
-    foreach ([$root . '/tools/phpDocumentor', $root . '/tools/phpDocumentor.phar', $root . '/phpDocumentor.phar'] as $local) {
-        if (is_file($local)) {
-            return str_ends_with($local, '.phar') ? [PHP_BINARY, $local] : [$local];
-        }
-    }
+    $candidates[] = $root . '/phpdoc-tool/vendor/bin/phpdoc';        // created here, as CI does
+    $candidates[] = dirname($root) . '/phpdoc-tool/vendor/bin/phpdoc'; // a checkout beside this one
+    $candidates[] = dirname($root) . '/phpdoc-tool-shared/vendor/bin/phpdoc';
 
-    foreach (['phpDocumentor', 'phpdoc'] as $binary) {
-        $which = PHP_OS_FAMILY === 'Windows' ? "where {$binary}" : "command -v {$binary}";
-        $found = trim((string) @shell_exec($which . ' 2>' . (PHP_OS_FAMILY === 'Windows' ? 'NUL' : '/dev/null')));
-
-        if ($found !== '') {
-            return [strtok($found, "\r\n")];
+    foreach ($candidates as $candidate) {
+        if (is_file($candidate)) {
+            return str_ends_with($candidate, '.phar') ? [PHP_BINARY, $candidate] : [PHP_BINARY, $candidate];
         }
     }
 
@@ -59,15 +61,19 @@ $command = $locate();
 
 if ($command === []) {
     fwrite(STDERR, <<<'TEXT'
-        phpDocumentor was not found.
+        The documentation builder was not found.
 
-        Install it with phive:
+        This project builds its docs with discord-php/phpdoc-tool - phpDocumentor
+        plus the DiscordPHP family's patches for `?T|null` types. It is not on
+        Packagist, so install it from its repository:
 
-            phive install phpDocumentor --trust-gpg-keys 67F861C3D889C656,6DA3ACC4991FFAE5
+            composer create-project discord-php/phpdoc-tool:^1.0 phpdoc-tool \
+              --no-interaction --no-progress \
+              --repository='{"type":"vcs","url":"https://github.com/discord-php/phpdoc-tool"}'
 
-        or download the PHAR and point this at it:
+        Or point this at an existing checkout:
 
-            PHPDOCUMENTOR=/path/to/phpDocumentor.phar composer docs
+            PHPDOC=../phpdoc-tool/vendor/bin/phpdoc composer docs
 
         TEXT);
     exit(1);

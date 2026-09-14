@@ -28,10 +28,18 @@ jobs:
         with:
           php-version: '8.4'
           extensions: iconv, mbstring
-          tools: phive
+          tools: composer
 
+      # The DiscordPHP family's build of phpDocumentor, carrying its patches for
+      # `?T|null` types. Not on Packagist, hence the explicit repository. phive
+      # is not used: its `phpDocumentor` alias still resolves to the retired
+      # phpdocumentor/phpdocumentor2 repository, which is both rate-limited and
+      # a major version behind the guides support this site needs.
       - name: Install phpDocumentor
-        run: phive install phpDocumentor --trust-gpg-keys 67F861C3D889C656,6DA3ACC4991FFAE5
+        run: >-
+          composer create-project discord-php/phpdoc-tool:^1.0 phpdoc-tool
+          --no-interaction --no-progress
+          --repository='{"type":"vcs","url":"https://github.com/discord-php/phpdoc-tool"}'
 
       - name: Build the reference and the guide
         run: php tools/build-docs.php
