@@ -28,7 +28,7 @@ Its API surface is generated from the Bot API specification rather than written 
 method and every field the documentation describes is present, correctly typed, and covered by a
 test. See :doc:`generated` for how that works and what it means when Telegram ships a new version.
 
-This documentation is built from the ``dev`` branch and describes **Bot API 10.3**.
+This documentation is built from the ``main`` branch and describes **Bot API 10.3**.
 
 Requirements
 ============
@@ -66,9 +66,9 @@ To install the latest release::
 
    $ composer require vzgcoders/telegramphp
 
-If you would like to run on the latest ``dev`` branch::
+If you would like to run on the latest ``main`` branch::
 
-   $ composer require vzgcoders/telegramphp dev-dev
+   $ composer require vzgcoders/telegramphp dev-main
 
 Getting a token
 ===============
