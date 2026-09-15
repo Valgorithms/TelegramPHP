@@ -24,7 +24,7 @@ namespace Telegram\Parts;
  *
  * @link https://core.telegram.org/bots/api#userrating
  *
- * @since Bot API 10.3
+ * @since v10.3
  */
 class UserRating extends Part
 {

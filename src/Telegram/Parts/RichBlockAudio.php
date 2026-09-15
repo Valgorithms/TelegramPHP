@@ -23,7 +23,7 @@ namespace Telegram\Parts;
  *
  * @link https://core.telegram.org/bots/api#richblockaudio
  *
- * @since Bot API 10.3
+ * @since v10.3
  */
 class RichBlockAudio extends RichBlock
 {

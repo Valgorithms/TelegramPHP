@@ -23,7 +23,7 @@ namespace Telegram\Parts;
  *
  * @link https://core.telegram.org/bots/api#richtextbankcardnumber
  *
- * @since Bot API 10.3
+ * @since v10.3
  */
 class RichTextBankCardNumber extends RichText
 {

@@ -24,7 +24,7 @@ namespace Telegram\Parts;
  *
  * @link https://core.telegram.org/bots/api#inputrichblockdetails
  *
- * @since Bot API 10.3
+ * @since v10.3
  */
 class InputRichBlockDetails extends InputRichBlock
 {

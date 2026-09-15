@@ -33,7 +33,7 @@ namespace Telegram\Parts;
  *
  * @link https://core.telegram.org/bots/api#inlinequeryresultcachedphoto
  *
- * @since Bot API 10.3
+ * @since v10.3
  */
 class InlineQueryResultCachedPhoto extends InlineQueryResult
 {

@@ -8,6 +8,7 @@
     <title>TelegramPHP Documentation</title>
     <paths>
         <output>build</output>
+        <cache>.phpdoc/cache</cache>
     </paths>
     <version number="latest">
         <api>
@@ -16,5 +17,12 @@
             </source>
             <output>reference</output>
         </api>
+        <guide>
+            <source dsn=".">
+                <path>guide</path>
+            </source>
+            <output>guide</output>
+        </guide>
     </version>
+    <setting name="guides.enabled" value="true"/>
 </phpdocumentor>

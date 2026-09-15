@@ -56,7 +56,8 @@
             "@spec:fetch",
             "@spec:openapi",
             "@spec:generate"
-        ]
+        ],
+        "docs": "php tools/build-docs.php"
     },
     "minimum-stability": "dev",
     "prefer-stable": true,

@@ -7,7 +7,7 @@
  *   TELEGRAM_TOKEN=123:ABC php examples/commands.php
  */
 
-require __DIR__ . '/../vendor/autoload.php';
+require __DIR__ . '/bootstrap.php';
 
 use Telegram\Builders\InlineKeyboard;
 use Telegram\CommandClient\TelegramCommandClient;
@@ -16,7 +16,8 @@ use Telegram\Parts\CallbackQuery;
 use Telegram\Parts\Message;
 
 $bot = new TelegramCommandClient([
-    'token' => getenv('TELEGRAM_TOKEN') ?: throw new RuntimeException('Set TELEGRAM_TOKEN.'),
+    'token' => bot_token(),
+    'socket_options' => socket_options(),
     'description' => 'An example bot built with TelegramPHP',
 ]);
 

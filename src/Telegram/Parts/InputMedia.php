@@ -27,7 +27,7 @@ namespace Telegram\Parts;
  *
  * @link https://core.telegram.org/bots/api#inputmedia
  *
- * @since Bot API 10.3
+ * @since v10.3
  */
 abstract class InputMedia extends Part
 {

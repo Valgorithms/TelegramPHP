@@ -29,7 +29,7 @@ namespace Telegram\Parts;
  *
  * @link https://core.telegram.org/bots/api#audio
  *
- * @since Bot API 10.3
+ * @since v10.3
  */
 class Audio extends Part
 {

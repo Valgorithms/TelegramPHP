@@ -35,7 +35,7 @@ namespace Telegram\Parts;
  *
  * @link https://core.telegram.org/bots/api#inlinekeyboardbutton
  *
- * @since Bot API 10.3
+ * @since v10.3
  */
 class InlineKeyboardButton extends Part
 {

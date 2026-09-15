@@ -47,7 +47,7 @@ namespace Telegram\Parts;
  *
  * @link https://core.telegram.org/bots/api#externalreplyinfo
  *
- * @since Bot API 10.3
+ * @since v10.3
  */
 class ExternalReplyInfo extends Part
 {

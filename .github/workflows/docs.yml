@@ -1,0 +1,57 @@
+name: Build Docs
+
+on:
+  release:
+    types: [published]
+  workflow_dispatch:
+  push:
+
+permissions:
+  contents: write
+
+jobs:
+  docs:
+    runs-on: ubuntu-latest
+    # A published release, a manual dispatch, or a push whose head commit message
+    # contains "build docs" - the convention DiscordPHP uses, so the site is not
+    # rebuilt and redeployed on every commit.
+    if: >-
+      github.event_name == 'release'
+      || github.event_name == 'workflow_dispatch'
+      || (github.event_name == 'push' && contains(github.event.head_commit.message, 'build docs'))
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.4'
+          extensions: iconv, mbstring
+          tools: composer
+
+      # The DiscordPHP family's build of phpDocumentor, carrying its patches for
+      # `?T|null` types. Not on Packagist, hence the explicit repository. phive
+      # is not used: its `phpDocumentor` alias still resolves to the retired
+      # phpdocumentor/phpdocumentor2 repository, which is both rate-limited and
+      # a major version behind the guides support this site needs.
+      - name: Install phpDocumentor
+        run: >-
+          composer create-project discord-php/phpdoc-tool:^1.0 phpdoc-tool
+          --no-interaction --no-progress
+          --repository='{"type":"vcs","url":"https://github.com/discord-php/phpdoc-tool"}'
+
+      - name: Build the reference and the guide
+        run: php tools/build-docs.php
+
+      - name: Disable Jekyll
+        # Without this, GitHub Pages hides every path beginning with an underscore.
+        run: touch build/.nojekyll
+
+      - name: Publish to gh-pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          branch: gh-pages
+          folder: build
+          clean: true

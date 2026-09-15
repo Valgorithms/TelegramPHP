@@ -23,7 +23,7 @@ namespace Telegram\Http;
  *
  * @link https://core.telegram.org/bots/api#available-methods
  *
- * @since Bot API 10.3
+ * @since v10.3
  */
 final class Endpoint
 {

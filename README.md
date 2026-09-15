@@ -13,6 +13,16 @@ reachable from PHP.
 
 **Bot API 10.3** · 185 methods · 400 types.
 
+## Documentation
+
+- **[Guide](https://valgorithms.github.io/TelegramPHP/guide/index.html)** — getting started, calling
+  the API, updates and events, parts, keyboards and files, commands, webhooks, error handling, and
+  how the generated code works.
+- **[API reference](https://valgorithms.github.io/TelegramPHP/)** — every class, generated from the
+  source by [phpDocumentor](https://phpdoc.org).
+
+Both are published to GitHub Pages on release, and can be built locally with `composer docs`.
+
 ## Requirements
 
 - PHP 8.4 or newer
@@ -35,6 +45,18 @@ $telegram = new Telegram([
     'socket_options' => ['tls' => ['cafile' => 'C:/php/cacert.pem']],
 ]);
 ```
+
+## Running the examples
+
+```bash
+cp example.env .env     # then put your @BotFather token in it
+php examples/ping.php
+```
+
+[examples/bootstrap.php](examples/bootstrap.php) reads that `.env` and finds a CA bundle for Windows
+PHP builds; the environment wins over the file, so `TELEGRAM_TOKEN=… php examples/ping.php` works too.
+The library itself reads no configuration and needs no dotenv package — everything is passed to the
+constructor.
 
 ## Getting started
 
@@ -280,6 +302,7 @@ rewrite:
 composer spec:build     # fetch api.json, build openapi.json, regenerate the library
 composer test           # 4,500+ tests, including full spec coverage
 composer cs             # php-cs-fixer
+composer docs           # build the guide and the API reference into build/
 ```
 
 `composer spec:build` runs three steps, each usable on its own — `spec:fetch`, `spec:openapi`,
@@ -292,6 +315,19 @@ The suite is mostly generated too: every method is checked for a PHP method with
 parameters and types, then called with every field the spec lists to prove that each one reaches the
 request, and every type is hydrated from a synthetic payload and serialised back. If Telegram adds a
 method or a field and nobody regenerates, the tests say so.
+
+`composer docs` builds with [discord-php/phpdoc-tool](https://github.com/discord-php/phpdoc-tool) —
+[phpDocumentor](https://phpdoc.org) carrying the DiscordPHP family's patches for `?T|null` types, the
+same builder DiscordPHP and TwitchPHP use. It is not on Packagist, so install it from its repository:
+
+```bash
+composer create-project discord-php/phpdoc-tool:^1.0 phpdoc-tool --no-interaction \
+  --repository='{"type":"vcs","url":"https://github.com/discord-php/phpdoc-tool"}'
+```
+
+An existing checkout works too — `PHPDOC=../phpdoc-tool/vendor/bin/phpdoc composer docs`. The site is
+published to GitHub Pages by [.github/workflows/docs.yml](.github/workflows/docs.yml) on a release, on
+a manual dispatch, or on a push whose commit message contains `build docs`.
 
 ## License
 
