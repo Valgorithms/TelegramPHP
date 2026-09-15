@@ -37,7 +37,7 @@ namespace Telegram\Parts;
  *
  * @link https://core.telegram.org/bots/api#inlinequeryresultmpeg4gif
  *
- * @since Bot API 10.3
+ * @since v10.3
  */
 class InlineQueryResultMpeg4Gif extends InlineQueryResult
 {

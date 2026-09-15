@@ -28,7 +28,7 @@ namespace Telegram\Parts;
  *
  * @link https://core.telegram.org/bots/api#polloption
  *
- * @since Bot API 10.3
+ * @since v10.3
  */
 class PollOption extends Part
 {

@@ -29,7 +29,7 @@ namespace Telegram\Events;
  *
  * @link https://core.telegram.org/bots/api#update
  *
- * @since Bot API 10.3
+ * @since v10.3
  */
 final class Event
 {

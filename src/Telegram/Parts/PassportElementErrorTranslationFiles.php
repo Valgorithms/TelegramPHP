@@ -25,7 +25,7 @@ namespace Telegram\Parts;
  *
  * @link https://core.telegram.org/bots/api#passportelementerrortranslationfiles
  *
- * @since Bot API 10.3
+ * @since v10.3
  */
 class PassportElementErrorTranslationFiles extends PassportElementError
 {

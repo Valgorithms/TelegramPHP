@@ -19,7 +19,7 @@ namespace Telegram\Parts;
  *
  * @link https://core.telegram.org/bots/api#disabledbutton
  *
- * @since Bot API 10.3
+ * @since v10.3
  */
 class DisabledButton extends Part
 {

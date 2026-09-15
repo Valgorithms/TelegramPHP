@@ -21,7 +21,7 @@ namespace Telegram\Parts;
  *
  * @link https://core.telegram.org/bots/api#copytextbutton
  *
- * @since Bot API 10.3
+ * @since v10.3
  */
 class CopyTextButton extends Part
 {

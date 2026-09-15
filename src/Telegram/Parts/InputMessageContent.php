@@ -28,7 +28,7 @@ namespace Telegram\Parts;
  *
  * @link https://core.telegram.org/bots/api#inputmessagecontent
  *
- * @since Bot API 10.3
+ * @since v10.3
  */
 abstract class InputMessageContent extends Part
 {

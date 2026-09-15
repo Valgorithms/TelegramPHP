@@ -25,7 +25,7 @@ namespace Telegram\Parts;
  *
  * @link https://core.telegram.org/bots/api#paidmedia
  *
- * @since Bot API 10.3
+ * @since v10.3
  */
 abstract class PaidMedia extends Part
 {

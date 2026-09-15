@@ -19,7 +19,7 @@ namespace Telegram\Parts;
  *
  * @link https://core.telegram.org/bots/api#callbackgame
  *
- * @since Bot API 10.3
+ * @since v10.3
  */
 class CallbackGame extends Part
 {
