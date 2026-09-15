@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+            <title>TelegramPHP Documentation</title>
+    
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="../">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png"/>
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png"/>
+    <link rel="icon" href="images/favicon.ico"/>
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png"/>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/base.css">
+            <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/template.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/themes/prism-okaidia.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-numbers/prism-line-numbers.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-highlight/prism-line-highlight.css">
+                <script src="https://cdn.jsdelivr.net/npm/fuse.js@3.4.6"></script>
+        <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+        <script src="js/template.js"></script>
+        <script src="js/search.js"></script>
+        <script defer src="js/searchIndex.js"></script>
+    </head>
+<body id="top">
+    <header class="phpdocumentor-header phpdocumentor-section">
+    <h1 class="phpdocumentor-title"><a href="" class="phpdocumentor-title__link">TelegramPHP Documentation</a></h1>
+    <input class="phpdocumentor-header__menu-button" type="checkbox" id="menu-button" name="menu-button" />
+    <label class="phpdocumentor-header__menu-icon" for="menu-button">
+        <i class="fas fa-bars"></i>
+    </label>
+    <section data-search-form class="phpdocumentor-search">
+    <label>
+        <span class="visually-hidden">Search for</span>
+        <svg class="phpdocumentor-search__icon" width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="7.5" cy="7.5" r="6.5" stroke="currentColor" stroke-width="2"/>
+            <line x1="12.4892" y1="12.2727" x2="19.1559" y2="18.9393" stroke="currentColor" stroke-width="3"/>
+        </svg>
+        <input type="search" class="phpdocumentor-field phpdocumentor-search__field" placeholder="Loading .." disabled />
+    </label>
+</section>
+
+    <nav class="phpdocumentor-topnav">
+    <ul class="phpdocumentor-topnav__menu">
+        </ul>
+</nav>
+</header>
+
+    <main class="phpdocumentor">
+        <div class="phpdocumentor-section">
+            <input class="phpdocumentor-sidebar__menu-button" type="checkbox" id="sidebar-button" name="sidebar-button" />
+<label class="phpdocumentor-sidebar__menu-icon" for="sidebar-button">
+    Menu
+</label>
+<aside class="phpdocumentor-column -three phpdocumentor-sidebar">
+                    <section class="phpdocumentor-sidebar__category -guide">
+            <h2 class="phpdocumentor-sidebar__category-header">Guide</h2>
+                                    <h4 class="phpdocumentor-sidebar__root-namespace">
+    <a href="guide/basics.html#basics" class="">Basics</a>
+</h4>
+
+                                    <h4 class="phpdocumentor-sidebar__root-namespace">
+    <a href="guide/calling.html#calling-the-api" class="">Calling the API</a>
+</h4>
+
+                                    <h4 class="phpdocumentor-sidebar__root-namespace">
+    <a href="guide/events.html#updates-and-events" class="">Updates and events</a>
+</h4>
+
+                                    <h4 class="phpdocumentor-sidebar__root-namespace">
+    <a href="guide/parts.html#parts" class="">Parts</a>
+</h4>
+
+                                    <h4 class="phpdocumentor-sidebar__root-namespace">
+    <a href="guide/builders.html#keyboards-and-files" class="">Keyboards and files</a>
+</h4>
+
+                                    <h4 class="phpdocumentor-sidebar__root-namespace">
+    <a href="guide/commands.html#commands" class="">Commands</a>
+</h4>
+
+                                    <h4 class="phpdocumentor-sidebar__root-namespace">
+    <a href="guide/webhooks.html#webhooks" class="">Webhooks</a>
+</h4>
+
+                                    <h4 class="phpdocumentor-sidebar__root-namespace">
+    <a href="guide/errors.html#handling-errors" class="">Handling errors</a>
+</h4>
+
+                                    <h4 class="phpdocumentor-sidebar__root-namespace">
+    <a href="guide/caches.html#chats-and-users" class="">Chats and users</a>
+</h4>
+
+                                    <h4 class="phpdocumentor-sidebar__root-namespace">
+    <a href="guide/generated.html#generated-from-the-spec" class="">Generated from the spec</a>
+</h4>
+
+                                    <h4 class="phpdocumentor-sidebar__root-namespace">
+    <a href="guide/faq.html#faq" class="">FAQ</a>
+</h4>
+
+                        </section>
+                <section class="phpdocumentor-sidebar__category -namespaces">
+            <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
+                                    <h4 class="phpdocumentor-sidebar__root-namespace">
+    <a href="namespaces/telegram.html" class="">Telegram</a>
+</h4>
+    <ul class="phpdocumentor-list">
+                    <li>
+                <a href="namespaces/telegram-api.html" class="">Api</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/telegram-builders.html" class="">Builders</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/telegram-commandclient.html" class="">CommandClient</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/telegram-events.html" class="">Events</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/telegram-exceptions.html" class="">Exceptions</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/telegram-factory.html" class="">Factory</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/telegram-http.html" class="">Http</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/telegram-parts.html" class="">Parts</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/telegram-polling.html" class="">Polling</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/telegram-repository.html" class="">Repository</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/telegram-webhook.html" class="">Webhook</a>
+                
+            </li>
+            </ul>
+
+                        </section>
+                <section class="phpdocumentor-sidebar__category -packages">
+            <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
+                                    <h4 class="phpdocumentor-sidebar__root-namespace">
+    <a href="packages/Application.html" class="">Application</a>
+</h4>
+
+                        </section>
+            
+    <section class="phpdocumentor-sidebar__category -reports">
+        <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
+                <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/deprecated.html">Deprecated</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/errors.html">Errors</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/markers.html">Markers</a></h3>
+    </section>
+
+    <section class="phpdocumentor-sidebar__category -indices">
+        <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="indices/files.html">Files</a></h3>
+    </section>
+</aside>
+
+            <div class="phpdocumentor-column -nine phpdocumentor-content">
+                                        <section class="section " id="keyboards-and-files">
+            <h1>Keyboards and files</h1>
+
+            <section class="section " id="inline-keyboards">
+            <h2>Inline keyboards</h2>
+
+            
+    <p>An inline keyboard is the row of buttons that stays attached to a message. <code>InlineKeyboard</code>
+ builds
+the markup; buttons go into the current row, and <code>row()</code>
+ starts the next one:</p>
+
+            <pre><code class="language-php">use Telegram\Builders\InlineKeyboard;
+
+$telegram-&gt;sendMessage($chatId, &#039;Deploy?&#039;, reply_markup: InlineKeyboard::new()
+    -&gt;callback(&#039;Ship it&#039;, &#039;deploy:yes&#039;)
+    -&gt;callback(&#039;Hold&#039;, &#039;deploy:no&#039;)
+    -&gt;row()
+    -&gt;url(&#039;What changed&#039;, &#039;https://example.com/diff&#039;));</code></pre>
+
+            
+    <p>The button kinds:</p>
+
+            <pre><code class="language-php">InlineKeyboard::new()
+    -&gt;callback(&#039;Press me&#039;, &#039;some:data&#039;)          // sends a callback query back
+    -&gt;url(&#039;Open a link&#039;, &#039;https://example.com&#039;)
+    -&gt;webApp(&#039;Open the app&#039;, &#039;https://example.com/app&#039;)
+    -&gt;login(&#039;Sign in&#039;, &#039;https://example.com/login&#039;)
+    -&gt;switchInline(&#039;Share&#039;, &#039;a query&#039;)           // picks a chat to drop the query into
+    -&gt;switchInline(&#039;Here&#039;, &#039;a query&#039;, currentChat: true)
+    -&gt;copyText(&#039;Copy the code&#039;, &#039;ABC-123&#039;)
+    -&gt;game(&#039;Play&#039;)                               // first button only
+    -&gt;pay(&#039;Pay&#039;)                                 // first button only, invoices only
+    -&gt;button([&#039;text&#039; =&gt; &#039;Anything else&#039;, &#039;callback_data&#039; =&gt; &#039;raw&#039;]);</code></pre>
+
+            
+    <p>Pressing a <code>callback</code>
+ button produces a <code>callback_query</code>
+ update. <strong>Answer every one</strong>
+, even with
+nothing to say, or the button spins on the user&#039;s screen until it times out:</p>
+
+            <pre><code class="language-php">$telegram-&gt;on(Event::CALLBACK_QUERY, function (CallbackQuery $query) {
+    $query-&gt;answer();                     // stops the spinner
+    $query-&gt;editMessage(&#039;Deployed. 🚀&#039;);  // replaces the message the button is under
+});</code></pre>
+
+            
+    <p>Callback data is limited to 64 bytes, so put an identifier in it rather than a payload.</p>
+
+    </section>
+
+            <section class="section " id="reply-keyboards">
+            <h2>Reply keyboards</h2>
+
+            
+    <p>A reply keyboard replaces the user&#039;s own keyboard with buttons that send text or ask for something:</p>
+
+            <pre><code class="language-php">use Telegram\Builders\ReplyKeyboard;
+
+$telegram-&gt;sendMessage($chatId, &#039;Where are you?&#039;, reply_markup: ReplyKeyboard::new()
+    -&gt;requestLocation(&#039;Send my location&#039;)
+    -&gt;row()
+    -&gt;button(&#039;Skip&#039;)
+    -&gt;resize()
+    -&gt;oneTime());</code></pre>
+
+            <pre><code class="language-php">ReplyKeyboard::new()
+    -&gt;button(&#039;Plain text&#039;)
+    -&gt;requestContact(&#039;Share my number&#039;)      // private chats only
+    -&gt;requestLocation(&#039;Share my location&#039;)   // private chats only
+    -&gt;requestPoll(&#039;Make a poll&#039;, &#039;quiz&#039;)
+    -&gt;webApp(&#039;Open the app&#039;, &#039;https://example.com/app&#039;)
+    -&gt;requestUsers(&#039;Pick people&#039;, requestId: 1, criteria: [&#039;max_quantity&#039; =&gt; 3])
+    -&gt;requestChat(&#039;Pick a channel&#039;, requestId: 2, chatIsChannel: true)
+    -&gt;resize()          // shrink to fit the buttons
+    -&gt;oneTime()         // hide after one press
+    -&gt;persistent()      // keep it open
+    -&gt;placeholder(&#039;Pick one&#039;)
+    -&gt;selective();      // show only to the users the message concerns</code></pre>
+
+            
+    <p>The two markups that carry no buttons are static helpers:</p>
+
+            <pre><code class="language-php">$telegram-&gt;sendMessage($chatId, &#039;Done&#039;, reply_markup: ReplyKeyboard::remove());
+$telegram-&gt;sendMessage($chatId, &#039;Your name?&#039;, reply_markup: ReplyKeyboard::forceReply(&#039;Type it here&#039;));</code></pre>
+
+    </section>
+
+            <section class="section " id="uploading-files">
+            <h2>Uploading files</h2>
+
+            
+    <p>Anywhere the Bot API types a field as <code>InputFile or String</code>
+ you have three choices, and only the
+last one is an upload:</p>
+
+            <pre><code class="language-php">use Telegram\Builders\InputFile;
+
+$telegram-&gt;sendPhoto($chatId, &#039;AgACAgQAAxkBAA...&#039;);            // a file_id Telegram already has
+$telegram-&gt;sendPhoto($chatId, &#039;https://example.com/cat.jpg&#039;);  // a URL Telegram fetches itself
+$telegram-&gt;sendPhoto($chatId, InputFile::fromPath(&#039;cat.jpg&#039;)); // bytes from this machine</code></pre>
+
+            
+    <p>Reuse a <code>file_id</code>
+ whenever you can - it costs Telegram nothing and you nothing.</p>
+
+            
+    <p>An <code>InputFile</code>
+ can come from disk, from memory, or from a stream:</p>
+
+            <pre><code class="language-php">InputFile::fromPath(&#039;/tmp/report.pdf&#039;);                       // name and type guessed
+InputFile::fromPath(&#039;/tmp/x.bin&#039;, &#039;report.pdf&#039;, &#039;application/pdf&#039;);
+InputFile::fromString($csv, &#039;report.csv&#039;, &#039;text/csv&#039;);
+InputFile::fromStream($handle, &#039;report.csv&#039;);</code></pre>
+
+            
+    <p>Passing one anywhere in the payload switches that request to <code>multipart/form-data</code>
+ - you do not
+have to say so. That holds at any depth, which is what makes media groups work:</p>
+
+            <pre><code class="language-php">$telegram-&gt;sendMediaGroup($chatId, [
+    [&#039;type&#039; =&gt; &#039;photo&#039;, &#039;media&#039; =&gt; InputFile::fromPath(&#039;one.jpg&#039;), &#039;caption&#039; =&gt; &#039;First&#039;],
+    [&#039;type&#039; =&gt; &#039;photo&#039;, &#039;media&#039; =&gt; InputFile::fromPath(&#039;two.jpg&#039;)],
+]);</code></pre>
+
+            
+    <p>A nested file is sent as its own form part and its place in the JSON is replaced with an
+<code>attach://</code>
+ reference, exactly as the Bot API requires. A top-level file field is sent as that field
+directly.</p>
+
+            <div class="phpdocumentor-admonition note">
+            <svg class="phpdocumentor-admonition__icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z"></path></svg>
+                    <article>
+        
+    <p>The official Bot API server accepts uploads up to 50 MB (10 MB for photos). Point <code>base_url</code>
+ at a
+<a href="https://core.telegram.org/bots/api#using-a-local-bot-api-server">local Bot API server</a> to lift
+that to 2 GB.</p>
+
+    </article>
+</div>
+
+    </section>
+
+            <section class="section " id="downloading-files">
+            <h2>Downloading files</h2>
+
+            
+    <p>An incoming file is a <code>file_id</code>
+ plus metadata; the bytes take a second call. Either do it in one
+step from the client, or in two if you want the <code>File</code>
+ record:</p>
+
+            <pre><code class="language-php">$telegram-&gt;downloadFile($message-&gt;document-&gt;file_id)
+    -&gt;then(fn (string $bytes) =&gt; file_put_contents(&#039;report.pdf&#039;, $bytes));
+
+$telegram-&gt;getFile($message-&gt;document-&gt;file_id)
+    -&gt;then(fn (File $file) =&gt; $file-&gt;save(&#039;/tmp&#039;));   // keeps Telegram&#039;s own filename</code></pre>
+
+            <div class="phpdocumentor-admonition warning">
+                <svg class="phpdocumentor-admonition__icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
+                <article>
+        
+    <p><code>File::getUrl()</code>
+ contains the bot token, because that is how Telegram authorises the download.
+Never log it or hand it to a user - it is as sensitive as the token itself.</p>
+
+    </article>
+</div>
+
+            
+    <p>A <code>file_path</code>
+ is valid for at least an hour. After that, call <code>getFile</code>
+ again with the same
+<code>file_id</code>
+.</p>
+
+    </section>
+
+    </section>
+
+                            </div>
+            <section data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
+    <section class="phpdocumentor-search-results__dialog">
+        <header class="phpdocumentor-search-results__header">
+            <h2 class="phpdocumentor-search-results__title">Search results</h2>
+            <button class="phpdocumentor-search-results__close"><i class="fas fa-times"></i></button>
+        </header>
+        <section class="phpdocumentor-search-results__body">
+            <ul class="phpdocumentor-search-results__entries"></ul>
+        </section>
+    </section>
+</section>
+        </div>
+        <a href="#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+
+    </main>
+
+    <script>
+        cssVars({});
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/prism.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/autoloader/prism-autoloader.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-numbers/prism-line-numbers.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-highlight/prism-line-highlight.min.js"></script>
+</body>
+</html>

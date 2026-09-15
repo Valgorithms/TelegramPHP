@@ -1,0 +1,4299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+            <title>TelegramPHP Documentation</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="../">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png"/>
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png"/>
+    <link rel="icon" href="images/favicon.ico"/>
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png"/>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/base.css">
+            <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/template.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/themes/prism-okaidia.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-numbers/prism-line-numbers.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-highlight/prism-line-highlight.css">
+                <script src="https://cdn.jsdelivr.net/npm/fuse.js@3.4.6"></script>
+        <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+        <script src="js/template.js"></script>
+        <script src="js/search.js"></script>
+        <script defer src="js/searchIndex.js"></script>
+    </head>
+<body id="top">
+    <header class="phpdocumentor-header phpdocumentor-section">
+    <h1 class="phpdocumentor-title"><a href="" class="phpdocumentor-title__link">TelegramPHP Documentation</a></h1>
+    <input class="phpdocumentor-header__menu-button" type="checkbox" id="menu-button" name="menu-button" />
+    <label class="phpdocumentor-header__menu-icon" for="menu-button">
+        <i class="fas fa-bars"></i>
+    </label>
+    <section data-search-form class="phpdocumentor-search">
+    <label>
+        <span class="visually-hidden">Search for</span>
+        <svg class="phpdocumentor-search__icon" width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="7.5" cy="7.5" r="6.5" stroke="currentColor" stroke-width="2"/>
+            <line x1="12.4892" y1="12.2727" x2="19.1559" y2="18.9393" stroke="currentColor" stroke-width="3"/>
+        </svg>
+        <input type="search" class="phpdocumentor-field phpdocumentor-search__field" placeholder="Loading .." disabled />
+    </label>
+</section>
+
+    <nav class="phpdocumentor-topnav">
+    <ul class="phpdocumentor-topnav__menu">
+        </ul>
+</nav>
+</header>
+
+    <main class="phpdocumentor">
+        <div class="phpdocumentor-section">
+            <input class="phpdocumentor-sidebar__menu-button" type="checkbox" id="sidebar-button" name="sidebar-button" />
+<label class="phpdocumentor-sidebar__menu-icon" for="sidebar-button">
+    Menu
+</label>
+<aside class="phpdocumentor-column -three phpdocumentor-sidebar">
+                    <section class="phpdocumentor-sidebar__category -guide">
+            <h2 class="phpdocumentor-sidebar__category-header">Guide</h2>
+                                    <h4 class="phpdocumentor-sidebar__root-namespace">
+    <a href="guide/basics.html#basics" class="">Basics</a>
+</h4>
+
+                                    <h4 class="phpdocumentor-sidebar__root-namespace">
+    <a href="guide/calling.html#calling-the-api" class="">Calling the API</a>
+</h4>
+
+                                    <h4 class="phpdocumentor-sidebar__root-namespace">
+    <a href="guide/events.html#updates-and-events" class="">Updates and events</a>
+</h4>
+
+                                    <h4 class="phpdocumentor-sidebar__root-namespace">
+    <a href="guide/parts.html#parts" class="">Parts</a>
+</h4>
+
+                                    <h4 class="phpdocumentor-sidebar__root-namespace">
+    <a href="guide/builders.html#keyboards-and-files" class="">Keyboards and files</a>
+</h4>
+
+                                    <h4 class="phpdocumentor-sidebar__root-namespace">
+    <a href="guide/commands.html#commands" class="">Commands</a>
+</h4>
+
+                                    <h4 class="phpdocumentor-sidebar__root-namespace">
+    <a href="guide/webhooks.html#webhooks" class="">Webhooks</a>
+</h4>
+
+                                    <h4 class="phpdocumentor-sidebar__root-namespace">
+    <a href="guide/errors.html#handling-errors" class="">Handling errors</a>
+</h4>
+
+                                    <h4 class="phpdocumentor-sidebar__root-namespace">
+    <a href="guide/caches.html#chats-and-users" class="">Chats and users</a>
+</h4>
+
+                                    <h4 class="phpdocumentor-sidebar__root-namespace">
+    <a href="guide/generated.html#generated-from-the-spec" class="">Generated from the spec</a>
+</h4>
+
+                                    <h4 class="phpdocumentor-sidebar__root-namespace">
+    <a href="guide/faq.html#faq" class="">FAQ</a>
+</h4>
+
+                        </section>
+                <section class="phpdocumentor-sidebar__category -namespaces">
+            <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
+                                    <h4 class="phpdocumentor-sidebar__root-namespace">
+    <a href="namespaces/telegram.html" class="">Telegram</a>
+</h4>
+    <ul class="phpdocumentor-list">
+                    <li>
+                <a href="namespaces/telegram-api.html" class="">Api</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/telegram-builders.html" class="">Builders</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/telegram-commandclient.html" class="">CommandClient</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/telegram-events.html" class="">Events</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/telegram-exceptions.html" class="">Exceptions</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/telegram-factory.html" class="">Factory</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/telegram-http.html" class="">Http</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/telegram-parts.html" class="">Parts</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/telegram-polling.html" class="">Polling</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/telegram-repository.html" class="">Repository</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/telegram-webhook.html" class="">Webhook</a>
+                
+            </li>
+            </ul>
+
+                        </section>
+                <section class="phpdocumentor-sidebar__category -packages">
+            <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
+                                    <h4 class="phpdocumentor-sidebar__root-namespace">
+    <a href="packages/Application.html" class="">Application</a>
+</h4>
+
+                        </section>
+            
+    <section class="phpdocumentor-sidebar__category -reports">
+        <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
+                <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/deprecated.html">Deprecated</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/errors.html">Errors</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/markers.html">Markers</a></h3>
+    </section>
+
+    <section class="phpdocumentor-sidebar__category -indices">
+        <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="indices/files.html">Files</a></h3>
+    </section>
+</aside>
+
+            <div class="phpdocumentor-column -nine phpdocumentor-content">
+                                <section>
+                                        <ul class="phpdocumentor-breadcrumbs">
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/telegram.html">Telegram</a></li>
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/telegram-parts.html">Parts</a></li>
+    </ul>
+
+    <article class="phpdocumentor-element -class">
+        <h2 class="phpdocumentor-content__title">
+    ChatFullInfo
+
+        <span class="phpdocumentor-element__extends">
+        extends <a href="classes/Telegram-Parts-Part.html"><abbr title="\Telegram\Parts\Part">Part</abbr></a>
+    </span>
+    
+            <div class="phpdocumentor-element__package">
+            in package
+            <ul class="phpdocumentor-breadcrumbs">
+                                    <li class="phpdocumentor-breadcrumb"><a href="packages/Application.html">Application</a></li>
+                            </ul>
+        </div>
+    
+    
+            <span class="phpdocumentor-element__extends">
+            uses
+                            <a href="classes/Telegram-Parts-Concerns-ChatFullInfoBehaviour.html"><abbr title="\Telegram\Parts\Concerns\ChatFullInfoBehaviour">ChatFullInfoBehaviour</abbr></a>                    </span>
+    </h2>
+
+<div class="phpdocumentor-label-line">
+
+
+</div>
+
+        <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Telegram/Parts/ChatFullInfo.php"><a href="files/src-telegram-parts-chatfullinfo.html"><abbr title="src/Telegram/Parts/ChatFullInfo.php">ChatFullInfo.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">78</span>
+
+    </aside>
+
+            <p class="phpdocumentor-summary">This file is generated from spec/openapi.json (Bot API 10.3) by tools/generate.php.</p>
+
+
+    <section class="phpdocumentor-description"><p>Do not edit it by hand - run <code class="prettyprint">composer spec:build</code> instead.</p>
+<p>This object contains full information about a chat.</p>
+</section>
+
+
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="classes/Telegram-Parts-ChatFullInfo.html#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                    <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">link</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
+                                                                                                        <a class="phpdocumentor-tag-link" href="https://core.telegram.org/bots/api#chatfullinfo"> https://core.telegram.org/bots/api#chatfullinfo </a>
+                                    </dd>
+                                <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">since</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
+                                                                                                            <section class="phpdocumentor-description"><p>Bot API 10.3</p>
+</section>
+
+                                    </dd>
+                        </dl>
+
+    
+    
+<h3 id="toc">
+    Table of Contents
+    <a href="classes/Telegram-Parts-ChatFullInfo.html#toc" class="headerlink"><i class="fas fa-link"></i></a>
+
+</h3>
+
+
+
+
+
+
+
+<h4 id="toc-constants">
+    Constants
+    <a href="classes/Telegram-Parts-ChatFullInfo.html#toc-constants" class="headerlink"><i class="fas fa-link"></i></a>
+
+</h4>
+<dl class="phpdocumentor-table-of-contents">
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Telegram-Parts-Part.html#constant_DISCRIMINATOR">DISCRIMINATOR</a>
+    <span>
+        &nbsp;: mixed&nbsp;= null                            </span>
+</dt>
+<dd>The attribute whose value names the concrete subtype, for union parents.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Telegram-Parts-Part.html#constant_SUBTYPES">SUBTYPES</a>
+    <span>
+        &nbsp;: array&lt;string, <abbr title="class-string<\Telegram\Parts\Part>">Part></abbr>&gt;|array&lt;int, <abbr title="class-string<\Telegram\Parts\Part>">Part></abbr>&gt;&nbsp;= []                            </span>
+</dt>
+<dd>The concrete classes a union parent may resolve to - keyed by discriminator
+value when there is one, a plain list otherwise. Empty on ordinary parts.</dd>
+
+    </dl>
+
+
+<h4 id="toc-properties">
+    Properties
+    <a href="classes/Telegram-Parts-ChatFullInfo.html#toc-properties" class="headerlink"><i class="fas fa-link"></i></a>
+
+</h4>
+<dl class="phpdocumentor-table-of-contents">
+            <dt class="phpdocumentor-table-of-contents__entry -property -public">
+    <a class="" href="classes/Telegram-Parts-ChatFullInfo.html#property_accent_color_id">$accent_color_id</a>
+    <span>
+                        &nbsp;: int            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -public">
+    <a class="" href="classes/Telegram-Parts-ChatFullInfo.html#property_accepted_gift_types">$accepted_gift_types</a>
+    <span>
+                        &nbsp;: <a href="classes/Telegram-Parts-AcceptedGiftTypes.html"><abbr title="\Telegram\Parts\AcceptedGiftTypes">AcceptedGiftTypes</abbr></a>            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -public">
+    <a class="" href="classes/Telegram-Parts-ChatFullInfo.html#property_active_usernames">$active_usernames</a>
+    <span>
+                        &nbsp;: array&lt;int, string&gt;|null            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -public">
+    <a class="" href="classes/Telegram-Parts-ChatFullInfo.html#property_available_reactions">$available_reactions</a>
+    <span>
+                        &nbsp;: <abbr title="\Discord\Helpers\Collection">Collection</abbr>&lt;string|int, <a href="classes/Telegram-Parts-ReactionType.html"><abbr title="\Telegram\Parts\ReactionType">ReactionType</abbr></a>&gt;|null            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -public">
+    <a class="" href="classes/Telegram-Parts-ChatFullInfo.html#property_background_custom_emoji_id">$background_custom_emoji_id</a>
+    <span>
+                        &nbsp;: string|null            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -public">
+    <a class="" href="classes/Telegram-Parts-ChatFullInfo.html#property_bio">$bio</a>
+    <span>
+                        &nbsp;: string|null            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -public">
+    <a class="" href="classes/Telegram-Parts-ChatFullInfo.html#property_birthdate">$birthdate</a>
+    <span>
+                        &nbsp;: <a href="classes/Telegram-Parts-Birthdate.html"><abbr title="\Telegram\Parts\Birthdate">Birthdate</abbr></a>|null            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -public">
+    <a class="" href="classes/Telegram-Parts-ChatFullInfo.html#property_business_intro">$business_intro</a>
+    <span>
+                        &nbsp;: <a href="classes/Telegram-Parts-BusinessIntro.html"><abbr title="\Telegram\Parts\BusinessIntro">BusinessIntro</abbr></a>|null            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -public">
+    <a class="" href="classes/Telegram-Parts-ChatFullInfo.html#property_business_location">$business_location</a>
+    <span>
+                        &nbsp;: <a href="classes/Telegram-Parts-BusinessLocation.html"><abbr title="\Telegram\Parts\BusinessLocation">BusinessLocation</abbr></a>|null            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -public">
+    <a class="" href="classes/Telegram-Parts-ChatFullInfo.html#property_business_opening_hours">$business_opening_hours</a>
+    <span>
+                        &nbsp;: <a href="classes/Telegram-Parts-BusinessOpeningHours.html"><abbr title="\Telegram\Parts\BusinessOpeningHours">BusinessOpeningHours</abbr></a>|null            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -public">
+    <a class="" href="classes/Telegram-Parts-ChatFullInfo.html#property_can_send_paid_media">$can_send_paid_media</a>
+    <span>
+                        &nbsp;: bool|null            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -public">
+    <a class="" href="classes/Telegram-Parts-ChatFullInfo.html#property_can_set_sticker_set">$can_set_sticker_set</a>
+    <span>
+                        &nbsp;: bool|null            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -public">
+    <a class="" href="classes/Telegram-Parts-ChatFullInfo.html#property_community">$community</a>
+    <span>
+                        &nbsp;: <a href="classes/Telegram-Parts-Community.html"><abbr title="\Telegram\Parts\Community">Community</abbr></a>|null            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -public">
+    <a class="" href="classes/Telegram-Parts-ChatFullInfo.html#property_custom_emoji_sticker_set_name">$custom_emoji_sticker_set_name</a>
+    <span>
+                        &nbsp;: string|null            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -public">
+    <a class="" href="classes/Telegram-Parts-ChatFullInfo.html#property_description">$description</a>
+    <span>
+                        &nbsp;: string|null            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -public">
+    <a class="" href="classes/Telegram-Parts-ChatFullInfo.html#property_emoji_status_custom_emoji_id">$emoji_status_custom_emoji_id</a>
+    <span>
+                        &nbsp;: string|null            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -public">
+    <a class="" href="classes/Telegram-Parts-ChatFullInfo.html#property_emoji_status_expiration_date">$emoji_status_expiration_date</a>
+    <span>
+                        &nbsp;: <abbr title="\Carbon\CarbonImmutable">CarbonImmutable</abbr>|null            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -public">
+    <a class="" href="classes/Telegram-Parts-ChatFullInfo.html#property_first_name">$first_name</a>
+    <span>
+                        &nbsp;: string|null            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -public">
+    <a class="" href="classes/Telegram-Parts-ChatFullInfo.html#property_first_profile_audio">$first_profile_audio</a>
+    <span>
+                        &nbsp;: <a href="classes/Telegram-Parts-Audio.html"><abbr title="\Telegram\Parts\Audio">Audio</abbr></a>|null            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -public">
+    <a class="" href="classes/Telegram-Parts-ChatFullInfo.html#property_guard_bot">$guard_bot</a>
+    <span>
+                        &nbsp;: <a href="classes/Telegram-Parts-User.html"><abbr title="\Telegram\Parts\User">User</abbr></a>|null            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -public">
+    <a class="" href="classes/Telegram-Parts-ChatFullInfo.html#property_has_aggressive_anti_spam_enabled">$has_aggressive_anti_spam_enabled</a>
+    <span>
+                        &nbsp;: bool|null            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -public">
+    <a class="" href="classes/Telegram-Parts-ChatFullInfo.html#property_has_hidden_members">$has_hidden_members</a>
+    <span>
+                        &nbsp;: bool|null            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -public">
+    <a class="" href="classes/Telegram-Parts-ChatFullInfo.html#property_has_private_forwards">$has_private_forwards</a>
+    <span>
+                        &nbsp;: bool|null            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -public">
+    <a class="" href="classes/Telegram-Parts-ChatFullInfo.html#property_has_protected_content">$has_protected_content</a>
+    <span>
+                        &nbsp;: bool|null            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -public">
+    <a class="" href="classes/Telegram-Parts-ChatFullInfo.html#property_has_restricted_voice_and_video_messages">$has_restricted_voice_and_video_messages</a>
+    <span>
+                        &nbsp;: bool|null            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -public">
+    <a class="" href="classes/Telegram-Parts-ChatFullInfo.html#property_has_visible_history">$has_visible_history</a>
+    <span>
+                        &nbsp;: bool|null            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -public">
+    <a class="" href="classes/Telegram-Parts-ChatFullInfo.html#property_id">$id</a>
+    <span>
+                        &nbsp;: int            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -public">
+    <a class="" href="classes/Telegram-Parts-ChatFullInfo.html#property_invite_link">$invite_link</a>
+    <span>
+                        &nbsp;: string|null            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -public">
+    <a class="" href="classes/Telegram-Parts-ChatFullInfo.html#property_is_direct_messages">$is_direct_messages</a>
+    <span>
+                        &nbsp;: bool|null            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -public">
+    <a class="" href="classes/Telegram-Parts-ChatFullInfo.html#property_is_forum">$is_forum</a>
+    <span>
+                        &nbsp;: bool|null            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -public">
+    <a class="" href="classes/Telegram-Parts-ChatFullInfo.html#property_join_by_request">$join_by_request</a>
+    <span>
+                        &nbsp;: bool|null            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -public">
+    <a class="" href="classes/Telegram-Parts-ChatFullInfo.html#property_join_to_send_messages">$join_to_send_messages</a>
+    <span>
+                        &nbsp;: bool|null            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -public">
+    <a class="" href="classes/Telegram-Parts-ChatFullInfo.html#property_last_name">$last_name</a>
+    <span>
+                        &nbsp;: string|null            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -public">
+    <a class="" href="classes/Telegram-Parts-ChatFullInfo.html#property_linked_chat_id">$linked_chat_id</a>
+    <span>
+                        &nbsp;: int|null            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -public">
+    <a class="" href="classes/Telegram-Parts-ChatFullInfo.html#property_location">$location</a>
+    <span>
+                        &nbsp;: <a href="classes/Telegram-Parts-ChatLocation.html"><abbr title="\Telegram\Parts\ChatLocation">ChatLocation</abbr></a>|null            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -public">
+    <a class="" href="classes/Telegram-Parts-ChatFullInfo.html#property_max_reaction_count">$max_reaction_count</a>
+    <span>
+                        &nbsp;: int            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -public">
+    <a class="" href="classes/Telegram-Parts-ChatFullInfo.html#property_message_auto_delete_time">$message_auto_delete_time</a>
+    <span>
+                        &nbsp;: int|null            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -public">
+    <a class="" href="classes/Telegram-Parts-ChatFullInfo.html#property_paid_message_star_count">$paid_message_star_count</a>
+    <span>
+                        &nbsp;: int|null            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -public">
+    <a class="" href="classes/Telegram-Parts-ChatFullInfo.html#property_parent_chat">$parent_chat</a>
+    <span>
+                        &nbsp;: <a href="classes/Telegram-Parts-Chat.html"><abbr title="\Telegram\Parts\Chat">Chat</abbr></a>|null            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -public">
+    <a class="" href="classes/Telegram-Parts-ChatFullInfo.html#property_permissions">$permissions</a>
+    <span>
+                        &nbsp;: <a href="classes/Telegram-Parts-ChatPermissions.html"><abbr title="\Telegram\Parts\ChatPermissions">ChatPermissions</abbr></a>|null            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -public">
+    <a class="" href="classes/Telegram-Parts-ChatFullInfo.html#property_personal_chat">$personal_chat</a>
+    <span>
+                        &nbsp;: <a href="classes/Telegram-Parts-Chat.html"><abbr title="\Telegram\Parts\Chat">Chat</abbr></a>|null            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -public">
+    <a class="" href="classes/Telegram-Parts-ChatFullInfo.html#property_photo">$photo</a>
+    <span>
+                        &nbsp;: <a href="classes/Telegram-Parts-ChatPhoto.html"><abbr title="\Telegram\Parts\ChatPhoto">ChatPhoto</abbr></a>|null            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -public">
+    <a class="" href="classes/Telegram-Parts-ChatFullInfo.html#property_pinned_message">$pinned_message</a>
+    <span>
+                        &nbsp;: <a href="classes/Telegram-Parts-Message.html"><abbr title="\Telegram\Parts\Message">Message</abbr></a>|null            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -public">
+    <a class="" href="classes/Telegram-Parts-ChatFullInfo.html#property_profile_accent_color_id">$profile_accent_color_id</a>
+    <span>
+                        &nbsp;: int|null            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -public">
+    <a class="" href="classes/Telegram-Parts-ChatFullInfo.html#property_profile_background_custom_emoji_id">$profile_background_custom_emoji_id</a>
+    <span>
+                        &nbsp;: string|null            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -public">
+    <a class="" href="classes/Telegram-Parts-ChatFullInfo.html#property_rating">$rating</a>
+    <span>
+                        &nbsp;: <a href="classes/Telegram-Parts-UserRating.html"><abbr title="\Telegram\Parts\UserRating">UserRating</abbr></a>|null            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -public">
+    <a class="" href="classes/Telegram-Parts-ChatFullInfo.html#property_slow_mode_delay">$slow_mode_delay</a>
+    <span>
+                        &nbsp;: int|null            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -public">
+    <a class="" href="classes/Telegram-Parts-ChatFullInfo.html#property_sticker_set_name">$sticker_set_name</a>
+    <span>
+                        &nbsp;: string|null            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -public">
+    <a class="" href="classes/Telegram-Parts-ChatFullInfo.html#property_title">$title</a>
+    <span>
+                        &nbsp;: string|null            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -public">
+    <a class="" href="classes/Telegram-Parts-ChatFullInfo.html#property_type">$type</a>
+    <span>
+                        &nbsp;: string            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -public">
+    <a class="" href="classes/Telegram-Parts-ChatFullInfo.html#property_unique_gift_colors">$unique_gift_colors</a>
+    <span>
+                        &nbsp;: <a href="classes/Telegram-Parts-UniqueGiftColors.html"><abbr title="\Telegram\Parts\UniqueGiftColors">UniqueGiftColors</abbr></a>|null            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -public">
+    <a class="" href="classes/Telegram-Parts-ChatFullInfo.html#property_unrestrict_boost_count">$unrestrict_boost_count</a>
+    <span>
+                        &nbsp;: int|null            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -public">
+    <a class="" href="classes/Telegram-Parts-ChatFullInfo.html#property_username">$username</a>
+    <span>
+                        &nbsp;: string|null            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
+    <a class="" href="classes/Telegram-Parts-ChatFullInfo.html#property_casts">$casts</a>
+    <span>
+                        &nbsp;: array&lt;string, string&gt;            </span>
+</dt>
+<dd>Attribute name =&gt; Telegram type token (&quot;User&quot;, &quot;Array of PhotoSize&quot;), used
+to hydrate nested objects into parts.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
+    <a class="" href="classes/Telegram-Parts-ChatFullInfo.html#property_dates">$dates</a>
+    <span>
+                        &nbsp;: array&lt;int, string&gt;            </span>
+</dt>
+<dd>Attribute names holding Unix timestamps, read back as {@see CarbonImmutable}.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
+    <a class="" href="classes/Telegram-Parts-ChatFullInfo.html#property_fillable">$fillable</a>
+    <span>
+                        &nbsp;: array&lt;int, string&gt;            </span>
+</dt>
+<dd>Attribute names this part accepts. Empty = accept anything.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
+    <a class="" href="classes/Telegram-Parts-Part.html#property_telegram">$telegram</a>
+    <span>
+                        &nbsp;: <a href="classes/Telegram-Telegram.html"><abbr title="\Telegram\Telegram">Telegram</abbr></a>            </span>
+</dt>
+
+    </dl>
+
+<h4 id="toc-methods">
+    Methods
+    <a href="classes/Telegram-Parts-ChatFullInfo.html#toc-methods" class="headerlink"><i class="fas fa-link"></i></a>
+
+</h4>
+<dl class="phpdocumentor-table-of-contents">
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Telegram-Parts-Part.html#method___construct">__construct()</a>
+    <span>
+                                &nbsp;: mixed    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Telegram-Parts-Part.html#method___debugInfo">__debugInfo()</a>
+    <span>
+                                &nbsp;: array&lt;string, mixed&gt;    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Telegram-Parts-Part.html#method___get">__get()</a>
+    <span>
+                                &nbsp;: mixed    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Telegram-Parts-Part.html#method___isset">__isset()</a>
+    <span>
+                                &nbsp;: bool    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Telegram-Parts-Part.html#method___set">__set()</a>
+    <span>
+                                &nbsp;: void    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Telegram-Parts-Part.html#method___toString">__toString()</a>
+    <span>
+                                &nbsp;: string    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Telegram-Parts-Part.html#method_attributeExists">attributeExists()</a>
+    <span>
+                                &nbsp;: bool    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Telegram-Parts-Part.html#method_fill">fill()</a>
+    <span>
+                                &nbsp;: void    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Telegram-Parts-Part.html#method_getAttribute">getAttribute()</a>
+    <span>
+                                &nbsp;: mixed    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Telegram-Parts-Part.html#method_getCasts">getCasts()</a>
+    <span>
+                                &nbsp;: array&lt;string, string&gt;    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Telegram-Parts-Part.html#method_getFillable">getFillable()</a>
+    <span>
+                                &nbsp;: array&lt;int, string&gt;    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Telegram-Parts-Part.html#method_getRawAttributes">getRawAttributes()</a>
+    <span>
+                                &nbsp;: array&lt;string, mixed&gt;    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Telegram-Parts-Part.html#method_getTelegram">getTelegram()</a>
+    <span>
+                                &nbsp;: <a href="classes/Telegram-Telegram.html"><abbr title="\Telegram\Telegram">Telegram</abbr></a>    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Telegram-Parts-Part.html#method_jsonSerialize">jsonSerialize()</a>
+    <span>
+                                &nbsp;: array&lt;string, mixed&gt;    </span>
+</dt>
+<dd>The payload this part would be sent back to Telegram as - nested parts and
+collections flattened, timestamps left as the integers they arrived as.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Telegram-Parts-Part.html#method_offsetExists">offsetExists()</a>
+    <span>
+                                &nbsp;: bool    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Telegram-Parts-Part.html#method_offsetGet">offsetGet()</a>
+    <span>
+                                &nbsp;: mixed    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Telegram-Parts-Part.html#method_offsetSet">offsetSet()</a>
+    <span>
+                                &nbsp;: void    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Telegram-Parts-Part.html#method_offsetUnset">offsetUnset()</a>
+    <span>
+                                &nbsp;: void    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Telegram-Parts-Part.html#method_resolveSubtype">resolveSubtype()</a>
+    <span>
+                                &nbsp;: <abbr title="class-string<\Telegram\Parts\Part>">Part></abbr>    </span>
+</dt>
+<dd>The concrete class an incoming payload belongs to, for a union parent.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Telegram-Parts-Part.html#method_setAttribute">setAttribute()</a>
+    <span>
+                                &nbsp;: void    </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -protected">
+    <a class="" href="classes/Telegram-Parts-Part.html#method_factory">factory()</a>
+    <span>
+                                &nbsp;: <a href="classes/Telegram-Factory-Factory.html"><abbr title="\Telegram\Factory\Factory">Factory</abbr></a>    </span>
+</dt>
+<dd>Builds another part from the same client - for nested objects.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -protected">
+    <a class="" href="classes/Telegram-Parts-Part.html#method_getRawAttribute">getRawAttribute()</a>
+    <span>
+                                &nbsp;: mixed    </span>
+</dt>
+<dd>Reads straight from the attribute bag, skipping the `get{Key}Attribute` hook.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -protected">
+    <a class="" href="classes/Telegram-Parts-Part.html#method_setRawAttribute">setRawAttribute()</a>
+    <span>
+                                &nbsp;: void    </span>
+</dt>
+<dd>Writes straight to the attribute bag, skipping the `set{Key}Attribute` hook
+and any cast. For use *inside* a mutator, which would otherwise have no way
+to store its shaped value without recursing through {@see setAttribute()}.</dd>
+
+    </dl>
+
+
+
+        
+    <section class="phpdocumentor-constants">
+        <h3 class="phpdocumentor-elements__header" id="constants">
+            Constants
+            <a href="classes/Telegram-Parts-ChatFullInfo.html#constants" class="headerlink"><i class="fas fa-link"></i></a>
+
+        </h3>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_DISCRIMINATOR">
+        DISCRIMINATOR
+        <a href="classes/Telegram-Parts-Part.html#constant_DISCRIMINATOR" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Telegram/Parts/Part.php"><a href="files/src-telegram-parts-part.html"><abbr title="src/Telegram/Parts/Part.php">Part.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">41</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">The attribute whose value names the concrete subtype, for union parents.</p>
+
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">DISCRIMINATOR</span>
+    = <span class="phpdocumentor-signature__default-value">null</span>
+</code>
+
+
+        <section class="phpdocumentor-description"><p><code class="prettyprint">null</code> on ordinary parts and on unions Telegram does not tag.</p>
+</section>
+
+    
+    
+
+        
+    </article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_SUBTYPES">
+        SUBTYPES
+        <a href="classes/Telegram-Parts-Part.html#constant_SUBTYPES" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Telegram/Parts/Part.php"><a href="files/src-telegram-parts-part.html"><abbr title="src/Telegram/Parts/Part.php">Part.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">49</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">The concrete classes a union parent may resolve to - keyed by discriminator
+value when there is one, a plain list otherwise. Empty on ordinary parts.</p>
+
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">array&lt;string, <abbr title="class-string<\Telegram\Parts\Part>">Part></abbr>&gt;|array&lt;int, <abbr title="class-string<\Telegram\Parts\Part>">Part></abbr>&gt;</span>
+    <span class="phpdocumentor-signature__name">SUBTYPES</span>
+    = <span class="phpdocumentor-signature__default-value">[]</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+            </section>
+
+        
+    <section class="phpdocumentor-properties">
+        <h3 class="phpdocumentor-elements__header" id="properties">
+            Properties
+            <a href="classes/Telegram-Parts-ChatFullInfo.html#properties" class="headerlink"><i class="fas fa-link"></i></a>
+
+        </h3>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -public
+                                                                    "
+>
+    <h4 class="phpdocumentor-element__name" id="property_accent_color_id">
+        $accent_color_id
+        <a href="classes/Telegram-Parts-ChatFullInfo.html#property_accent_color_id" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                            </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Telegram/Parts/ChatFullInfo.php"><a href="files/src-telegram-parts-chatfullinfo.html"><abbr title="src/Telegram/Parts/ChatFullInfo.php">ChatFullInfo.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">0</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__type">int</span>
+    <span class="phpdocumentor-signature__name">$accent_color_id</span>
+    </code>
+
+        <section class="phpdocumentor-description"><p>Identifier of the accent color for the chat name and backgrounds of the chat photo, reply header, and link preview. See accent colors for more details.</p>
+</section>
+
+    
+    
+
+        
+        
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -public
+                                                                    "
+>
+    <h4 class="phpdocumentor-element__name" id="property_accepted_gift_types">
+        $accepted_gift_types
+        <a href="classes/Telegram-Parts-ChatFullInfo.html#property_accepted_gift_types" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                            </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Telegram/Parts/ChatFullInfo.php"><a href="files/src-telegram-parts-chatfullinfo.html"><abbr title="src/Telegram/Parts/ChatFullInfo.php">ChatFullInfo.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">0</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__type"><a href="classes/Telegram-Parts-AcceptedGiftTypes.html"><abbr title="\Telegram\Parts\AcceptedGiftTypes">AcceptedGiftTypes</abbr></a></span>
+    <span class="phpdocumentor-signature__name">$accepted_gift_types</span>
+    </code>
+
+        <section class="phpdocumentor-description"><p>Information about types of gifts that are accepted by the chat or by the corresponding user for private chats</p>
+</section>
+
+    
+    
+
+        
+        
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -public
+                                                                    "
+>
+    <h4 class="phpdocumentor-element__name" id="property_active_usernames">
+        $active_usernames
+        <a href="classes/Telegram-Parts-ChatFullInfo.html#property_active_usernames" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                            </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Telegram/Parts/ChatFullInfo.php"><a href="files/src-telegram-parts-chatfullinfo.html"><abbr title="src/Telegram/Parts/ChatFullInfo.php">ChatFullInfo.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">0</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__type">array&lt;int, string&gt;|null</span>
+    <span class="phpdocumentor-signature__name">$active_usernames</span>
+    </code>
+
+        <section class="phpdocumentor-description"><p>Optional. If non-empty, the list of all active chat usernames; for private chats, supergroups and channels</p>
+</section>
+
+    
+    
+
+        
+        
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -public
+                                                                    "
+>
+    <h4 class="phpdocumentor-element__name" id="property_available_reactions">
+        $available_reactions
+        <a href="classes/Telegram-Parts-ChatFullInfo.html#property_available_reactions" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                            </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Telegram/Parts/ChatFullInfo.php"><a href="files/src-telegram-parts-chatfullinfo.html"><abbr title="src/Telegram/Parts/ChatFullInfo.php">ChatFullInfo.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">0</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__type"><abbr title="\Discord\Helpers\Collection">Collection</abbr>&lt;string|int, <a href="classes/Telegram-Parts-ReactionType.html"><abbr title="\Telegram\Parts\ReactionType">ReactionType</abbr></a>&gt;|null</span>
+    <span class="phpdocumentor-signature__name">$available_reactions</span>
+    </code>
+
+        <section class="phpdocumentor-description"><p>Optional. List of available reactions allowed in the chat. If omitted, then all emoji reactions are allowed.</p>
+</section>
+
+    
+    
+
+        
+        
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -public
+                                                                    "
+>
+    <h4 class="phpdocumentor-element__name" id="property_background_custom_emoji_id">
+        $background_custom_emoji_id
+        <a href="classes/Telegram-Parts-ChatFullInfo.html#property_background_custom_emoji_id" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                            </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Telegram/Parts/ChatFullInfo.php"><a href="files/src-telegram-parts-chatfullinfo.html"><abbr title="src/Telegram/Parts/ChatFullInfo.php">ChatFullInfo.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">0</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__type">string|null</span>
+    <span class="phpdocumentor-signature__name">$background_custom_emoji_id</span>
+    </code>
+
+        <section class="phpdocumentor-description"><p>Optional. Custom emoji identifier of the emoji chosen by the chat for the reply header and link preview background</p>
+</section>
+
+    
+    
+
+        
+        
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -public
+                                                                    "
+>
+    <h4 class="phpdocumentor-element__name" id="property_bio">
+        $bio
+        <a href="classes/Telegram-Parts-ChatFullInfo.html#property_bio" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                            </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Telegram/Parts/ChatFullInfo.php"><a href="files/src-telegram-parts-chatfullinfo.html"><abbr title="src/Telegram/Parts/ChatFullInfo.php">ChatFullInfo.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">0</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__type">string|null</span>
+    <span class="phpdocumentor-signature__name">$bio</span>
+    </code>
+
+        <section class="phpdocumentor-description"><p>Optional. Bio of the other party in a private chat</p>
+</section>
+
+    
+    
+
+        
+        
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -public
+                                                                    "
+>
+    <h4 class="phpdocumentor-element__name" id="property_birthdate">
+        $birthdate
+        <a href="classes/Telegram-Parts-ChatFullInfo.html#property_birthdate" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                            </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Telegram/Parts/ChatFullInfo.php"><a href="files/src-telegram-parts-chatfullinfo.html"><abbr title="src/Telegram/Parts/ChatFullInfo.php">ChatFullInfo.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">0</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__type"><a href="classes/Telegram-Parts-Birthdate.html"><abbr title="\Telegram\Parts\Birthdate">Birthdate</abbr></a>|null</span>
+    <span class="phpdocumentor-signature__name">$birthdate</span>
+    </code>
+
+        <section class="phpdocumentor-description"><p>Optional. For private chats, the date of birth of the user</p>
+</section>
+
+    
+    
+
+        
+        
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -public
+                                                                    "
+>
+    <h4 class="phpdocumentor-element__name" id="property_business_intro">
+        $business_intro
+        <a href="classes/Telegram-Parts-ChatFullInfo.html#property_business_intro" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                            </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Telegram/Parts/ChatFullInfo.php"><a href="files/src-telegram-parts-chatfullinfo.html"><abbr title="src/Telegram/Parts/ChatFullInfo.php">ChatFullInfo.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">0</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__type"><a href="classes/Telegram-Parts-BusinessIntro.html"><abbr title="\Telegram\Parts\BusinessIntro">BusinessIntro</abbr></a>|null</span>
+    <span class="phpdocumentor-signature__name">$business_intro</span>
+    </code>
+
+        <section class="phpdocumentor-description"><p>Optional. For private chats with business accounts, the intro of the business</p>
+</section>
+
+    
+    
+
+        
+        
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -public
+                                                                    "
+>
+    <h4 class="phpdocumentor-element__name" id="property_business_location">
+        $business_location
+        <a href="classes/Telegram-Parts-ChatFullInfo.html#property_business_location" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                            </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Telegram/Parts/ChatFullInfo.php"><a href="files/src-telegram-parts-chatfullinfo.html"><abbr title="src/Telegram/Parts/ChatFullInfo.php">ChatFullInfo.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">0</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__type"><a href="classes/Telegram-Parts-BusinessLocation.html"><abbr title="\Telegram\Parts\BusinessLocation">BusinessLocation</abbr></a>|null</span>
+    <span class="phpdocumentor-signature__name">$business_location</span>
+    </code>
+
+        <section class="phpdocumentor-description"><p>Optional. For private chats with business accounts, the location of the business</p>
+</section>
+
+    
+    
+
+        
+        
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -public
+                                                                    "
+>
+    <h4 class="phpdocumentor-element__name" id="property_business_opening_hours">
+        $business_opening_hours
+        <a href="classes/Telegram-Parts-ChatFullInfo.html#property_business_opening_hours" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                            </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Telegram/Parts/ChatFullInfo.php"><a href="files/src-telegram-parts-chatfullinfo.html"><abbr title="src/Telegram/Parts/ChatFullInfo.php">ChatFullInfo.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">0</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__type"><a href="classes/Telegram-Parts-BusinessOpeningHours.html"><abbr title="\Telegram\Parts\BusinessOpeningHours">BusinessOpeningHours</abbr></a>|null</span>
+    <span class="phpdocumentor-signature__name">$business_opening_hours</span>
+    </code>
+
+        <section class="phpdocumentor-description"><p>Optional. For private chats with business accounts, the opening hours of the business</p>
+</section>
+
+    
+    
+
+        
+        
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -public
+                                                                    "
+>
+    <h4 class="phpdocumentor-element__name" id="property_can_send_paid_media">
+        $can_send_paid_media
+        <a href="classes/Telegram-Parts-ChatFullInfo.html#property_can_send_paid_media" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                            </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Telegram/Parts/ChatFullInfo.php"><a href="files/src-telegram-parts-chatfullinfo.html"><abbr title="src/Telegram/Parts/ChatFullInfo.php">ChatFullInfo.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">0</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__type">bool|null</span>
+    <span class="phpdocumentor-signature__name">$can_send_paid_media</span>
+    </code>
+
+        <section class="phpdocumentor-description"><p>Optional. True, if paid media messages can be sent or forwarded to the channel chat. The field is available only for channel chats.</p>
+</section>
+
+    
+    
+
+        
+        
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -public
+                                                                    "
+>
+    <h4 class="phpdocumentor-element__name" id="property_can_set_sticker_set">
+        $can_set_sticker_set
+        <a href="classes/Telegram-Parts-ChatFullInfo.html#property_can_set_sticker_set" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                            </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Telegram/Parts/ChatFullInfo.php"><a href="files/src-telegram-parts-chatfullinfo.html"><abbr title="src/Telegram/Parts/ChatFullInfo.php">ChatFullInfo.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">0</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__type">bool|null</span>
+    <span class="phpdocumentor-signature__name">$can_set_sticker_set</span>
+    </code>
+
+        <section class="phpdocumentor-description"><p>Optional. True, if the bot can change the group sticker set</p>
+</section>
+
+    
+    
+
+        
+        
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -public
+                                                                    "
+>
+    <h4 class="phpdocumentor-element__name" id="property_community">
+        $community
+        <a href="classes/Telegram-Parts-ChatFullInfo.html#property_community" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                            </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Telegram/Parts/ChatFullInfo.php"><a href="files/src-telegram-parts-chatfullinfo.html"><abbr title="src/Telegram/Parts/ChatFullInfo.php">ChatFullInfo.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">0</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__type"><a href="classes/Telegram-Parts-Community.html"><abbr title="\Telegram\Parts\Community">Community</abbr></a>|null</span>
+    <span class="phpdocumentor-signature__name">$community</span>
+    </code>
+
+        <section class="phpdocumentor-description"><p>Optional. The Community to which the chat belongs</p>
+</section>
+
+    
+    
+
+        
+        
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -public
+                                                                    "
+>
+    <h4 class="phpdocumentor-element__name" id="property_custom_emoji_sticker_set_name">
+        $custom_emoji_sticker_set_name
+        <a href="classes/Telegram-Parts-ChatFullInfo.html#property_custom_emoji_sticker_set_name" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                            </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Telegram/Parts/ChatFullInfo.php"><a href="files/src-telegram-parts-chatfullinfo.html"><abbr title="src/Telegram/Parts/ChatFullInfo.php">ChatFullInfo.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">0</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__type">string|null</span>
+    <span class="phpdocumentor-signature__name">$custom_emoji_sticker_set_name</span>
+    </code>
+
+        <section class="phpdocumentor-description"><p>Optional. For supergroups, the name of the group's custom emoji sticker set. Custom emoji from this set can be used by all users and bots in the group.</p>
+</section>
+
+    
+    
+
+        
+        
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -public
+                                                                    "
+>
+    <h4 class="phpdocumentor-element__name" id="property_description">
+        $description
+        <a href="classes/Telegram-Parts-ChatFullInfo.html#property_description" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                            </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Telegram/Parts/ChatFullInfo.php"><a href="files/src-telegram-parts-chatfullinfo.html"><abbr title="src/Telegram/Parts/ChatFullInfo.php">ChatFullInfo.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">0</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__type">string|null</span>
+    <span class="phpdocumentor-signature__name">$description</span>
+    </code>
+
+        <section class="phpdocumentor-description"><p>Optional. Description, for groups, supergroups and channel chats</p>
+</section>
+
+    
+    
+
+        
+        
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -public
+                                                                    "
+>
+    <h4 class="phpdocumentor-element__name" id="property_emoji_status_custom_emoji_id">
+        $emoji_status_custom_emoji_id
+        <a href="classes/Telegram-Parts-ChatFullInfo.html#property_emoji_status_custom_emoji_id" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                            </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Telegram/Parts/ChatFullInfo.php"><a href="files/src-telegram-parts-chatfullinfo.html"><abbr title="src/Telegram/Parts/ChatFullInfo.php">ChatFullInfo.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">0</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__type">string|null</span>
+    <span class="phpdocumentor-signature__name">$emoji_status_custom_emoji_id</span>
+    </code>
+
+        <section class="phpdocumentor-description"><p>Optional. Custom emoji identifier of the emoji status of the chat or the other party in a private chat</p>
+</section>
+
+    
+    
+
+        
+        
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -public
+                                                                    "
+>
+    <h4 class="phpdocumentor-element__name" id="property_emoji_status_expiration_date">
+        $emoji_status_expiration_date
+        <a href="classes/Telegram-Parts-ChatFullInfo.html#property_emoji_status_expiration_date" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                            </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Telegram/Parts/ChatFullInfo.php"><a href="files/src-telegram-parts-chatfullinfo.html"><abbr title="src/Telegram/Parts/ChatFullInfo.php">ChatFullInfo.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">0</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__type"><abbr title="\Carbon\CarbonImmutable">CarbonImmutable</abbr>|null</span>
+    <span class="phpdocumentor-signature__name">$emoji_status_expiration_date</span>
+    </code>
+
+        <section class="phpdocumentor-description"><p>Optional. Expiration date of the emoji status of the chat or the other party in a private chat, in Unix time, if any</p>
+</section>
+
+    
+    
+
+        
+        
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -public
+                                                                    "
+>
+    <h4 class="phpdocumentor-element__name" id="property_first_name">
+        $first_name
+        <a href="classes/Telegram-Parts-ChatFullInfo.html#property_first_name" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                            </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Telegram/Parts/ChatFullInfo.php"><a href="files/src-telegram-parts-chatfullinfo.html"><abbr title="src/Telegram/Parts/ChatFullInfo.php">ChatFullInfo.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">0</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__type">string|null</span>
+    <span class="phpdocumentor-signature__name">$first_name</span>
+    </code>
+
+        <section class="phpdocumentor-description"><p>Optional. First name of the other party in a private chat</p>
+</section>
+
+    
+    
+
+        
+        
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -public
+                                                                    "
+>
+    <h4 class="phpdocumentor-element__name" id="property_first_profile_audio">
+        $first_profile_audio
+        <a href="classes/Telegram-Parts-ChatFullInfo.html#property_first_profile_audio" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                            </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Telegram/Parts/ChatFullInfo.php"><a href="files/src-telegram-parts-chatfullinfo.html"><abbr title="src/Telegram/Parts/ChatFullInfo.php">ChatFullInfo.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">0</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__type"><a href="classes/Telegram-Parts-Audio.html"><abbr title="\Telegram\Parts\Audio">Audio</abbr></a>|null</span>
+    <span class="phpdocumentor-signature__name">$first_profile_audio</span>
+    </code>
+
+        <section class="phpdocumentor-description"><p>Optional. For private chats, the first audio added to the profile of the user</p>
+</section>
+
+    
+    
+
+        
+        
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -public
+                                                                    "
+>
+    <h4 class="phpdocumentor-element__name" id="property_guard_bot">
+        $guard_bot
+        <a href="classes/Telegram-Parts-ChatFullInfo.html#property_guard_bot" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                            </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Telegram/Parts/ChatFullInfo.php"><a href="files/src-telegram-parts-chatfullinfo.html"><abbr title="src/Telegram/Parts/ChatFullInfo.php">ChatFullInfo.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">0</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__type"><a href="classes/Telegram-Parts-User.html"><abbr title="\Telegram\Parts\User">User</abbr></a>|null</span>
+    <span class="phpdocumentor-signature__name">$guard_bot</span>
+    </code>
+
+        <section class="phpdocumentor-description"><p>Optional. The bot that processes join request queries in the chat. The field is only available to chat administrators.</p>
+</section>
+
+    
+    
+
+        
+        
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -public
+                                                                    "
+>
+    <h4 class="phpdocumentor-element__name" id="property_has_aggressive_anti_spam_enabled">
+        $has_aggressive_anti_spam_enabled
+        <a href="classes/Telegram-Parts-ChatFullInfo.html#property_has_aggressive_anti_spam_enabled" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                            </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Telegram/Parts/ChatFullInfo.php"><a href="files/src-telegram-parts-chatfullinfo.html"><abbr title="src/Telegram/Parts/ChatFullInfo.php">ChatFullInfo.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">0</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__type">bool|null</span>
+    <span class="phpdocumentor-signature__name">$has_aggressive_anti_spam_enabled</span>
+    </code>
+
+        <section class="phpdocumentor-description"><p>Optional. True, if aggressive anti-spam checks are enabled in the supergroup. The field is only available to chat administrators.</p>
+</section>
+
+    
+    
+
+        
+        
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -public
+                                                                    "
+>
+    <h4 class="phpdocumentor-element__name" id="property_has_hidden_members">
+        $has_hidden_members
+        <a href="classes/Telegram-Parts-ChatFullInfo.html#property_has_hidden_members" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                            </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Telegram/Parts/ChatFullInfo.php"><a href="files/src-telegram-parts-chatfullinfo.html"><abbr title="src/Telegram/Parts/ChatFullInfo.php">ChatFullInfo.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">0</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__type">bool|null</span>
+    <span class="phpdocumentor-signature__name">$has_hidden_members</span>
+    </code>
+
+        <section class="phpdocumentor-description"><p>Optional. True, if non-administrators can only get the list of bots and administrators in the chat</p>
+</section>
+
+    
+    
+
+        
+        
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -public
+                                                                    "
+>
+    <h4 class="phpdocumentor-element__name" id="property_has_private_forwards">
+        $has_private_forwards
+        <a href="classes/Telegram-Parts-ChatFullInfo.html#property_has_private_forwards" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                            </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Telegram/Parts/ChatFullInfo.php"><a href="files/src-telegram-parts-chatfullinfo.html"><abbr title="src/Telegram/Parts/ChatFullInfo.php">ChatFullInfo.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">0</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__type">bool|null</span>
+    <span class="phpdocumentor-signature__name">$has_private_forwards</span>
+    </code>
+
+        <section class="phpdocumentor-description"><p>Optional. True, if privacy settings of the other party in the private chat allows to use tg://user?id=&lt;user_id&gt; links only in chats with the user</p>
+</section>
+
+    
+    
+
+        
+        
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -public
+                                                                    "
+>
+    <h4 class="phpdocumentor-element__name" id="property_has_protected_content">
+        $has_protected_content
+        <a href="classes/Telegram-Parts-ChatFullInfo.html#property_has_protected_content" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                            </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Telegram/Parts/ChatFullInfo.php"><a href="files/src-telegram-parts-chatfullinfo.html"><abbr title="src/Telegram/Parts/ChatFullInfo.php">ChatFullInfo.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">0</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__type">bool|null</span>
+    <span class="phpdocumentor-signature__name">$has_protected_content</span>
+    </code>
+
+        <section class="phpdocumentor-description"><p>Optional. True, if messages from the chat can't be forwarded to other chats</p>
+</section>
+
+    
+    
+
+        
+        
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -public
+                                                                    "
+>
+    <h4 class="phpdocumentor-element__name" id="property_has_restricted_voice_and_video_messages">
+        $has_restricted_voice_and_video_messages
+        <a href="classes/Telegram-Parts-ChatFullInfo.html#property_has_restricted_voice_and_video_messages" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                            </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Telegram/Parts/ChatFullInfo.php"><a href="files/src-telegram-parts-chatfullinfo.html"><abbr title="src/Telegram/Parts/ChatFullInfo.php">ChatFullInfo.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">0</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__type">bool|null</span>
+    <span class="phpdocumentor-signature__name">$has_restricted_voice_and_video_messages</span>
+    </code>
+
+        <section class="phpdocumentor-description"><p>Optional. True, if the privacy settings of the other party restrict sending voice and video note messages in the private chat</p>
+</section>
+
+    
+    
+
+        
+        
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -public
+                                                                    "
+>
+    <h4 class="phpdocumentor-element__name" id="property_has_visible_history">
+        $has_visible_history
+        <a href="classes/Telegram-Parts-ChatFullInfo.html#property_has_visible_history" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                            </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Telegram/Parts/ChatFullInfo.php"><a href="files/src-telegram-parts-chatfullinfo.html"><abbr title="src/Telegram/Parts/ChatFullInfo.php">ChatFullInfo.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">0</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__type">bool|null</span>
+    <span class="phpdocumentor-signature__name">$has_visible_history</span>
+    </code>
+
+        <section class="phpdocumentor-description"><p>Optional. True, if new chat members will have access to old messages; available only to chat administrators</p>
+</section>
+
+    
+    
+
+        
+        
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -public
+                                                                    "
+>
+    <h4 class="phpdocumentor-element__name" id="property_id">
+        $id
+        <a href="classes/Telegram-Parts-ChatFullInfo.html#property_id" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                            </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Telegram/Parts/ChatFullInfo.php"><a href="files/src-telegram-parts-chatfullinfo.html"><abbr title="src/Telegram/Parts/ChatFullInfo.php">ChatFullInfo.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">0</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__type">int</span>
+    <span class="phpdocumentor-signature__name">$id</span>
+    </code>
+
+        <section class="phpdocumentor-description"><p>Unique identifier for this chat. This number may have more than 32 significant bits and some programming languages may have difficulty/silent defects in interpreting it. But it has at most 52 significant bits, so a signed 64-bit integer or double-precision float type are safe for storing this identifier.</p>
+</section>
+
+    
+    
+
+        
+        
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -public
+                                                                    "
+>
+    <h4 class="phpdocumentor-element__name" id="property_invite_link">
+        $invite_link
+        <a href="classes/Telegram-Parts-ChatFullInfo.html#property_invite_link" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                            </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Telegram/Parts/ChatFullInfo.php"><a href="files/src-telegram-parts-chatfullinfo.html"><abbr title="src/Telegram/Parts/ChatFullInfo.php">ChatFullInfo.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">0</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__type">string|null</span>
+    <span class="phpdocumentor-signature__name">$invite_link</span>
+    </code>
+
+        <section class="phpdocumentor-description"><p>Optional. Primary invite link, for groups, supergroups and channel chats</p>
+</section>
+
+    
+    
+
+        
+        
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -public
+                                                                    "
+>
+    <h4 class="phpdocumentor-element__name" id="property_is_direct_messages">
+        $is_direct_messages
+        <a href="classes/Telegram-Parts-ChatFullInfo.html#property_is_direct_messages" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                            </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Telegram/Parts/ChatFullInfo.php"><a href="files/src-telegram-parts-chatfullinfo.html"><abbr title="src/Telegram/Parts/ChatFullInfo.php">ChatFullInfo.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">0</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__type">bool|null</span>
+    <span class="phpdocumentor-signature__name">$is_direct_messages</span>
+    </code>
+
+        <section class="phpdocumentor-description"><p>Optional. True, if the chat is the direct messages chat of a channel</p>
+</section>
+
+    
+    
+
+        
+        
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -public
+                                                                    "
+>
+    <h4 class="phpdocumentor-element__name" id="property_is_forum">
+        $is_forum
+        <a href="classes/Telegram-Parts-ChatFullInfo.html#property_is_forum" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                            </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Telegram/Parts/ChatFullInfo.php"><a href="files/src-telegram-parts-chatfullinfo.html"><abbr title="src/Telegram/Parts/ChatFullInfo.php">ChatFullInfo.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">0</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__type">bool|null</span>
+    <span class="phpdocumentor-signature__name">$is_forum</span>
+    </code>
+
+        <section class="phpdocumentor-description"><p>Optional. True, if the supergroup chat is a forum (has topics enabled)</p>
+</section>
+
+    
+    
+
+        
+        
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -public
+                                                                    "
+>
+    <h4 class="phpdocumentor-element__name" id="property_join_by_request">
+        $join_by_request
+        <a href="classes/Telegram-Parts-ChatFullInfo.html#property_join_by_request" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                            </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Telegram/Parts/ChatFullInfo.php"><a href="files/src-telegram-parts-chatfullinfo.html"><abbr title="src/Telegram/Parts/ChatFullInfo.php">ChatFullInfo.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">0</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__type">bool|null</span>
+    <span class="phpdocumentor-signature__name">$join_by_request</span>
+    </code>
+
+        <section class="phpdocumentor-description"><p>Optional. True, if all users directly joining the supergroup without using an invite link need to be approved by supergroup administrators</p>
+</section>
+
+    
+    
+
+        
+        
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -public
+                                                                    "
+>
+    <h4 class="phpdocumentor-element__name" id="property_join_to_send_messages">
+        $join_to_send_messages
+        <a href="classes/Telegram-Parts-ChatFullInfo.html#property_join_to_send_messages" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                            </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Telegram/Parts/ChatFullInfo.php"><a href="files/src-telegram-parts-chatfullinfo.html"><abbr title="src/Telegram/Parts/ChatFullInfo.php">ChatFullInfo.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">0</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__type">bool|null</span>
+    <span class="phpdocumentor-signature__name">$join_to_send_messages</span>
+    </code>
+
+        <section class="phpdocumentor-description"><p>Optional. True, if users need to join the supergroup before they can send messages</p>
+</section>
+
+    
+    
+
+        
+        
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -public
+                                                                    "
+>
+    <h4 class="phpdocumentor-element__name" id="property_last_name">
+        $last_name
+        <a href="classes/Telegram-Parts-ChatFullInfo.html#property_last_name" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                            </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Telegram/Parts/ChatFullInfo.php"><a href="files/src-telegram-parts-chatfullinfo.html"><abbr title="src/Telegram/Parts/ChatFullInfo.php">ChatFullInfo.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">0</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__type">string|null</span>
+    <span class="phpdocumentor-signature__name">$last_name</span>
+    </code>
+
+        <section class="phpdocumentor-description"><p>Optional. Last name of the other party in a private chat</p>
+</section>
+
+    
+    
+
+        
+        
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -public
+                                                                    "
+>
+    <h4 class="phpdocumentor-element__name" id="property_linked_chat_id">
+        $linked_chat_id
+        <a href="classes/Telegram-Parts-ChatFullInfo.html#property_linked_chat_id" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                            </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Telegram/Parts/ChatFullInfo.php"><a href="files/src-telegram-parts-chatfullinfo.html"><abbr title="src/Telegram/Parts/ChatFullInfo.php">ChatFullInfo.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">0</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__type">int|null</span>
+    <span class="phpdocumentor-signature__name">$linked_chat_id</span>
+    </code>
+
+        <section class="phpdocumentor-description"><p>Optional. Unique identifier for the linked chat, i.e. the discussion group identifier for a channel and vice versa; for supergroups and channel chats. This identifier may be greater than 32 bits and some programming languages may have difficulty/silent defects in interpreting it. But it is smaller than 52 bits, so a signed 64 bit integer or double-precision float type are safe for storing this identifier.</p>
+</section>
+
+    
+    
+
+        
+        
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -public
+                                                                    "
+>
+    <h4 class="phpdocumentor-element__name" id="property_location">
+        $location
+        <a href="classes/Telegram-Parts-ChatFullInfo.html#property_location" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                            </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Telegram/Parts/ChatFullInfo.php"><a href="files/src-telegram-parts-chatfullinfo.html"><abbr title="src/Telegram/Parts/ChatFullInfo.php">ChatFullInfo.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">0</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__type"><a href="classes/Telegram-Parts-ChatLocation.html"><abbr title="\Telegram\Parts\ChatLocation">ChatLocation</abbr></a>|null</span>
+    <span class="phpdocumentor-signature__name">$location</span>
+    </code>
+
+        <section class="phpdocumentor-description"><p>Optional. For supergroups, the location to which the supergroup is connected</p>
+</section>
+
+    
+    
+
+        
+        
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -public
+                                                                    "
+>
+    <h4 class="phpdocumentor-element__name" id="property_max_reaction_count">
+        $max_reaction_count
+        <a href="classes/Telegram-Parts-ChatFullInfo.html#property_max_reaction_count" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                            </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Telegram/Parts/ChatFullInfo.php"><a href="files/src-telegram-parts-chatfullinfo.html"><abbr title="src/Telegram/Parts/ChatFullInfo.php">ChatFullInfo.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">0</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__type">int</span>
+    <span class="phpdocumentor-signature__name">$max_reaction_count</span>
+    </code>
+
+        <section class="phpdocumentor-description"><p>The maximum number of reactions that can be set on a message in the chat</p>
+</section>
+
+    
+    
+
+        
+        
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -public
+                                                                    "
+>
+    <h4 class="phpdocumentor-element__name" id="property_message_auto_delete_time">
+        $message_auto_delete_time
+        <a href="classes/Telegram-Parts-ChatFullInfo.html#property_message_auto_delete_time" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                            </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Telegram/Parts/ChatFullInfo.php"><a href="files/src-telegram-parts-chatfullinfo.html"><abbr title="src/Telegram/Parts/ChatFullInfo.php">ChatFullInfo.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">0</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__type">int|null</span>
+    <span class="phpdocumentor-signature__name">$message_auto_delete_time</span>
+    </code>
+
+        <section class="phpdocumentor-description"><p>Optional. The time after which all messages sent to the chat will be automatically deleted; in seconds</p>
+</section>
+
+    
+    
+
+        
+        
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -public
+                                                                    "
+>
+    <h4 class="phpdocumentor-element__name" id="property_paid_message_star_count">
+        $paid_message_star_count
+        <a href="classes/Telegram-Parts-ChatFullInfo.html#property_paid_message_star_count" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                            </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Telegram/Parts/ChatFullInfo.php"><a href="files/src-telegram-parts-chatfullinfo.html"><abbr title="src/Telegram/Parts/ChatFullInfo.php">ChatFullInfo.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">0</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__type">int|null</span>
+    <span class="phpdocumentor-signature__name">$paid_message_star_count</span>
+    </code>
+
+        <section class="phpdocumentor-description"><p>Optional. The number of Telegram Stars a general user has to pay to send a message to the chat</p>
+</section>
+
+    
+    
+
+        
+        
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -public
+                                                                    "
+>
+    <h4 class="phpdocumentor-element__name" id="property_parent_chat">
+        $parent_chat
+        <a href="classes/Telegram-Parts-ChatFullInfo.html#property_parent_chat" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                            </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Telegram/Parts/ChatFullInfo.php"><a href="files/src-telegram-parts-chatfullinfo.html"><abbr title="src/Telegram/Parts/ChatFullInfo.php">ChatFullInfo.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">0</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__type"><a href="classes/Telegram-Parts-Chat.html"><abbr title="\Telegram\Parts\Chat">Chat</abbr></a>|null</span>
+    <span class="phpdocumentor-signature__name">$parent_chat</span>
+    </code>
+
+        <section class="phpdocumentor-description"><p>Optional. Information about the corresponding channel chat; for direct messages chats only</p>
+</section>
+
+    
+    
+
+        
+        
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -public
+                                                                    "
+>
+    <h4 class="phpdocumentor-element__name" id="property_permissions">
+        $permissions
+        <a href="classes/Telegram-Parts-ChatFullInfo.html#property_permissions" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                            </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Telegram/Parts/ChatFullInfo.php"><a href="files/src-telegram-parts-chatfullinfo.html"><abbr title="src/Telegram/Parts/ChatFullInfo.php">ChatFullInfo.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">0</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__type"><a href="classes/Telegram-Parts-ChatPermissions.html"><abbr title="\Telegram\Parts\ChatPermissions">ChatPermissions</abbr></a>|null</span>
+    <span class="phpdocumentor-signature__name">$permissions</span>
+    </code>
+
+        <section class="phpdocumentor-description"><p>Optional. Default chat member permissions, for groups and supergroups</p>
+</section>
+
+    
+    
+
+        
+        
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -public
+                                                                    "
+>
+    <h4 class="phpdocumentor-element__name" id="property_personal_chat">
+        $personal_chat
+        <a href="classes/Telegram-Parts-ChatFullInfo.html#property_personal_chat" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                            </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Telegram/Parts/ChatFullInfo.php"><a href="files/src-telegram-parts-chatfullinfo.html"><abbr title="src/Telegram/Parts/ChatFullInfo.php">ChatFullInfo.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">0</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__type"><a href="classes/Telegram-Parts-Chat.html"><abbr title="\Telegram\Parts\Chat">Chat</abbr></a>|null</span>
+    <span class="phpdocumentor-signature__name">$personal_chat</span>
+    </code>
+
+        <section class="phpdocumentor-description"><p>Optional. For private chats, the personal channel of the user</p>
+</section>
+
+    
+    
+
+        
+        
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -public
+                                                                    "
+>
+    <h4 class="phpdocumentor-element__name" id="property_photo">
+        $photo
+        <a href="classes/Telegram-Parts-ChatFullInfo.html#property_photo" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                            </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Telegram/Parts/ChatFullInfo.php"><a href="files/src-telegram-parts-chatfullinfo.html"><abbr title="src/Telegram/Parts/ChatFullInfo.php">ChatFullInfo.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">0</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__type"><a href="classes/Telegram-Parts-ChatPhoto.html"><abbr title="\Telegram\Parts\ChatPhoto">ChatPhoto</abbr></a>|null</span>
+    <span class="phpdocumentor-signature__name">$photo</span>
+    </code>
+
+        <section class="phpdocumentor-description"><p>Optional. Chat photo</p>
+</section>
+
+    
+    
+
+        
+        
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -public
+                                                                    "
+>
+    <h4 class="phpdocumentor-element__name" id="property_pinned_message">
+        $pinned_message
+        <a href="classes/Telegram-Parts-ChatFullInfo.html#property_pinned_message" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                            </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Telegram/Parts/ChatFullInfo.php"><a href="files/src-telegram-parts-chatfullinfo.html"><abbr title="src/Telegram/Parts/ChatFullInfo.php">ChatFullInfo.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">0</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__type"><a href="classes/Telegram-Parts-Message.html"><abbr title="\Telegram\Parts\Message">Message</abbr></a>|null</span>
+    <span class="phpdocumentor-signature__name">$pinned_message</span>
+    </code>
+
+        <section class="phpdocumentor-description"><p>Optional. The most recent pinned message (by sending date)</p>
+</section>
+
+    
+    
+
+        
+        
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -public
+                                                                    "
+>
+    <h4 class="phpdocumentor-element__name" id="property_profile_accent_color_id">
+        $profile_accent_color_id
+        <a href="classes/Telegram-Parts-ChatFullInfo.html#property_profile_accent_color_id" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                            </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Telegram/Parts/ChatFullInfo.php"><a href="files/src-telegram-parts-chatfullinfo.html"><abbr title="src/Telegram/Parts/ChatFullInfo.php">ChatFullInfo.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">0</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__type">int|null</span>
+    <span class="phpdocumentor-signature__name">$profile_accent_color_id</span>
+    </code>
+
+        <section class="phpdocumentor-description"><p>Optional. Identifier of the accent color for the chat's profile background. See profile accent colors for more details.</p>
+</section>
+
+    
+    
+
+        
+        
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -public
+                                                                    "
+>
+    <h4 class="phpdocumentor-element__name" id="property_profile_background_custom_emoji_id">
+        $profile_background_custom_emoji_id
+        <a href="classes/Telegram-Parts-ChatFullInfo.html#property_profile_background_custom_emoji_id" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                            </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Telegram/Parts/ChatFullInfo.php"><a href="files/src-telegram-parts-chatfullinfo.html"><abbr title="src/Telegram/Parts/ChatFullInfo.php">ChatFullInfo.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">0</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__type">string|null</span>
+    <span class="phpdocumentor-signature__name">$profile_background_custom_emoji_id</span>
+    </code>
+
+        <section class="phpdocumentor-description"><p>Optional. Custom emoji identifier of the emoji chosen by the chat for its profile background</p>
+</section>
+
+    
+    
+
+        
+        
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -public
+                                                                    "
+>
+    <h4 class="phpdocumentor-element__name" id="property_rating">
+        $rating
+        <a href="classes/Telegram-Parts-ChatFullInfo.html#property_rating" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                            </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Telegram/Parts/ChatFullInfo.php"><a href="files/src-telegram-parts-chatfullinfo.html"><abbr title="src/Telegram/Parts/ChatFullInfo.php">ChatFullInfo.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">0</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__type"><a href="classes/Telegram-Parts-UserRating.html"><abbr title="\Telegram\Parts\UserRating">UserRating</abbr></a>|null</span>
+    <span class="phpdocumentor-signature__name">$rating</span>
+    </code>
+
+        <section class="phpdocumentor-description"><p>Optional. For private chats, the rating of the user if any</p>
+</section>
+
+    
+    
+
+        
+        
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -public
+                                                                    "
+>
+    <h4 class="phpdocumentor-element__name" id="property_slow_mode_delay">
+        $slow_mode_delay
+        <a href="classes/Telegram-Parts-ChatFullInfo.html#property_slow_mode_delay" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                            </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Telegram/Parts/ChatFullInfo.php"><a href="files/src-telegram-parts-chatfullinfo.html"><abbr title="src/Telegram/Parts/ChatFullInfo.php">ChatFullInfo.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">0</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__type">int|null</span>
+    <span class="phpdocumentor-signature__name">$slow_mode_delay</span>
+    </code>
+
+        <section class="phpdocumentor-description"><p>Optional. For supergroups, the minimum allowed delay between consecutive messages sent by each unprivileged user; in seconds</p>
+</section>
+
+    
+    
+
+        
+        
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -public
+                                                                    "
+>
+    <h4 class="phpdocumentor-element__name" id="property_sticker_set_name">
+        $sticker_set_name
+        <a href="classes/Telegram-Parts-ChatFullInfo.html#property_sticker_set_name" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                            </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Telegram/Parts/ChatFullInfo.php"><a href="files/src-telegram-parts-chatfullinfo.html"><abbr title="src/Telegram/Parts/ChatFullInfo.php">ChatFullInfo.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">0</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__type">string|null</span>
+    <span class="phpdocumentor-signature__name">$sticker_set_name</span>
+    </code>
+
+        <section class="phpdocumentor-description"><p>Optional. For supergroups, name of the group sticker set</p>
+</section>
+
+    
+    
+
+        
+        
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -public
+                                                                    "
+>
+    <h4 class="phpdocumentor-element__name" id="property_title">
+        $title
+        <a href="classes/Telegram-Parts-ChatFullInfo.html#property_title" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                            </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Telegram/Parts/ChatFullInfo.php"><a href="files/src-telegram-parts-chatfullinfo.html"><abbr title="src/Telegram/Parts/ChatFullInfo.php">ChatFullInfo.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">0</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__type">string|null</span>
+    <span class="phpdocumentor-signature__name">$title</span>
+    </code>
+
+        <section class="phpdocumentor-description"><p>Optional. Title, for supergroups, channels and group chats</p>
+</section>
+
+    
+    
+
+        
+        
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -public
+                                                                    "
+>
+    <h4 class="phpdocumentor-element__name" id="property_type">
+        $type
+        <a href="classes/Telegram-Parts-ChatFullInfo.html#property_type" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                            </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Telegram/Parts/ChatFullInfo.php"><a href="files/src-telegram-parts-chatfullinfo.html"><abbr title="src/Telegram/Parts/ChatFullInfo.php">ChatFullInfo.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">0</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__type">string</span>
+    <span class="phpdocumentor-signature__name">$type</span>
+    </code>
+
+        <section class="phpdocumentor-description"><p>Type of the chat, can be either &quot;private&quot;, &quot;group&quot;, &quot;supergroup&quot; or &quot;channel&quot;</p>
+</section>
+
+    
+    
+
+        
+        
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -public
+                                                                    "
+>
+    <h4 class="phpdocumentor-element__name" id="property_unique_gift_colors">
+        $unique_gift_colors
+        <a href="classes/Telegram-Parts-ChatFullInfo.html#property_unique_gift_colors" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                            </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Telegram/Parts/ChatFullInfo.php"><a href="files/src-telegram-parts-chatfullinfo.html"><abbr title="src/Telegram/Parts/ChatFullInfo.php">ChatFullInfo.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">0</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__type"><a href="classes/Telegram-Parts-UniqueGiftColors.html"><abbr title="\Telegram\Parts\UniqueGiftColors">UniqueGiftColors</abbr></a>|null</span>
+    <span class="phpdocumentor-signature__name">$unique_gift_colors</span>
+    </code>
+
+        <section class="phpdocumentor-description"><p>Optional. The color scheme based on a unique gift that must be used for the chat's name, message replies and link previews</p>
+</section>
+
+    
+    
+
+        
+        
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -public
+                                                                    "
+>
+    <h4 class="phpdocumentor-element__name" id="property_unrestrict_boost_count">
+        $unrestrict_boost_count
+        <a href="classes/Telegram-Parts-ChatFullInfo.html#property_unrestrict_boost_count" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                            </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Telegram/Parts/ChatFullInfo.php"><a href="files/src-telegram-parts-chatfullinfo.html"><abbr title="src/Telegram/Parts/ChatFullInfo.php">ChatFullInfo.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">0</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__type">int|null</span>
+    <span class="phpdocumentor-signature__name">$unrestrict_boost_count</span>
+    </code>
+
+        <section class="phpdocumentor-description"><p>Optional. For supergroups, the minimum number of boosts that a non-administrator user needs to add in order to ignore slow mode and chat permissions</p>
+</section>
+
+    
+    
+
+        
+        
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -public
+                                                                    "
+>
+    <h4 class="phpdocumentor-element__name" id="property_username">
+        $username
+        <a href="classes/Telegram-Parts-ChatFullInfo.html#property_username" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                            </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Telegram/Parts/ChatFullInfo.php"><a href="files/src-telegram-parts-chatfullinfo.html"><abbr title="src/Telegram/Parts/ChatFullInfo.php">ChatFullInfo.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">0</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+        <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__type">string|null</span>
+    <span class="phpdocumentor-signature__name">$username</span>
+    </code>
+
+        <section class="phpdocumentor-description"><p>Optional. Username, for private chats, supergroups and channels if available</p>
+</section>
+
+    
+    
+
+        
+        
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -protected
+                                                                    "
+>
+    <h4 class="phpdocumentor-element__name" id="property_casts">
+        $casts
+        <a href="classes/Telegram-Parts-ChatFullInfo.html#property_casts" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                            </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Telegram/Parts/ChatFullInfo.php"><a href="files/src-telegram-parts-chatfullinfo.html"><abbr title="src/Telegram/Parts/ChatFullInfo.php">ChatFullInfo.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">140</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Attribute name =&gt; Telegram type token (&quot;User&quot;, &quot;Array of PhotoSize&quot;), used
+to hydrate nested objects into parts.</p>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+        <span class="phpdocumentor-signature__visibility">protected</span>
+            <span class="phpdocumentor-signature__type">array&lt;string, string&gt;</span>
+    <span class="phpdocumentor-signature__name">$casts</span>
+     = <span class="phpdocumentor-signature__default-value">[&#039;photo&#039; =&gt; &#039;ChatPhoto&#039;, &#039;active_usernames&#039; =&gt; &#039;Array of String&#039;, &#039;birthdate&#039; =&gt; &#039;Birthdate&#039;, &#039;business_intro&#039; =&gt; &#039;BusinessIntro&#039;, &#039;business_location&#039; =&gt; &#039;BusinessLocation&#039;, &#039;business_opening_hours&#039; =&gt; &#039;BusinessOpeningHours&#039;, &#039;personal_chat&#039; =&gt; &#039;Chat&#039;, &#039;parent_chat&#039; =&gt; &#039;Chat&#039;, &#039;available_reactions&#039; =&gt; &#039;Array of ReactionType&#039;, &#039;pinned_message&#039; =&gt; &#039;Message&#039;, &#039;permissions&#039; =&gt; &#039;ChatPermissions&#039;, &#039;accepted_gift_types&#039; =&gt; &#039;AcceptedGiftTypes&#039;, &#039;location&#039; =&gt; &#039;ChatLocation&#039;, &#039;rating&#039; =&gt; &#039;UserRating&#039;, &#039;first_profile_audio&#039; =&gt; &#039;Audio&#039;, &#039;unique_gift_colors&#039; =&gt; &#039;UniqueGiftColors&#039;, &#039;guard_bot&#039; =&gt; &#039;User&#039;, &#039;community&#039; =&gt; &#039;Community&#039;]</span></code>
+
+    
+    
+    
+
+        
+        
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -protected
+                                                                    "
+>
+    <h4 class="phpdocumentor-element__name" id="property_dates">
+        $dates
+        <a href="classes/Telegram-Parts-ChatFullInfo.html#property_dates" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                            </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Telegram/Parts/ChatFullInfo.php"><a href="files/src-telegram-parts-chatfullinfo.html"><abbr title="src/Telegram/Parts/ChatFullInfo.php">ChatFullInfo.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">162</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Attribute names holding Unix timestamps, read back as {@see CarbonImmutable}.</p>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+        <span class="phpdocumentor-signature__visibility">protected</span>
+            <span class="phpdocumentor-signature__type">array&lt;int, string&gt;</span>
+    <span class="phpdocumentor-signature__name">$dates</span>
+     = <span class="phpdocumentor-signature__default-value">[&#039;emoji_status_expiration_date&#039;]</span></code>
+
+    
+    
+    
+
+        
+        
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -protected
+                                                                    "
+>
+    <h4 class="phpdocumentor-element__name" id="property_fillable">
+        $fillable
+        <a href="classes/Telegram-Parts-ChatFullInfo.html#property_fillable" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                            </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Telegram/Parts/ChatFullInfo.php"><a href="files/src-telegram-parts-chatfullinfo.html"><abbr title="src/Telegram/Parts/ChatFullInfo.php">ChatFullInfo.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">83</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Attribute names this part accepts. Empty = accept anything.</p>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+        <span class="phpdocumentor-signature__visibility">protected</span>
+            <span class="phpdocumentor-signature__type">array&lt;int, string&gt;</span>
+    <span class="phpdocumentor-signature__name">$fillable</span>
+     = <span class="phpdocumentor-signature__default-value">[&#039;id&#039;, &#039;type&#039;, &#039;title&#039;, &#039;username&#039;, &#039;first_name&#039;, &#039;last_name&#039;, &#039;is_forum&#039;, &#039;is_direct_messages&#039;, &#039;accent_color_id&#039;, &#039;max_reaction_count&#039;, &#039;photo&#039;, &#039;active_usernames&#039;, &#039;birthdate&#039;, &#039;business_intro&#039;, &#039;business_location&#039;, &#039;business_opening_hours&#039;, &#039;personal_chat&#039;, &#039;parent_chat&#039;, &#039;available_reactions&#039;, &#039;background_custom_emoji_id&#039;, &#039;profile_accent_color_id&#039;, &#039;profile_background_custom_emoji_id&#039;, &#039;emoji_status_custom_emoji_id&#039;, &#039;emoji_status_expiration_date&#039;, &#039;bio&#039;, &#039;has_private_forwards&#039;, &#039;has_restricted_voice_and_video_messages&#039;, &#039;join_to_send_messages&#039;, &#039;join_by_request&#039;, &#039;description&#039;, &#039;invite_link&#039;, &#039;pinned_message&#039;, &#039;permissions&#039;, &#039;accepted_gift_types&#039;, &#039;can_send_paid_media&#039;, &#039;slow_mode_delay&#039;, &#039;unrestrict_boost_count&#039;, &#039;message_auto_delete_time&#039;, &#039;has_aggressive_anti_spam_enabled&#039;, &#039;has_hidden_members&#039;, &#039;has_protected_content&#039;, &#039;has_visible_history&#039;, &#039;sticker_set_name&#039;, &#039;can_set_sticker_set&#039;, &#039;custom_emoji_sticker_set_name&#039;, &#039;linked_chat_id&#039;, &#039;location&#039;, &#039;rating&#039;, &#039;first_profile_audio&#039;, &#039;unique_gift_colors&#039;, &#039;paid_message_star_count&#039;, &#039;guard_bot&#039;, &#039;community&#039;]</span></code>
+
+    
+    
+    
+
+        
+        
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -protected
+                                                -read-only                    "
+>
+    <h4 class="phpdocumentor-element__name" id="property_telegram">
+        $telegram
+        <a href="classes/Telegram-Parts-Part.html#property_telegram" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                        <small class="phpdocumentor-element__modifier">read-only</small>                    </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Telegram/Parts/Part.php"><a href="files/src-telegram-parts-part.html"><abbr title="src/Telegram/Parts/Part.php">Part.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">80</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+        <span class="phpdocumentor-signature__visibility">protected</span>
+            <span class="phpdocumentor-signature__type"><a href="classes/Telegram-Telegram.html"><abbr title="\Telegram\Telegram">Telegram</abbr></a></span>
+    <span class="phpdocumentor-signature__name">$telegram</span>
+    </code>
+
+    
+    
+    
+
+        
+        
+
+</article>
+            </section>
+
+            <section class="phpdocumentor-methods">
+        <h3 class="phpdocumentor-elements__header" id="methods">
+            Methods
+            <a href="classes/Telegram-Parts-ChatFullInfo.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
+
+        </h3>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method___construct">
+        __construct()
+        <a href="classes/Telegram-Parts-Part.html#method___construct" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Telegram/Parts/Part.php"><a href="files/src-telegram-parts-part.html"><abbr title="src/Telegram/Parts/Part.php">Part.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">79</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type"><a href="classes/Telegram-Telegram.html"><abbr title="\Telegram\Telegram">Telegram</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$telegram</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__type">array&lt;string, mixed&gt;|object&nbsp;</span><span class="phpdocumentor-signature__argument__name">$attributes</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$telegram</span>
+                : <span class="phpdocumentor-argument-list__argument__type"><a href="classes/Telegram-Telegram.html"><abbr title="\Telegram\Telegram">Telegram</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$attributes</span>
+                : <span class="phpdocumentor-argument-list__argument__type">array&lt;string, mixed&gt;|object</span>
+                 = <span class="phpdocumentor-argument-list__argument__default-value">[]</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method___debugInfo">
+        __debugInfo()
+        <a href="classes/Telegram-Parts-Part.html#method___debugInfo" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Telegram/Parts/Part.php"><a href="files/src-telegram-parts-part.html"><abbr title="src/Telegram/Parts/Part.php">Part.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">317</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">__debugInfo</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string, mixed&gt;</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">array&lt;string, mixed&gt;</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method___get">
+        __get()
+        <a href="classes/Telegram-Parts-Part.html#method___get" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Telegram/Parts/Part.php"><a href="files/src-telegram-parts-part.html"><abbr title="src/Telegram/Parts/Part.php">Part.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">243</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">__get</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$name</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$name</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method___isset">
+        __isset()
+        <a href="classes/Telegram-Parts-Part.html#method___isset" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Telegram/Parts/Part.php"><a href="files/src-telegram-parts-part.html"><abbr title="src/Telegram/Parts/Part.php">Part.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">253</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">__isset</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$name</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$name</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">bool</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method___set">
+        __set()
+        <a href="classes/Telegram-Parts-Part.html#method___set" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Telegram/Parts/Part.php"><a href="files/src-telegram-parts-part.html"><abbr title="src/Telegram/Parts/Part.php">Part.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">248</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">__set</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$name</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$name</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$value</span>
+                : <span class="phpdocumentor-argument-list__argument__type">mixed</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method___toString">
+        __toString()
+        <a href="classes/Telegram-Parts-Part.html#method___toString" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Telegram/Parts/Part.php"><a href="files/src-telegram-parts-part.html"><abbr title="src/Telegram/Parts/Part.php">Part.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">322</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">__toString</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">string</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_attributeExists">
+        attributeExists()
+        <a href="classes/Telegram-Parts-Part.html#method_attributeExists" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Telegram/Parts/Part.php"><a href="files/src-telegram-parts-part.html"><abbr title="src/Telegram/Parts/Part.php">Part.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">146</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">attributeExists</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$key</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$key</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">bool</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_fill">
+        fill()
+        <a href="classes/Telegram-Parts-Part.html#method_fill" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Telegram/Parts/Part.php"><a href="files/src-telegram-parts-part.html"><abbr title="src/Telegram/Parts/Part.php">Part.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">89</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">fill</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">array&lt;string, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$attributes</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$attributes</span>
+                : <span class="phpdocumentor-argument-list__argument__type">array&lt;string, mixed&gt;</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getAttribute">
+        getAttribute()
+        <a href="classes/Telegram-Parts-Part.html#method_getAttribute" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Telegram/Parts/Part.php"><a href="files/src-telegram-parts-part.html"><abbr title="src/Telegram/Parts/Part.php">Part.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">114</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">getAttribute</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$key</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$key</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getCasts">
+        getCasts()
+        <a href="classes/Telegram-Parts-Part.html#method_getCasts" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Telegram/Parts/Part.php"><a href="files/src-telegram-parts-part.html"><abbr title="src/Telegram/Parts/Part.php">Part.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">165</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">getCasts</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string, string&gt;</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">array&lt;string, string&gt;</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getFillable">
+        getFillable()
+        <a href="classes/Telegram-Parts-Part.html#method_getFillable" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Telegram/Parts/Part.php"><a href="files/src-telegram-parts-part.html"><abbr title="src/Telegram/Parts/Part.php">Part.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">159</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">getFillable</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;int, string&gt;</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">array&lt;int, string&gt;</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getRawAttributes">
+        getRawAttributes()
+        <a href="classes/Telegram-Parts-Part.html#method_getRawAttributes" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Telegram/Parts/Part.php"><a href="files/src-telegram-parts-part.html"><abbr title="src/Telegram/Parts/Part.php">Part.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">153</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">getRawAttributes</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string, mixed&gt;</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">array&lt;string, mixed&gt;</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getTelegram">
+        getTelegram()
+        <a href="classes/Telegram-Parts-Part.html#method_getTelegram" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Telegram/Parts/Part.php"><a href="files/src-telegram-parts-part.html"><abbr title="src/Telegram/Parts/Part.php">Part.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">170</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">getTelegram</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Telegram-Telegram.html"><abbr title="\Telegram\Telegram">Telegram</abbr></a></span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Telegram-Telegram.html"><abbr title="\Telegram\Telegram">Telegram</abbr></a></span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_jsonSerialize">
+        jsonSerialize()
+        <a href="classes/Telegram-Parts-Part.html#method_jsonSerialize" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Telegram/Parts/Part.php"><a href="files/src-telegram-parts-part.html"><abbr title="src/Telegram/Parts/Part.php">Part.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">284</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">The payload this part would be sent back to Telegram as - nested parts and
+collections flattened, timestamps left as the integers they arrived as.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">jsonSerialize</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string, mixed&gt;</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">array&lt;string, mixed&gt;</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_offsetExists">
+        offsetExists()
+        <a href="classes/Telegram-Parts-Part.html#method_offsetExists" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Telegram/Parts/Part.php"><a href="files/src-telegram-parts-part.html"><abbr title="src/Telegram/Parts/Part.php">Part.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">258</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">offsetExists</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$offset</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$offset</span>
+                : <span class="phpdocumentor-argument-list__argument__type">mixed</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">bool</span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_offsetGet">
+        offsetGet()
+        <a href="classes/Telegram-Parts-Part.html#method_offsetGet" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Telegram/Parts/Part.php"><a href="files/src-telegram-parts-part.html"><abbr title="src/Telegram/Parts/Part.php">Part.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">263</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">offsetGet</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$offset</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$offset</span>
+                : <span class="phpdocumentor-argument-list__argument__type">mixed</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_offsetSet">
+        offsetSet()
+        <a href="classes/Telegram-Parts-Part.html#method_offsetSet" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Telegram/Parts/Part.php"><a href="files/src-telegram-parts-part.html"><abbr title="src/Telegram/Parts/Part.php">Part.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">268</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">offsetSet</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$offset</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$offset</span>
+                : <span class="phpdocumentor-argument-list__argument__type">mixed</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$value</span>
+                : <span class="phpdocumentor-argument-list__argument__type">mixed</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_offsetUnset">
+        offsetUnset()
+        <a href="classes/Telegram-Parts-Part.html#method_offsetUnset" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Telegram/Parts/Part.php"><a href="files/src-telegram-parts-part.html"><abbr title="src/Telegram/Parts/Part.php">Part.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">273</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">offsetUnset</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$offset</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$offset</span>
+                : <span class="phpdocumentor-argument-list__argument__type">mixed</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_resolveSubtype">
+        resolveSubtype()
+        <a href="classes/Telegram-Parts-Part.html#method_resolveSubtype" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Telegram/Parts/Part.php"><a href="files/src-telegram-parts-part.html"><abbr title="src/Telegram/Parts/Part.php">Part.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">196</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">The concrete class an incoming payload belongs to, for a union parent.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">resolveSubtype</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">array&lt;string, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$attributes</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="class-string<\Telegram\Parts\Part>">Part></abbr></span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+        <section class="phpdocumentor-description"><p>Tagged unions resolve on their discriminator. The handful Telegram leaves
+untagged (<code class="prettyprint">InputMessageContent</code>, and the rest), and any payload whose tag
+this build does not recognise - a member added to the Bot API since it was
+generated - resolve instead to the subtype whose attributes the payload
+matches most closely.</p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$attributes</span>
+                : <span class="phpdocumentor-argument-list__argument__type">array&lt;string, mixed&gt;</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="method_resolveSubtype_tags">
+        Tags
+        <a href="classes/Telegram-Parts-Part.html#method_resolveSubtype_tags" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                    <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">throws</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
+                                                                <span class="phpdocumentor-tag-link"><a href="classes/Telegram-Exceptions-PartException.html"><abbr title="\Telegram\Exceptions\PartException">PartException</abbr></a></span>
+                                                                                        <section class="phpdocumentor-description"><p>When the part is not a union, or nothing matches.</p>
+</section>
+
+                                    </dd>
+                        </dl>
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><abbr title="class-string<\Telegram\Parts\Part>">Part></abbr></span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_setAttribute">
+        setAttribute()
+        <a href="classes/Telegram-Parts-Part.html#method_setAttribute" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Telegram/Parts/Part.php"><a href="files/src-telegram-parts-part.html"><abbr title="src/Telegram/Parts/Part.php">Part.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">98</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">setAttribute</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$key</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$key</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$value</span>
+                : <span class="phpdocumentor-argument-list__argument__type">mixed</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -protected
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_factory">
+        factory()
+        <a href="classes/Telegram-Parts-Part.html#method_factory" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Telegram/Parts/Part.php"><a href="files/src-telegram-parts-part.html"><abbr title="src/Telegram/Parts/Part.php">Part.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">176</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Builds another part from the same client - for nested objects.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+                    <span class="phpdocumentor-signature__name">factory</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Telegram-Factory-Factory.html"><abbr title="\Telegram\Factory\Factory">Factory</abbr></a></span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type"><a href="classes/Telegram-Factory-Factory.html"><abbr title="\Telegram\Factory\Factory">Factory</abbr></a></span>
+            </section>
+
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -protected
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_getRawAttribute">
+        getRawAttribute()
+        <a href="classes/Telegram-Parts-Part.html#method_getRawAttribute" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Telegram/Parts/Part.php"><a href="files/src-telegram-parts-part.html"><abbr title="src/Telegram/Parts/Part.php">Part.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">141</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Reads straight from the attribute bag, skipping the `get{Key}Attribute` hook.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+                    <span class="phpdocumentor-signature__name">getRawAttribute</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$key</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$key</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -protected
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_setRawAttribute">
+        setRawAttribute()
+        <a href="classes/Telegram-Parts-Part.html#method_setRawAttribute" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Telegram/Parts/Part.php"><a href="files/src-telegram-parts-part.html"><abbr title="src/Telegram/Parts/Part.php">Part.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">135</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Writes straight to the attribute bag, skipping the `set{Key}Attribute` hook
+and any cast. For use *inside* a mutator, which would otherwise have no way
+to store its shaped value without recursing through {@see setAttribute()}.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+                    <span class="phpdocumentor-signature__name">setRawAttribute</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$key</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$key</span>
+                : <span class="phpdocumentor-argument-list__argument__type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-argument-list__argument__name">$value</span>
+                : <span class="phpdocumentor-argument-list__argument__type">mixed</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        
+    
+    
+</article>
+            </section>
+
+        
+    </article>
+                                </section>
+                <section class="phpdocumentor-on-this-page__sidebar">
+                                
+    <section class="phpdocumentor-on-this-page__content">
+        <strong class="phpdocumentor-on-this-page__title">On this page</strong>
+
+        <ul class="phpdocumentor-list -clean">
+            <li class="phpdocumentor-on-this-page-section__title">Table Of Contents</li>
+            <li>
+                <ul class="phpdocumentor-list -clean">
+                                        <li><a href="classes/Telegram-Parts-ChatFullInfo.html#toc-constants">Constants</a></li>
+                                                            <li><a href="classes/Telegram-Parts-ChatFullInfo.html#toc-properties">Properties</a></li>
+                                                            <li><a href="classes/Telegram-Parts-ChatFullInfo.html#toc-methods">Methods</a></li>
+                                    </ul>
+            </li>
+                            <li class="phpdocumentor-on-this-page-section__title">Constants</li>
+                <li>
+                    <ul class="phpdocumentor-list -clean">
+                                                    <li class=""><a href="classes/Telegram-Parts-Part.html#constant_DISCRIMINATOR">DISCRIMINATOR</a></li>
+                                                    <li class=""><a href="classes/Telegram-Parts-Part.html#constant_SUBTYPES">SUBTYPES</a></li>
+                                            </ul>
+                </li>
+            
+                            <li class="phpdocumentor-on-this-page-section__title">Properties</li>
+                <li>
+                    <ul class="phpdocumentor-list -clean">
+                                                    <li class=""><a href="classes/Telegram-Parts-ChatFullInfo.html#property_accent_color_id">$accent_color_id</a></li>
+                                                    <li class=""><a href="classes/Telegram-Parts-ChatFullInfo.html#property_accepted_gift_types">$accepted_gift_types</a></li>
+                                                    <li class=""><a href="classes/Telegram-Parts-ChatFullInfo.html#property_active_usernames">$active_usernames</a></li>
+                                                    <li class=""><a href="classes/Telegram-Parts-ChatFullInfo.html#property_available_reactions">$available_reactions</a></li>
+                                                    <li class=""><a href="classes/Telegram-Parts-ChatFullInfo.html#property_background_custom_emoji_id">$background_custom_emoji_id</a></li>
+                                                    <li class=""><a href="classes/Telegram-Parts-ChatFullInfo.html#property_bio">$bio</a></li>
+                                                    <li class=""><a href="classes/Telegram-Parts-ChatFullInfo.html#property_birthdate">$birthdate</a></li>
+                                                    <li class=""><a href="classes/Telegram-Parts-ChatFullInfo.html#property_business_intro">$business_intro</a></li>
+                                                    <li class=""><a href="classes/Telegram-Parts-ChatFullInfo.html#property_business_location">$business_location</a></li>
+                                                    <li class=""><a href="classes/Telegram-Parts-ChatFullInfo.html#property_business_opening_hours">$business_opening_hours</a></li>
+                                                    <li class=""><a href="classes/Telegram-Parts-ChatFullInfo.html#property_can_send_paid_media">$can_send_paid_media</a></li>
+                                                    <li class=""><a href="classes/Telegram-Parts-ChatFullInfo.html#property_can_set_sticker_set">$can_set_sticker_set</a></li>
+                                                    <li class=""><a href="classes/Telegram-Parts-ChatFullInfo.html#property_community">$community</a></li>
+                                                    <li class=""><a href="classes/Telegram-Parts-ChatFullInfo.html#property_custom_emoji_sticker_set_name">$custom_emoji_sticker_set_name</a></li>
+                                                    <li class=""><a href="classes/Telegram-Parts-ChatFullInfo.html#property_description">$description</a></li>
+                                                    <li class=""><a href="classes/Telegram-Parts-ChatFullInfo.html#property_emoji_status_custom_emoji_id">$emoji_status_custom_emoji_id</a></li>
+                                                    <li class=""><a href="classes/Telegram-Parts-ChatFullInfo.html#property_emoji_status_expiration_date">$emoji_status_expiration_date</a></li>
+                                                    <li class=""><a href="classes/Telegram-Parts-ChatFullInfo.html#property_first_name">$first_name</a></li>
+                                                    <li class=""><a href="classes/Telegram-Parts-ChatFullInfo.html#property_first_profile_audio">$first_profile_audio</a></li>
+                                                    <li class=""><a href="classes/Telegram-Parts-ChatFullInfo.html#property_guard_bot">$guard_bot</a></li>
+                                                    <li class=""><a href="classes/Telegram-Parts-ChatFullInfo.html#property_has_aggressive_anti_spam_enabled">$has_aggressive_anti_spam_enabled</a></li>
+                                                    <li class=""><a href="classes/Telegram-Parts-ChatFullInfo.html#property_has_hidden_members">$has_hidden_members</a></li>
+                                                    <li class=""><a href="classes/Telegram-Parts-ChatFullInfo.html#property_has_private_forwards">$has_private_forwards</a></li>
+                                                    <li class=""><a href="classes/Telegram-Parts-ChatFullInfo.html#property_has_protected_content">$has_protected_content</a></li>
+                                                    <li class=""><a href="classes/Telegram-Parts-ChatFullInfo.html#property_has_restricted_voice_and_video_messages">$has_restricted_voice_and_video_messages</a></li>
+                                                    <li class=""><a href="classes/Telegram-Parts-ChatFullInfo.html#property_has_visible_history">$has_visible_history</a></li>
+                                                    <li class=""><a href="classes/Telegram-Parts-ChatFullInfo.html#property_id">$id</a></li>
+                                                    <li class=""><a href="classes/Telegram-Parts-ChatFullInfo.html#property_invite_link">$invite_link</a></li>
+                                                    <li class=""><a href="classes/Telegram-Parts-ChatFullInfo.html#property_is_direct_messages">$is_direct_messages</a></li>
+                                                    <li class=""><a href="classes/Telegram-Parts-ChatFullInfo.html#property_is_forum">$is_forum</a></li>
+                                                    <li class=""><a href="classes/Telegram-Parts-ChatFullInfo.html#property_join_by_request">$join_by_request</a></li>
+                                                    <li class=""><a href="classes/Telegram-Parts-ChatFullInfo.html#property_join_to_send_messages">$join_to_send_messages</a></li>
+                                                    <li class=""><a href="classes/Telegram-Parts-ChatFullInfo.html#property_last_name">$last_name</a></li>
+                                                    <li class=""><a href="classes/Telegram-Parts-ChatFullInfo.html#property_linked_chat_id">$linked_chat_id</a></li>
+                                                    <li class=""><a href="classes/Telegram-Parts-ChatFullInfo.html#property_location">$location</a></li>
+                                                    <li class=""><a href="classes/Telegram-Parts-ChatFullInfo.html#property_max_reaction_count">$max_reaction_count</a></li>
+                                                    <li class=""><a href="classes/Telegram-Parts-ChatFullInfo.html#property_message_auto_delete_time">$message_auto_delete_time</a></li>
+                                                    <li class=""><a href="classes/Telegram-Parts-ChatFullInfo.html#property_paid_message_star_count">$paid_message_star_count</a></li>
+                                                    <li class=""><a href="classes/Telegram-Parts-ChatFullInfo.html#property_parent_chat">$parent_chat</a></li>
+                                                    <li class=""><a href="classes/Telegram-Parts-ChatFullInfo.html#property_permissions">$permissions</a></li>
+                                                    <li class=""><a href="classes/Telegram-Parts-ChatFullInfo.html#property_personal_chat">$personal_chat</a></li>
+                                                    <li class=""><a href="classes/Telegram-Parts-ChatFullInfo.html#property_photo">$photo</a></li>
+                                                    <li class=""><a href="classes/Telegram-Parts-ChatFullInfo.html#property_pinned_message">$pinned_message</a></li>
+                                                    <li class=""><a href="classes/Telegram-Parts-ChatFullInfo.html#property_profile_accent_color_id">$profile_accent_color_id</a></li>
+                                                    <li class=""><a href="classes/Telegram-Parts-ChatFullInfo.html#property_profile_background_custom_emoji_id">$profile_background_custom_emoji_id</a></li>
+                                                    <li class=""><a href="classes/Telegram-Parts-ChatFullInfo.html#property_rating">$rating</a></li>
+                                                    <li class=""><a href="classes/Telegram-Parts-ChatFullInfo.html#property_slow_mode_delay">$slow_mode_delay</a></li>
+                                                    <li class=""><a href="classes/Telegram-Parts-ChatFullInfo.html#property_sticker_set_name">$sticker_set_name</a></li>
+                                                    <li class=""><a href="classes/Telegram-Parts-ChatFullInfo.html#property_title">$title</a></li>
+                                                    <li class=""><a href="classes/Telegram-Parts-ChatFullInfo.html#property_type">$type</a></li>
+                                                    <li class=""><a href="classes/Telegram-Parts-ChatFullInfo.html#property_unique_gift_colors">$unique_gift_colors</a></li>
+                                                    <li class=""><a href="classes/Telegram-Parts-ChatFullInfo.html#property_unrestrict_boost_count">$unrestrict_boost_count</a></li>
+                                                    <li class=""><a href="classes/Telegram-Parts-ChatFullInfo.html#property_username">$username</a></li>
+                                                    <li class=""><a href="classes/Telegram-Parts-ChatFullInfo.html#property_casts">$casts</a></li>
+                                                    <li class=""><a href="classes/Telegram-Parts-ChatFullInfo.html#property_dates">$dates</a></li>
+                                                    <li class=""><a href="classes/Telegram-Parts-ChatFullInfo.html#property_fillable">$fillable</a></li>
+                                                    <li class=""><a href="classes/Telegram-Parts-Part.html#property_telegram">$telegram</a></li>
+                                            </ul>
+                </li>
+            
+                        <li class="phpdocumentor-on-this-page-section__title">Methods</li>
+            <li>
+                <ul class="phpdocumentor-list -clean">
+                                            <li class=""><a href="classes/Telegram-Parts-Part.html#method___construct">__construct()</a></li>
+                                            <li class=""><a href="classes/Telegram-Parts-Part.html#method___debugInfo">__debugInfo()</a></li>
+                                            <li class=""><a href="classes/Telegram-Parts-Part.html#method___get">__get()</a></li>
+                                            <li class=""><a href="classes/Telegram-Parts-Part.html#method___isset">__isset()</a></li>
+                                            <li class=""><a href="classes/Telegram-Parts-Part.html#method___set">__set()</a></li>
+                                            <li class=""><a href="classes/Telegram-Parts-Part.html#method___toString">__toString()</a></li>
+                                            <li class=""><a href="classes/Telegram-Parts-Part.html#method_attributeExists">attributeExists()</a></li>
+                                            <li class=""><a href="classes/Telegram-Parts-Part.html#method_fill">fill()</a></li>
+                                            <li class=""><a href="classes/Telegram-Parts-Part.html#method_getAttribute">getAttribute()</a></li>
+                                            <li class=""><a href="classes/Telegram-Parts-Part.html#method_getCasts">getCasts()</a></li>
+                                            <li class=""><a href="classes/Telegram-Parts-Part.html#method_getFillable">getFillable()</a></li>
+                                            <li class=""><a href="classes/Telegram-Parts-Part.html#method_getRawAttributes">getRawAttributes()</a></li>
+                                            <li class=""><a href="classes/Telegram-Parts-Part.html#method_getTelegram">getTelegram()</a></li>
+                                            <li class=""><a href="classes/Telegram-Parts-Part.html#method_jsonSerialize">jsonSerialize()</a></li>
+                                            <li class=""><a href="classes/Telegram-Parts-Part.html#method_offsetExists">offsetExists()</a></li>
+                                            <li class=""><a href="classes/Telegram-Parts-Part.html#method_offsetGet">offsetGet()</a></li>
+                                            <li class=""><a href="classes/Telegram-Parts-Part.html#method_offsetSet">offsetSet()</a></li>
+                                            <li class=""><a href="classes/Telegram-Parts-Part.html#method_offsetUnset">offsetUnset()</a></li>
+                                            <li class=""><a href="classes/Telegram-Parts-Part.html#method_resolveSubtype">resolveSubtype()</a></li>
+                                            <li class=""><a href="classes/Telegram-Parts-Part.html#method_setAttribute">setAttribute()</a></li>
+                                            <li class=""><a href="classes/Telegram-Parts-Part.html#method_factory">factory()</a></li>
+                                            <li class=""><a href="classes/Telegram-Parts-Part.html#method_getRawAttribute">getRawAttribute()</a></li>
+                                            <li class=""><a href="classes/Telegram-Parts-Part.html#method_setRawAttribute">setRawAttribute()</a></li>
+                                    </ul>
+            </li>
+                    </ul>
+    </section>
+
+                </section>
+                            </div>
+            <section data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
+    <section class="phpdocumentor-search-results__dialog">
+        <header class="phpdocumentor-search-results__header">
+            <h2 class="phpdocumentor-search-results__title">Search results</h2>
+            <button class="phpdocumentor-search-results__close"><i class="fas fa-times"></i></button>
+        </header>
+        <section class="phpdocumentor-search-results__body">
+            <ul class="phpdocumentor-search-results__entries"></ul>
+        </section>
+    </section>
+</section>
+        </div>
+        <a href="classes/Telegram-Parts-ChatFullInfo.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+
+    </main>
+
+    <script>
+        cssVars({});
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/prism.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/autoloader/prism-autoloader.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-numbers/prism-line-numbers.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-highlight/prism-line-highlight.min.js"></script>
+</body>
+</html>

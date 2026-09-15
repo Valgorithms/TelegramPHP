@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+            <title>TelegramPHP Documentation</title>
+    
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="../">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png"/>
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png"/>
+    <link rel="icon" href="images/favicon.ico"/>
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png"/>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/base.css">
+            <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/template.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/themes/prism-okaidia.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-numbers/prism-line-numbers.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-highlight/prism-line-highlight.css">
+                <script src="https://cdn.jsdelivr.net/npm/fuse.js@3.4.6"></script>
+        <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+        <script src="js/template.js"></script>
+        <script src="js/search.js"></script>
+        <script defer src="js/searchIndex.js"></script>
+    </head>
+<body id="top">
+    <header class="phpdocumentor-header phpdocumentor-section">
+    <h1 class="phpdocumentor-title"><a href="" class="phpdocumentor-title__link">TelegramPHP Documentation</a></h1>
+    <input class="phpdocumentor-header__menu-button" type="checkbox" id="menu-button" name="menu-button" />
+    <label class="phpdocumentor-header__menu-icon" for="menu-button">
+        <i class="fas fa-bars"></i>
+    </label>
+    <section data-search-form class="phpdocumentor-search">
+    <label>
+        <span class="visually-hidden">Search for</span>
+        <svg class="phpdocumentor-search__icon" width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="7.5" cy="7.5" r="6.5" stroke="currentColor" stroke-width="2"/>
+            <line x1="12.4892" y1="12.2727" x2="19.1559" y2="18.9393" stroke="currentColor" stroke-width="3"/>
+        </svg>
+        <input type="search" class="phpdocumentor-field phpdocumentor-search__field" placeholder="Loading .." disabled />
+    </label>
+</section>
+
+    <nav class="phpdocumentor-topnav">
+    <ul class="phpdocumentor-topnav__menu">
+        </ul>
+</nav>
+</header>
+
+    <main class="phpdocumentor">
+        <div class="phpdocumentor-section">
+            <input class="phpdocumentor-sidebar__menu-button" type="checkbox" id="sidebar-button" name="sidebar-button" />
+<label class="phpdocumentor-sidebar__menu-icon" for="sidebar-button">
+    Menu
+</label>
+<aside class="phpdocumentor-column -three phpdocumentor-sidebar">
+                    <section class="phpdocumentor-sidebar__category -guide">
+            <h2 class="phpdocumentor-sidebar__category-header">Guide</h2>
+                                    <h4 class="phpdocumentor-sidebar__root-namespace">
+    <a href="guide/basics.html#basics" class="">Basics</a>
+</h4>
+
+                                    <h4 class="phpdocumentor-sidebar__root-namespace">
+    <a href="guide/calling.html#calling-the-api" class="">Calling the API</a>
+</h4>
+
+                                    <h4 class="phpdocumentor-sidebar__root-namespace">
+    <a href="guide/events.html#updates-and-events" class="">Updates and events</a>
+</h4>
+
+                                    <h4 class="phpdocumentor-sidebar__root-namespace">
+    <a href="guide/parts.html#parts" class="">Parts</a>
+</h4>
+
+                                    <h4 class="phpdocumentor-sidebar__root-namespace">
+    <a href="guide/builders.html#keyboards-and-files" class="">Keyboards and files</a>
+</h4>
+
+                                    <h4 class="phpdocumentor-sidebar__root-namespace">
+    <a href="guide/commands.html#commands" class="">Commands</a>
+</h4>
+
+                                    <h4 class="phpdocumentor-sidebar__root-namespace">
+    <a href="guide/webhooks.html#webhooks" class="">Webhooks</a>
+</h4>
+
+                                    <h4 class="phpdocumentor-sidebar__root-namespace">
+    <a href="guide/errors.html#handling-errors" class="">Handling errors</a>
+</h4>
+
+                                    <h4 class="phpdocumentor-sidebar__root-namespace">
+    <a href="guide/caches.html#chats-and-users" class="">Chats and users</a>
+</h4>
+
+                                    <h4 class="phpdocumentor-sidebar__root-namespace">
+    <a href="guide/generated.html#generated-from-the-spec" class="">Generated from the spec</a>
+</h4>
+
+                                    <h4 class="phpdocumentor-sidebar__root-namespace">
+    <a href="guide/faq.html#faq" class="">FAQ</a>
+</h4>
+
+                        </section>
+                <section class="phpdocumentor-sidebar__category -namespaces">
+            <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
+                                    <h4 class="phpdocumentor-sidebar__root-namespace">
+    <a href="namespaces/telegram.html" class="">Telegram</a>
+</h4>
+    <ul class="phpdocumentor-list">
+                    <li>
+                <a href="namespaces/telegram-api.html" class="">Api</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/telegram-builders.html" class="">Builders</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/telegram-commandclient.html" class="">CommandClient</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/telegram-events.html" class="">Events</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/telegram-exceptions.html" class="">Exceptions</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/telegram-factory.html" class="">Factory</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/telegram-http.html" class="">Http</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/telegram-parts.html" class="">Parts</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/telegram-polling.html" class="">Polling</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/telegram-repository.html" class="">Repository</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/telegram-webhook.html" class="">Webhook</a>
+                
+            </li>
+            </ul>
+
+                        </section>
+                <section class="phpdocumentor-sidebar__category -packages">
+            <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
+                                    <h4 class="phpdocumentor-sidebar__root-namespace">
+    <a href="packages/Application.html" class="">Application</a>
+</h4>
+
+                        </section>
+            
+    <section class="phpdocumentor-sidebar__category -reports">
+        <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
+                <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/deprecated.html">Deprecated</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/errors.html">Errors</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/markers.html">Markers</a></h3>
+    </section>
+
+    <section class="phpdocumentor-sidebar__category -indices">
+        <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="indices/files.html">Files</a></h3>
+    </section>
+</aside>
+
+            <div class="phpdocumentor-column -nine phpdocumentor-content">
+                                        <section class="section " id="commands">
+            <h1>Commands</h1>
+
+            
+    <p><code>TelegramCommandClient</code>
+ is a <code>Telegram</code>
+ client that routes slash commands - the counterpart of
+DiscordPHP&#039;s <code>DiscordCommandClient</code>
+. It is a drop-in replacement, so everything in the rest of this
+guide still applies.</p>
+
+            <pre><code class="language-php">use Telegram\CommandClient\TelegramCommandClient;
+use Telegram\Parts\Message;
+
+$bot = new TelegramCommandClient([
+    &#039;token&#039; =&gt; getenv(&#039;TELEGRAM_TOKEN&#039;),
+    &#039;description&#039; =&gt; &#039;A helpful bot&#039;,
+]);
+
+$bot-&gt;registerCommand(&#039;ping&#039;, fn () =&gt; &#039;pong&#039;, [
+    &#039;description&#039; =&gt; &#039;Checks the bot is alive&#039;,
+]);
+
+$bot-&gt;run();</code></pre>
+
+            <section class="section " id="callbacks">
+            <h2>Callbacks</h2>
+
+            
+    <p>A callback receives the message that triggered it, the arguments after the command word, and the
+client:</p>
+
+            <pre><code class="language-php">$bot-&gt;registerCommand(&#039;echo&#039;, function (Message $message, array $args, TelegramCommandClient $bot) {
+    return implode(&#039; &#039;, $args);
+});</code></pre>
+
+            
+    <p>Returning a string sends it back as a reply. Return anything else - including nothing - and the client
+stays quiet, which is what you want when the command answers for itself:</p>
+
+            <pre><code class="language-php">$bot-&gt;registerCommand(&#039;deploy&#039;, function (Message $message) use ($bot) {
+    $bot-&gt;sendChatAction($message-&gt;chat-&gt;id, &#039;typing&#039;);
+
+    $message-&gt;reply(&#039;Deploying...&#039;, [&#039;reply_markup&#039; =&gt; InlineKeyboard::new()
+        -&gt;callback(&#039;Cancel&#039;, &#039;deploy:cancel&#039;)]);
+});</code></pre>
+
+            
+    <p>An exception out of a callback is logged and emitted as <code>Event::ERROR</code>
+ rather than ending the bot.</p>
+
+    </section>
+
+            <section class="section " id="options">
+            <h2>Options</h2>
+
+            <pre><code class="language-php">$bot-&gt;registerCommand(&#039;status&#039;, fn () =&gt; &#039;green&#039;, [
+    &#039;description&#039; =&gt; &#039;Reports the current status&#039;,  // shown in /help and the command menu
+    &#039;aliases&#039; =&gt; [&#039;st&#039;, &#039;stat&#039;],                    // other words that trigger it
+    &#039;listed&#039; =&gt; false,                              // hide it from /help and the menu
+]);</code></pre>
+
+            
+    <p>Client options, on top of the ones in <a href="guide/basics.html">Basics</a>:</p>
+
+            <table>
+                <thead>
+            <tr>
+                            <th>Option</th>
+                            <th>Default</th>
+                            <th>Description</th>
+                    </tr>
+        </thead>
+    <tbody>
+    <tr>
+            <td><code>prefix</code>
+</td>
+            <td><code>/</code>
+</td>
+            <td>What a command starts with. <code>!</code>
+ and <code>.</code>
+ are common alternatives.</td>
+    </tr>
+    <tr>
+            <td><code>description</code>
+</td>
+            <td><code>&#039;&#039;</code>
+</td>
+            <td>Shown at the top of <code>/help</code>
+.</td>
+    </tr>
+    <tr>
+            <td><code>register_commands</code>
+</td>
+            <td><code>true</code>
+</td>
+            <td>Publish the listed commands with <code>setMyCommands</code>
+ once the bot is ready.</td>
+    </tr>
+    <tr>
+            <td><code>help_command</code>
+</td>
+            <td><code>help</code>
+</td>
+            <td>Name of the built-in help command. <code>null</code>
+ disables it.</td>
+    </tr>
+    <tr>
+            <td><code>case_insensitive</code>
+</td>
+            <td><code>true</code>
+</td>
+            <td>Match <code>/Ping</code>
+ as <code>/ping</code>
+.</td>
+    </tr>
+</tbody>
+</table>
+
+    </section>
+
+            <section class="section " id="addressing">
+            <h2>Addressing</h2>
+
+            
+    <p>In a group, commands are usually written <code>/command@yourbot</code>
+ so several bots can coexist. The client
+accepts both forms, and ignores a command addressed to a different bot:</p>
+
+            <pre><code class="language-text">/ping          -&gt; handled
+/ping@yourbot  -&gt; handled
+/ping@otherbot -&gt; ignored</code></pre>
+
+            
+    <p>That check needs the bot&#039;s own username, which it learns at startup, so it only applies once the
+client is ready.</p>
+
+    </section>
+
+            <section class="section " id="the-command-menu">
+            <h2>The command menu</h2>
+
+            
+    <p>With <code>register_commands</code>
+ left on, the listed commands are published to Telegram on <code>ready</code>
+, which
+is what fills the menu beside the message box in every client:</p>
+
+            <pre><code class="language-php">$bot-&gt;publishCommands();   // or do it yourself, whenever</code></pre>
+
+            
+    <p>Only commands with <code>listed =&gt; true</code>
+ (the default) are published, and their <code>description</code>
+ is what
+users see. Publishing replaces the whole menu, so it reflects exactly what the running build
+registers.</p>
+
+    </section>
+
+            <section class="section " id="help">
+            <h2>Help</h2>
+
+            
+    <p><code>/help</code>
+ is registered for you and lists the description followed by every listed command. Turn it
+off with <code>help_command =&gt; null</code>
+ and register your own if you would rather write it yourself.</p>
+
+    </section>
+
+            <section class="section " id="managing-commands">
+            <h2>Managing commands</h2>
+
+            <pre><code class="language-php">$bot-&gt;getCommand(&#039;ping&#039;);       // the Command, or null
+$bot-&gt;getCommands();            // name =&gt; Command, for every registered command
+$bot-&gt;unregisterCommand(&#039;ping&#039;); // forgets it, aliases included</code></pre>
+
+            
+    <p>Registering the same name twice is an <code>InvalidArgumentException</code>
+ rather than a silent overwrite.</p>
+
+    </section>
+
+            <section class="section " id="beyond-slash-commands">
+            <h2>Beyond slash commands</h2>
+
+            
+    <p>Telegram has no equivalent of Discord&#039;s application commands - a slash command is an ordinary message
+that happens to start with <code>/</code>
+, and the published menu is only a hint to the client. Anything you
+can do with a message, you can do with a command, and anything the command client does you could
+write by hand on <code>Event::MESSAGE</code>
+.</p>
+
+    </section>
+
+    </section>
+
+                            </div>
+            <section data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
+    <section class="phpdocumentor-search-results__dialog">
+        <header class="phpdocumentor-search-results__header">
+            <h2 class="phpdocumentor-search-results__title">Search results</h2>
+            <button class="phpdocumentor-search-results__close"><i class="fas fa-times"></i></button>
+        </header>
+        <section class="phpdocumentor-search-results__body">
+            <ul class="phpdocumentor-search-results__entries"></ul>
+        </section>
+    </section>
+</section>
+        </div>
+        <a href="#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+
+    </main>
+
+    <script>
+        cssVars({});
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/prism.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/autoloader/prism-autoloader.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-numbers/prism-line-numbers.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-highlight/prism-line-highlight.min.js"></script>
+</body>
+</html>

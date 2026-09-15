@@ -1,0 +1,1622 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+            <title>TelegramPHP Documentation</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="../">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png"/>
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png"/>
+    <link rel="icon" href="images/favicon.ico"/>
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png"/>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/base.css">
+            <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/template.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/themes/prism-okaidia.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-numbers/prism-line-numbers.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-highlight/prism-line-highlight.css">
+                <script src="https://cdn.jsdelivr.net/npm/fuse.js@3.4.6"></script>
+        <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+        <script src="js/template.js"></script>
+        <script src="js/search.js"></script>
+        <script defer src="js/searchIndex.js"></script>
+    </head>
+<body id="top">
+    <header class="phpdocumentor-header phpdocumentor-section">
+    <h1 class="phpdocumentor-title"><a href="" class="phpdocumentor-title__link">TelegramPHP Documentation</a></h1>
+    <input class="phpdocumentor-header__menu-button" type="checkbox" id="menu-button" name="menu-button" />
+    <label class="phpdocumentor-header__menu-icon" for="menu-button">
+        <i class="fas fa-bars"></i>
+    </label>
+    <section data-search-form class="phpdocumentor-search">
+    <label>
+        <span class="visually-hidden">Search for</span>
+        <svg class="phpdocumentor-search__icon" width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="7.5" cy="7.5" r="6.5" stroke="currentColor" stroke-width="2"/>
+            <line x1="12.4892" y1="12.2727" x2="19.1559" y2="18.9393" stroke="currentColor" stroke-width="3"/>
+        </svg>
+        <input type="search" class="phpdocumentor-field phpdocumentor-search__field" placeholder="Loading .." disabled />
+    </label>
+</section>
+
+    <nav class="phpdocumentor-topnav">
+    <ul class="phpdocumentor-topnav__menu">
+        </ul>
+</nav>
+</header>
+
+    <main class="phpdocumentor">
+        <div class="phpdocumentor-section">
+            <input class="phpdocumentor-sidebar__menu-button" type="checkbox" id="sidebar-button" name="sidebar-button" />
+<label class="phpdocumentor-sidebar__menu-icon" for="sidebar-button">
+    Menu
+</label>
+<aside class="phpdocumentor-column -three phpdocumentor-sidebar">
+                    <section class="phpdocumentor-sidebar__category -guide">
+            <h2 class="phpdocumentor-sidebar__category-header">Guide</h2>
+                                    <h4 class="phpdocumentor-sidebar__root-namespace">
+    <a href="guide/basics.html#basics" class="">Basics</a>
+</h4>
+
+                                    <h4 class="phpdocumentor-sidebar__root-namespace">
+    <a href="guide/calling.html#calling-the-api" class="">Calling the API</a>
+</h4>
+
+                                    <h4 class="phpdocumentor-sidebar__root-namespace">
+    <a href="guide/events.html#updates-and-events" class="">Updates and events</a>
+</h4>
+
+                                    <h4 class="phpdocumentor-sidebar__root-namespace">
+    <a href="guide/parts.html#parts" class="">Parts</a>
+</h4>
+
+                                    <h4 class="phpdocumentor-sidebar__root-namespace">
+    <a href="guide/builders.html#keyboards-and-files" class="">Keyboards and files</a>
+</h4>
+
+                                    <h4 class="phpdocumentor-sidebar__root-namespace">
+    <a href="guide/commands.html#commands" class="">Commands</a>
+</h4>
+
+                                    <h4 class="phpdocumentor-sidebar__root-namespace">
+    <a href="guide/webhooks.html#webhooks" class="">Webhooks</a>
+</h4>
+
+                                    <h4 class="phpdocumentor-sidebar__root-namespace">
+    <a href="guide/errors.html#handling-errors" class="">Handling errors</a>
+</h4>
+
+                                    <h4 class="phpdocumentor-sidebar__root-namespace">
+    <a href="guide/caches.html#chats-and-users" class="">Chats and users</a>
+</h4>
+
+                                    <h4 class="phpdocumentor-sidebar__root-namespace">
+    <a href="guide/generated.html#generated-from-the-spec" class="">Generated from the spec</a>
+</h4>
+
+                                    <h4 class="phpdocumentor-sidebar__root-namespace">
+    <a href="guide/faq.html#faq" class="">FAQ</a>
+</h4>
+
+                        </section>
+                <section class="phpdocumentor-sidebar__category -namespaces">
+            <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
+                                    <h4 class="phpdocumentor-sidebar__root-namespace">
+    <a href="namespaces/telegram.html" class="">Telegram</a>
+</h4>
+    <ul class="phpdocumentor-list">
+                    <li>
+                <a href="namespaces/telegram-api.html" class="">Api</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/telegram-builders.html" class="">Builders</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/telegram-commandclient.html" class="">CommandClient</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/telegram-events.html" class="">Events</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/telegram-exceptions.html" class="">Exceptions</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/telegram-factory.html" class="">Factory</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/telegram-http.html" class="">Http</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/telegram-parts.html" class="">Parts</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/telegram-polling.html" class="">Polling</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/telegram-repository.html" class="">Repository</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/telegram-webhook.html" class="">Webhook</a>
+                
+            </li>
+            </ul>
+
+                        </section>
+                <section class="phpdocumentor-sidebar__category -packages">
+            <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
+                                    <h4 class="phpdocumentor-sidebar__root-namespace">
+    <a href="packages/Application.html" class="">Application</a>
+</h4>
+
+                        </section>
+            
+    <section class="phpdocumentor-sidebar__category -reports">
+        <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
+                <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/deprecated.html">Deprecated</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/errors.html">Errors</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/markers.html">Markers</a></h3>
+    </section>
+
+    <section class="phpdocumentor-sidebar__category -indices">
+        <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="indices/files.html">Files</a></h3>
+    </section>
+</aside>
+
+            <div class="phpdocumentor-column -nine phpdocumentor-content">
+                                <section>
+                                        <ul class="phpdocumentor-breadcrumbs">
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/telegram.html">Telegram</a></li>
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/telegram-events.html">Events</a></li>
+    </ul>
+
+    <article class="phpdocumentor-element -class">
+        <h2 class="phpdocumentor-content__title">
+    Event
+
+    
+            <div class="phpdocumentor-element__package">
+            in package
+            <ul class="phpdocumentor-breadcrumbs">
+                                    <li class="phpdocumentor-breadcrumb"><a href="packages/Application.html">Application</a></li>
+                            </ul>
+        </div>
+    
+    
+    </h2>
+
+<div class="phpdocumentor-label-line">
+
+    <div class="phpdocumentor-label phpdocumentor-label--success"><span>Final</span><span>Yes</span></div>
+
+
+</div>
+
+        <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Telegram/Events/Event.php"><a href="files/src-telegram-events-event.html"><abbr title="src/Telegram/Events/Event.php">Event.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">34</span>
+
+    </aside>
+
+            <p class="phpdocumentor-summary">This file is generated from spec/openapi.json (Bot API 10.3) by tools/generate.php.</p>
+
+
+    <section class="phpdocumentor-description"><p>Do not edit it by hand - run <code class="prettyprint">composer spec:build</code> instead.</p>
+<p>The update types a bot can receive, which are also the event names
+<a href="classes/Telegram-Telegram.html"><abbr title="\Telegram\Telegram">Telegram</abbr></a> emits:</p>
+<pre class="prettyprint"><code class="language-php">$telegram-&gt;on(Event::MESSAGE, function (Message $message) {
+    $message-&gt;reply('hello');
+});
+</code></pre>
+<p>The same strings go in the <code class="prettyprint">allowed_updates</code> array of <code class="prettyprint">getUpdates</code> and
+<code class="prettyprint">setWebhook</code>; <abbr title="\Telegram\Events\all()">all()</abbr> is the full list.</p>
+</section>
+
+
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="classes/Telegram-Events-Event.html#tags" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                    <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">link</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
+                                                                                                        <a class="phpdocumentor-tag-link" href="https://core.telegram.org/bots/api#update"> https://core.telegram.org/bots/api#update </a>
+                                    </dd>
+                                <dt class="phpdocumentor-tag-list__entry">
+                <span class="phpdocumentor-tag__name">since</span>
+            </dt>
+                            <dd class="phpdocumentor-tag-list__definition">
+                                                                                                            <section class="phpdocumentor-description"><p>Bot API 10.3</p>
+</section>
+
+                                    </dd>
+                        </dl>
+
+    
+    
+<h3 id="toc">
+    Table of Contents
+    <a href="classes/Telegram-Events-Event.html#toc" class="headerlink"><i class="fas fa-link"></i></a>
+
+</h3>
+
+
+
+
+
+
+
+<h4 id="toc-constants">
+    Constants
+    <a href="classes/Telegram-Events-Event.html#toc-constants" class="headerlink"><i class="fas fa-link"></i></a>
+
+</h4>
+<dl class="phpdocumentor-table-of-contents">
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Telegram-Events-Event.html#constant_BUSINESS_CONNECTION">BUSINESS_CONNECTION</a>
+    <span>
+        &nbsp;: mixed&nbsp;= &#039;business_connection&#039;                            </span>
+</dt>
+<dd>The bot was connected to or disconnected from a business account, or a user edited an existing connection with the bot</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Telegram-Events-Event.html#constant_BUSINESS_MESSAGE">BUSINESS_MESSAGE</a>
+    <span>
+        &nbsp;: mixed&nbsp;= &#039;business_message&#039;                            </span>
+</dt>
+<dd>New message from a connected business account</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Telegram-Events-Event.html#constant_CALLBACK_QUERY">CALLBACK_QUERY</a>
+    <span>
+        &nbsp;: mixed&nbsp;= &#039;callback_query&#039;                            </span>
+</dt>
+<dd>New incoming callback query</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Telegram-Events-Event.html#constant_CHANNEL_POST">CHANNEL_POST</a>
+    <span>
+        &nbsp;: mixed&nbsp;= &#039;channel_post&#039;                            </span>
+</dt>
+<dd>New incoming channel post of any kind - text, photo, sticker, etc.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Telegram-Events-Event.html#constant_CHAT_BOOST">CHAT_BOOST</a>
+    <span>
+        &nbsp;: mixed&nbsp;= &#039;chat_boost&#039;                            </span>
+</dt>
+<dd>A chat boost was added or changed. The bot must be an administrator in the chat to receive these updates.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Telegram-Events-Event.html#constant_CHAT_JOIN_REQUEST">CHAT_JOIN_REQUEST</a>
+    <span>
+        &nbsp;: mixed&nbsp;= &#039;chat_join_request&#039;                            </span>
+</dt>
+<dd>A request to join the chat has been sent. The bot must have the can_invite_users administrator right in the chat to receive these updates.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Telegram-Events-Event.html#constant_CHAT_MEMBER">CHAT_MEMBER</a>
+    <span>
+        &nbsp;: mixed&nbsp;= &#039;chat_member&#039;                            </span>
+</dt>
+<dd>A chat member&#039;s status was updated in a chat. The bot must be an administrator in the chat and must explicitly specify &quot;chat_member&quot; in the list of allowed_updates to receive these updates.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Telegram-Events-Event.html#constant_CHOSEN_INLINE_RESULT">CHOSEN_INLINE_RESULT</a>
+    <span>
+        &nbsp;: mixed&nbsp;= &#039;chosen_inline_result&#039;                            </span>
+</dt>
+<dd>The result of an inline query that was chosen by a user and sent to their chat partner. Please see our documentation on the feedback collecting for details on how to enable these updates for your bot.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Telegram-Events-Event.html#constant_DELETED_BUSINESS_MESSAGES">DELETED_BUSINESS_MESSAGES</a>
+    <span>
+        &nbsp;: mixed&nbsp;= &#039;deleted_business_messages&#039;                            </span>
+</dt>
+<dd>Messages were deleted from a connected business account</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Telegram-Events-Event.html#constant_EDITED_BUSINESS_MESSAGE">EDITED_BUSINESS_MESSAGE</a>
+    <span>
+        &nbsp;: mixed&nbsp;= &#039;edited_business_message&#039;                            </span>
+</dt>
+<dd>New version of a message from a connected business account</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Telegram-Events-Event.html#constant_EDITED_CHANNEL_POST">EDITED_CHANNEL_POST</a>
+    <span>
+        &nbsp;: mixed&nbsp;= &#039;edited_channel_post&#039;                            </span>
+</dt>
+<dd>New version of a channel post that is known to the bot and was edited. This update may at times be triggered by changes to message fields that are either unavailable or not actively used by your bot.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Telegram-Events-Event.html#constant_EDITED_MESSAGE">EDITED_MESSAGE</a>
+    <span>
+        &nbsp;: mixed&nbsp;= &#039;edited_message&#039;                            </span>
+</dt>
+<dd>New version of a message that is known to the bot and was edited. This update may at times be triggered by changes to message fields that are either unavailable or not actively used by your bot.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Telegram-Events-Event.html#constant_ERROR">ERROR</a>
+    <span>
+        &nbsp;: mixed&nbsp;= &#039;error&#039;                            </span>
+</dt>
+<dd>Emitted with any error the client could not hand to a caller.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Telegram-Events-Event.html#constant_GUEST_MESSAGE">GUEST_MESSAGE</a>
+    <span>
+        &nbsp;: mixed&nbsp;= &#039;guest_message&#039;                            </span>
+</dt>
+<dd>New guest message. The bot can use the field Message.guest_query_id and the method answerGuestQuery to send a message in response.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Telegram-Events-Event.html#constant_INLINE_QUERY">INLINE_QUERY</a>
+    <span>
+        &nbsp;: mixed&nbsp;= &#039;inline_query&#039;                            </span>
+</dt>
+<dd>New incoming inline query</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Telegram-Events-Event.html#constant_MANAGED_BOT">MANAGED_BOT</a>
+    <span>
+        &nbsp;: mixed&nbsp;= &#039;managed_bot&#039;                            </span>
+</dt>
+<dd>A new bot was created to be managed by the bot, or token or owner of a managed bot was changed</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Telegram-Events-Event.html#constant_MESSAGE">MESSAGE</a>
+    <span>
+        &nbsp;: mixed&nbsp;= &#039;message&#039;                            </span>
+</dt>
+<dd>New incoming message of any kind - text, photo, sticker, etc.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Telegram-Events-Event.html#constant_MESSAGE_REACTION">MESSAGE_REACTION</a>
+    <span>
+        &nbsp;: mixed&nbsp;= &#039;message_reaction&#039;                            </span>
+</dt>
+<dd>A reaction to a message was changed by a user. The bot must be an administrator in the chat and must explicitly specify &quot;message_reaction&quot; in the list of allowed_updates to receive these updates. The update isn&#039;t received for reactions set by bots.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Telegram-Events-Event.html#constant_MESSAGE_REACTION_COUNT">MESSAGE_REACTION_COUNT</a>
+    <span>
+        &nbsp;: mixed&nbsp;= &#039;message_reaction_count&#039;                            </span>
+</dt>
+<dd>Reactions to a message with anonymous reactions were changed. The bot must be an administrator in the chat and must explicitly specify &quot;message_reaction_count&quot; in the list of allowed_updates to receive these updates. The updates are grouped and can be sent with delay up to a few minutes.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Telegram-Events-Event.html#constant_MY_CHAT_MEMBER">MY_CHAT_MEMBER</a>
+    <span>
+        &nbsp;: mixed&nbsp;= &#039;my_chat_member&#039;                            </span>
+</dt>
+<dd>The bot&#039;s chat member status was updated in a chat. For private chats, this update is received only when the bot is blocked or unblocked by the user.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Telegram-Events-Event.html#constant_PAYLOAD_TYPES">PAYLOAD_TYPES</a>
+    <span>
+        &nbsp;: array&lt;string, string&gt;&nbsp;= [&#039;message&#039; =&gt; &#039;Message&#039;, &#039;edited_message&#039; =&gt; &#039;M...                            </span>
+</dt>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Telegram-Events-Event.html#constant_POLL">POLL</a>
+    <span>
+        &nbsp;: mixed&nbsp;= &#039;poll&#039;                            </span>
+</dt>
+<dd>New poll state. Bots receive only updates about manually stopped polls and polls, which are sent by the bot.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Telegram-Events-Event.html#constant_POLL_ANSWER">POLL_ANSWER</a>
+    <span>
+        &nbsp;: mixed&nbsp;= &#039;poll_answer&#039;                            </span>
+</dt>
+<dd>A user changed their answer in a non-anonymous poll. Bots receive new votes only in polls that were sent by the bot itself.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Telegram-Events-Event.html#constant_PRE_CHECKOUT_QUERY">PRE_CHECKOUT_QUERY</a>
+    <span>
+        &nbsp;: mixed&nbsp;= &#039;pre_checkout_query&#039;                            </span>
+</dt>
+<dd>New incoming pre-checkout query. Contains full information about checkout.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Telegram-Events-Event.html#constant_PURCHASED_PAID_MEDIA">PURCHASED_PAID_MEDIA</a>
+    <span>
+        &nbsp;: mixed&nbsp;= &#039;purchased_paid_media&#039;                            </span>
+</dt>
+<dd>A user purchased paid media with a non-empty payload sent by the bot in a non-channel chat</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Telegram-Events-Event.html#constant_READY">READY</a>
+    <span>
+        &nbsp;: mixed&nbsp;= &#039;ready&#039;                            </span>
+</dt>
+<dd>Emitted once the bot has identified itself and updates are flowing.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Telegram-Events-Event.html#constant_REMOVED_CHAT_BOOST">REMOVED_CHAT_BOOST</a>
+    <span>
+        &nbsp;: mixed&nbsp;= &#039;removed_chat_boost&#039;                            </span>
+</dt>
+<dd>A boost was removed from a chat. The bot must be an administrator in the chat to receive these updates.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Telegram-Events-Event.html#constant_SHIPPING_QUERY">SHIPPING_QUERY</a>
+    <span>
+        &nbsp;: mixed&nbsp;= &#039;shipping_query&#039;                            </span>
+</dt>
+<dd>New incoming shipping query. Only for invoices with flexible price.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Telegram-Events-Event.html#constant_STOPPED_MESSAGE_GENERATION">STOPPED_MESSAGE_GENERATION</a>
+    <span>
+        &nbsp;: mixed&nbsp;= &#039;stopped_message_generation&#039;                            </span>
+</dt>
+<dd>A user asked the bot to stop the generation of a message</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Telegram-Events-Event.html#constant_SUBSCRIPTION">SUBSCRIPTION</a>
+    <span>
+        &nbsp;: mixed&nbsp;= &#039;subscription&#039;                            </span>
+</dt>
+<dd>User payment subscription has changed</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a class="" href="classes/Telegram-Events-Event.html#constant_UPDATE">UPDATE</a>
+    <span>
+        &nbsp;: mixed&nbsp;= &#039;update&#039;                            </span>
+</dt>
+<dd>Emitted for every update, whatever its type, with the Update part.</dd>
+
+    </dl>
+
+
+
+<h4 id="toc-methods">
+    Methods
+    <a href="classes/Telegram-Events-Event.html#toc-methods" class="headerlink"><i class="fas fa-link"></i></a>
+
+</h4>
+<dl class="phpdocumentor-table-of-contents">
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a class="" href="classes/Telegram-Events-Event.html#method_all">all()</a>
+    <span>
+                                &nbsp;: array&lt;int, string&gt;    </span>
+</dt>
+
+    </dl>
+
+
+
+        
+    <section class="phpdocumentor-constants">
+        <h3 class="phpdocumentor-elements__header" id="constants">
+            Constants
+            <a href="classes/Telegram-Events-Event.html#constants" class="headerlink"><i class="fas fa-link"></i></a>
+
+        </h3>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_BUSINESS_CONNECTION">
+        BUSINESS_CONNECTION
+        <a href="classes/Telegram-Events-Event.html#constant_BUSINESS_CONNECTION" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Telegram/Events/Event.php"><a href="files/src-telegram-events-event.html"><abbr title="src/Telegram/Events/Event.php">Event.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">58</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">The bot was connected to or disconnected from a business account, or a user edited an existing connection with the bot</p>
+
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">BUSINESS_CONNECTION</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;business_connection&#039;</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_BUSINESS_MESSAGE">
+        BUSINESS_MESSAGE
+        <a href="classes/Telegram-Events-Event.html#constant_BUSINESS_MESSAGE" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Telegram/Events/Event.php"><a href="files/src-telegram-events-event.html"><abbr title="src/Telegram/Events/Event.php">Event.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">61</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">New message from a connected business account</p>
+
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">BUSINESS_MESSAGE</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;business_message&#039;</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_CALLBACK_QUERY">
+        CALLBACK_QUERY
+        <a href="classes/Telegram-Events-Event.html#constant_CALLBACK_QUERY" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Telegram/Events/Event.php"><a href="files/src-telegram-events-event.html"><abbr title="src/Telegram/Events/Event.php">Event.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">85</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">New incoming callback query</p>
+
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">CALLBACK_QUERY</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;callback_query&#039;</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_CHANNEL_POST">
+        CHANNEL_POST
+        <a href="classes/Telegram-Events-Event.html#constant_CHANNEL_POST" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Telegram/Events/Event.php"><a href="files/src-telegram-events-event.html"><abbr title="src/Telegram/Events/Event.php">Event.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">52</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">New incoming channel post of any kind - text, photo, sticker, etc.</p>
+
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">CHANNEL_POST</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;channel_post&#039;</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_CHAT_BOOST">
+        CHAT_BOOST
+        <a href="classes/Telegram-Events-Event.html#constant_CHAT_BOOST" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Telegram/Events/Event.php"><a href="files/src-telegram-events-event.html"><abbr title="src/Telegram/Events/Event.php">Event.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">112</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">A chat boost was added or changed. The bot must be an administrator in the chat to receive these updates.</p>
+
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">CHAT_BOOST</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;chat_boost&#039;</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_CHAT_JOIN_REQUEST">
+        CHAT_JOIN_REQUEST
+        <a href="classes/Telegram-Events-Event.html#constant_CHAT_JOIN_REQUEST" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Telegram/Events/Event.php"><a href="files/src-telegram-events-event.html"><abbr title="src/Telegram/Events/Event.php">Event.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">109</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">A request to join the chat has been sent. The bot must have the can_invite_users administrator right in the chat to receive these updates.</p>
+
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">CHAT_JOIN_REQUEST</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;chat_join_request&#039;</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_CHAT_MEMBER">
+        CHAT_MEMBER
+        <a href="classes/Telegram-Events-Event.html#constant_CHAT_MEMBER" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Telegram/Events/Event.php"><a href="files/src-telegram-events-event.html"><abbr title="src/Telegram/Events/Event.php">Event.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">106</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">A chat member&#039;s status was updated in a chat. The bot must be an administrator in the chat and must explicitly specify &quot;chat_member&quot; in the list of allowed_updates to receive these updates.</p>
+
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">CHAT_MEMBER</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;chat_member&#039;</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_CHOSEN_INLINE_RESULT">
+        CHOSEN_INLINE_RESULT
+        <a href="classes/Telegram-Events-Event.html#constant_CHOSEN_INLINE_RESULT" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Telegram/Events/Event.php"><a href="files/src-telegram-events-event.html"><abbr title="src/Telegram/Events/Event.php">Event.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">82</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">The result of an inline query that was chosen by a user and sent to their chat partner. Please see our documentation on the feedback collecting for details on how to enable these updates for your bot.</p>
+
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">CHOSEN_INLINE_RESULT</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;chosen_inline_result&#039;</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_DELETED_BUSINESS_MESSAGES">
+        DELETED_BUSINESS_MESSAGES
+        <a href="classes/Telegram-Events-Event.html#constant_DELETED_BUSINESS_MESSAGES" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Telegram/Events/Event.php"><a href="files/src-telegram-events-event.html"><abbr title="src/Telegram/Events/Event.php">Event.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">67</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Messages were deleted from a connected business account</p>
+
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">DELETED_BUSINESS_MESSAGES</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;deleted_business_messages&#039;</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_EDITED_BUSINESS_MESSAGE">
+        EDITED_BUSINESS_MESSAGE
+        <a href="classes/Telegram-Events-Event.html#constant_EDITED_BUSINESS_MESSAGE" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Telegram/Events/Event.php"><a href="files/src-telegram-events-event.html"><abbr title="src/Telegram/Events/Event.php">Event.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">64</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">New version of a message from a connected business account</p>
+
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">EDITED_BUSINESS_MESSAGE</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;edited_business_message&#039;</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_EDITED_CHANNEL_POST">
+        EDITED_CHANNEL_POST
+        <a href="classes/Telegram-Events-Event.html#constant_EDITED_CHANNEL_POST" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Telegram/Events/Event.php"><a href="files/src-telegram-events-event.html"><abbr title="src/Telegram/Events/Event.php">Event.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">55</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">New version of a channel post that is known to the bot and was edited. This update may at times be triggered by changes to message fields that are either unavailable or not actively used by your bot.</p>
+
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">EDITED_CHANNEL_POST</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;edited_channel_post&#039;</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_EDITED_MESSAGE">
+        EDITED_MESSAGE
+        <a href="classes/Telegram-Events-Event.html#constant_EDITED_MESSAGE" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Telegram/Events/Event.php"><a href="files/src-telegram-events-event.html"><abbr title="src/Telegram/Events/Event.php">Event.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">49</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">New version of a message that is known to the bot and was edited. This update may at times be triggered by changes to message fields that are either unavailable or not actively used by your bot.</p>
+
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">EDITED_MESSAGE</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;edited_message&#039;</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_ERROR">
+        ERROR
+        <a href="classes/Telegram-Events-Event.html#constant_ERROR" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Telegram/Events/Event.php"><a href="files/src-telegram-events-event.html"><abbr title="src/Telegram/Events/Event.php">Event.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">43</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Emitted with any error the client could not hand to a caller.</p>
+
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">ERROR</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;error&#039;</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_GUEST_MESSAGE">
+        GUEST_MESSAGE
+        <a href="classes/Telegram-Events-Event.html#constant_GUEST_MESSAGE" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Telegram/Events/Event.php"><a href="files/src-telegram-events-event.html"><abbr title="src/Telegram/Events/Event.php">Event.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">70</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">New guest message. The bot can use the field Message.guest_query_id and the method answerGuestQuery to send a message in response.</p>
+
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">GUEST_MESSAGE</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;guest_message&#039;</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_INLINE_QUERY">
+        INLINE_QUERY
+        <a href="classes/Telegram-Events-Event.html#constant_INLINE_QUERY" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Telegram/Events/Event.php"><a href="files/src-telegram-events-event.html"><abbr title="src/Telegram/Events/Event.php">Event.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">79</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">New incoming inline query</p>
+
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">INLINE_QUERY</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;inline_query&#039;</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_MANAGED_BOT">
+        MANAGED_BOT
+        <a href="classes/Telegram-Events-Event.html#constant_MANAGED_BOT" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Telegram/Events/Event.php"><a href="files/src-telegram-events-event.html"><abbr title="src/Telegram/Events/Event.php">Event.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">118</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">A new bot was created to be managed by the bot, or token or owner of a managed bot was changed</p>
+
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">MANAGED_BOT</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;managed_bot&#039;</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_MESSAGE">
+        MESSAGE
+        <a href="classes/Telegram-Events-Event.html#constant_MESSAGE" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Telegram/Events/Event.php"><a href="files/src-telegram-events-event.html"><abbr title="src/Telegram/Events/Event.php">Event.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">46</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">New incoming message of any kind - text, photo, sticker, etc.</p>
+
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">MESSAGE</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;message&#039;</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_MESSAGE_REACTION">
+        MESSAGE_REACTION
+        <a href="classes/Telegram-Events-Event.html#constant_MESSAGE_REACTION" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Telegram/Events/Event.php"><a href="files/src-telegram-events-event.html"><abbr title="src/Telegram/Events/Event.php">Event.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">73</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">A reaction to a message was changed by a user. The bot must be an administrator in the chat and must explicitly specify &quot;message_reaction&quot; in the list of allowed_updates to receive these updates. The update isn&#039;t received for reactions set by bots.</p>
+
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">MESSAGE_REACTION</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;message_reaction&#039;</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_MESSAGE_REACTION_COUNT">
+        MESSAGE_REACTION_COUNT
+        <a href="classes/Telegram-Events-Event.html#constant_MESSAGE_REACTION_COUNT" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Telegram/Events/Event.php"><a href="files/src-telegram-events-event.html"><abbr title="src/Telegram/Events/Event.php">Event.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">76</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Reactions to a message with anonymous reactions were changed. The bot must be an administrator in the chat and must explicitly specify &quot;message_reaction_count&quot; in the list of allowed_updates to receive these updates. The updates are grouped and can be sent with delay up to a few minutes.</p>
+
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">MESSAGE_REACTION_COUNT</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;message_reaction_count&#039;</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_MY_CHAT_MEMBER">
+        MY_CHAT_MEMBER
+        <a href="classes/Telegram-Events-Event.html#constant_MY_CHAT_MEMBER" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Telegram/Events/Event.php"><a href="files/src-telegram-events-event.html"><abbr title="src/Telegram/Events/Event.php">Event.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">103</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">The bot&#039;s chat member status was updated in a chat. For private chats, this update is received only when the bot is blocked or unblocked by the user.</p>
+
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">MY_CHAT_MEMBER</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;my_chat_member&#039;</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_PAYLOAD_TYPES">
+        PAYLOAD_TYPES
+        <a href="classes/Telegram-Events-Event.html#constant_PAYLOAD_TYPES" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Telegram/Events/Event.php"><a href="files/src-telegram-events-event.html"><abbr title="src/Telegram/Events/Event.php">Event.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">127</span>
+
+    </aside>
+
+    
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">array&lt;string, string&gt;</span>
+    <span class="phpdocumentor-signature__name">PAYLOAD_TYPES</span>
+    = <span class="phpdocumentor-signature__default-value">[&#039;message&#039; =&gt; &#039;Message&#039;, &#039;edited_message&#039; =&gt; &#039;Message&#039;, &#039;channel_post&#039; =&gt; &#039;Message&#039;, &#039;edited_channel_post&#039; =&gt; &#039;Message&#039;, &#039;business_connection&#039; =&gt; &#039;BusinessConnection&#039;, &#039;business_message&#039; =&gt; &#039;Message&#039;, &#039;edited_business_message&#039; =&gt; &#039;Message&#039;, &#039;deleted_business_messages&#039; =&gt; &#039;BusinessMessagesDeleted&#039;, &#039;guest_message&#039; =&gt; &#039;Message&#039;, &#039;message_reaction&#039; =&gt; &#039;MessageReactionUpdated&#039;, &#039;message_reaction_count&#039; =&gt; &#039;MessageReactionCountUpdated&#039;, &#039;inline_query&#039; =&gt; &#039;InlineQuery&#039;, &#039;chosen_inline_result&#039; =&gt; &#039;ChosenInlineResult&#039;, &#039;callback_query&#039; =&gt; &#039;CallbackQuery&#039;, &#039;shipping_query&#039; =&gt; &#039;ShippingQuery&#039;, &#039;pre_checkout_query&#039; =&gt; &#039;PreCheckoutQuery&#039;, &#039;purchased_paid_media&#039; =&gt; &#039;PaidMediaPurchased&#039;, &#039;poll&#039; =&gt; &#039;Poll&#039;, &#039;poll_answer&#039; =&gt; &#039;PollAnswer&#039;, &#039;my_chat_member&#039; =&gt; &#039;ChatMemberUpdated&#039;, &#039;chat_member&#039; =&gt; &#039;ChatMemberUpdated&#039;, &#039;chat_join_request&#039; =&gt; &#039;ChatJoinRequest&#039;, &#039;chat_boost&#039; =&gt; &#039;ChatBoostUpdated&#039;, &#039;removed_chat_boost&#039; =&gt; &#039;ChatBoostRemoved&#039;, &#039;managed_bot&#039; =&gt; &#039;ManagedBotUpdated&#039;, &#039;subscription&#039; =&gt; &#039;BotSubscriptionUpdated&#039;, &#039;stopped_message_generation&#039; =&gt; &#039;MessageGenerationStopped&#039;]</span>
+</code>
+
+
+    
+        <section class="phpdocumentor-description"><p>Update field =&gt; the part class it carries.</p>
+</section>
+
+    
+
+        
+    </article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_POLL">
+        POLL
+        <a href="classes/Telegram-Events-Event.html#constant_POLL" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Telegram/Events/Event.php"><a href="files/src-telegram-events-event.html"><abbr title="src/Telegram/Events/Event.php">Event.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">97</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">New poll state. Bots receive only updates about manually stopped polls and polls, which are sent by the bot.</p>
+
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">POLL</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;poll&#039;</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_POLL_ANSWER">
+        POLL_ANSWER
+        <a href="classes/Telegram-Events-Event.html#constant_POLL_ANSWER" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Telegram/Events/Event.php"><a href="files/src-telegram-events-event.html"><abbr title="src/Telegram/Events/Event.php">Event.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">100</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">A user changed their answer in a non-anonymous poll. Bots receive new votes only in polls that were sent by the bot itself.</p>
+
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">POLL_ANSWER</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;poll_answer&#039;</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_PRE_CHECKOUT_QUERY">
+        PRE_CHECKOUT_QUERY
+        <a href="classes/Telegram-Events-Event.html#constant_PRE_CHECKOUT_QUERY" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Telegram/Events/Event.php"><a href="files/src-telegram-events-event.html"><abbr title="src/Telegram/Events/Event.php">Event.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">91</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">New incoming pre-checkout query. Contains full information about checkout.</p>
+
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">PRE_CHECKOUT_QUERY</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;pre_checkout_query&#039;</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_PURCHASED_PAID_MEDIA">
+        PURCHASED_PAID_MEDIA
+        <a href="classes/Telegram-Events-Event.html#constant_PURCHASED_PAID_MEDIA" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Telegram/Events/Event.php"><a href="files/src-telegram-events-event.html"><abbr title="src/Telegram/Events/Event.php">Event.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">94</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">A user purchased paid media with a non-empty payload sent by the bot in a non-channel chat</p>
+
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">PURCHASED_PAID_MEDIA</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;purchased_paid_media&#039;</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_READY">
+        READY
+        <a href="classes/Telegram-Events-Event.html#constant_READY" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Telegram/Events/Event.php"><a href="files/src-telegram-events-event.html"><abbr title="src/Telegram/Events/Event.php">Event.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">40</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Emitted once the bot has identified itself and updates are flowing.</p>
+
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">READY</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;ready&#039;</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_REMOVED_CHAT_BOOST">
+        REMOVED_CHAT_BOOST
+        <a href="classes/Telegram-Events-Event.html#constant_REMOVED_CHAT_BOOST" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Telegram/Events/Event.php"><a href="files/src-telegram-events-event.html"><abbr title="src/Telegram/Events/Event.php">Event.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">115</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">A boost was removed from a chat. The bot must be an administrator in the chat to receive these updates.</p>
+
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">REMOVED_CHAT_BOOST</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;removed_chat_boost&#039;</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_SHIPPING_QUERY">
+        SHIPPING_QUERY
+        <a href="classes/Telegram-Events-Event.html#constant_SHIPPING_QUERY" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Telegram/Events/Event.php"><a href="files/src-telegram-events-event.html"><abbr title="src/Telegram/Events/Event.php">Event.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">88</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">New incoming shipping query. Only for invoices with flexible price.</p>
+
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">SHIPPING_QUERY</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;shipping_query&#039;</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_STOPPED_MESSAGE_GENERATION">
+        STOPPED_MESSAGE_GENERATION
+        <a href="classes/Telegram-Events-Event.html#constant_STOPPED_MESSAGE_GENERATION" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Telegram/Events/Event.php"><a href="files/src-telegram-events-event.html"><abbr title="src/Telegram/Events/Event.php">Event.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">124</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">A user asked the bot to stop the generation of a message</p>
+
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">STOPPED_MESSAGE_GENERATION</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;stopped_message_generation&#039;</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_SUBSCRIPTION">
+        SUBSCRIPTION
+        <a href="classes/Telegram-Events-Event.html#constant_SUBSCRIPTION" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Telegram/Events/Event.php"><a href="files/src-telegram-events-event.html"><abbr title="src/Telegram/Events/Event.php">Event.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">121</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">User payment subscription has changed</p>
+
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">SUBSCRIPTION</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;subscription&#039;</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_UPDATE">
+        UPDATE
+        <a href="classes/Telegram-Events-Event.html#constant_UPDATE" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Telegram/Events/Event.php"><a href="files/src-telegram-events-event.html"><abbr title="src/Telegram/Events/Event.php">Event.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">37</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Emitted for every update, whatever its type, with the Update part.</p>
+
+    
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">UPDATE</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;update&#039;</span>
+</code>
+
+
+    
+    
+    
+
+        
+    </article>
+            </section>
+
+        
+
+            <section class="phpdocumentor-methods">
+        <h3 class="phpdocumentor-elements__header" id="methods">
+            Methods
+            <a href="classes/Telegram-Events-Event.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
+
+        </h3>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                    -static                    "
+>
+    <h4 class="phpdocumentor-element__name" id="method_all">
+        all()
+        <a href="classes/Telegram-Events-Event.html#method_all" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Telegram/Events/Event.php"><a href="files/src-telegram-events-event.html"><abbr title="src/Telegram/Events/Event.php">Event.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">158</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">all</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;int, string&gt;</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+    
+    
+    
+    
+
+        
+    
+            <section>
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+        <span class="phpdocumentor-signature__response_type">array&lt;int, string&gt;</span>
+                    &mdash;
+                <section class="phpdocumentor-description"><p>Every update type, for <code class="prettyprint">allowed_updates</code>.</p>
+</section>
+
+            </section>
+
+</article>
+            </section>
+
+        
+    </article>
+                                </section>
+                <section class="phpdocumentor-on-this-page__sidebar">
+                                
+    <section class="phpdocumentor-on-this-page__content">
+        <strong class="phpdocumentor-on-this-page__title">On this page</strong>
+
+        <ul class="phpdocumentor-list -clean">
+            <li class="phpdocumentor-on-this-page-section__title">Table Of Contents</li>
+            <li>
+                <ul class="phpdocumentor-list -clean">
+                                        <li><a href="classes/Telegram-Events-Event.html#toc-constants">Constants</a></li>
+                                                                                <li><a href="classes/Telegram-Events-Event.html#toc-methods">Methods</a></li>
+                                    </ul>
+            </li>
+                            <li class="phpdocumentor-on-this-page-section__title">Constants</li>
+                <li>
+                    <ul class="phpdocumentor-list -clean">
+                                                    <li class=""><a href="classes/Telegram-Events-Event.html#constant_BUSINESS_CONNECTION">BUSINESS_CONNECTION</a></li>
+                                                    <li class=""><a href="classes/Telegram-Events-Event.html#constant_BUSINESS_MESSAGE">BUSINESS_MESSAGE</a></li>
+                                                    <li class=""><a href="classes/Telegram-Events-Event.html#constant_CALLBACK_QUERY">CALLBACK_QUERY</a></li>
+                                                    <li class=""><a href="classes/Telegram-Events-Event.html#constant_CHANNEL_POST">CHANNEL_POST</a></li>
+                                                    <li class=""><a href="classes/Telegram-Events-Event.html#constant_CHAT_BOOST">CHAT_BOOST</a></li>
+                                                    <li class=""><a href="classes/Telegram-Events-Event.html#constant_CHAT_JOIN_REQUEST">CHAT_JOIN_REQUEST</a></li>
+                                                    <li class=""><a href="classes/Telegram-Events-Event.html#constant_CHAT_MEMBER">CHAT_MEMBER</a></li>
+                                                    <li class=""><a href="classes/Telegram-Events-Event.html#constant_CHOSEN_INLINE_RESULT">CHOSEN_INLINE_RESULT</a></li>
+                                                    <li class=""><a href="classes/Telegram-Events-Event.html#constant_DELETED_BUSINESS_MESSAGES">DELETED_BUSINESS_MESSAGES</a></li>
+                                                    <li class=""><a href="classes/Telegram-Events-Event.html#constant_EDITED_BUSINESS_MESSAGE">EDITED_BUSINESS_MESSAGE</a></li>
+                                                    <li class=""><a href="classes/Telegram-Events-Event.html#constant_EDITED_CHANNEL_POST">EDITED_CHANNEL_POST</a></li>
+                                                    <li class=""><a href="classes/Telegram-Events-Event.html#constant_EDITED_MESSAGE">EDITED_MESSAGE</a></li>
+                                                    <li class=""><a href="classes/Telegram-Events-Event.html#constant_ERROR">ERROR</a></li>
+                                                    <li class=""><a href="classes/Telegram-Events-Event.html#constant_GUEST_MESSAGE">GUEST_MESSAGE</a></li>
+                                                    <li class=""><a href="classes/Telegram-Events-Event.html#constant_INLINE_QUERY">INLINE_QUERY</a></li>
+                                                    <li class=""><a href="classes/Telegram-Events-Event.html#constant_MANAGED_BOT">MANAGED_BOT</a></li>
+                                                    <li class=""><a href="classes/Telegram-Events-Event.html#constant_MESSAGE">MESSAGE</a></li>
+                                                    <li class=""><a href="classes/Telegram-Events-Event.html#constant_MESSAGE_REACTION">MESSAGE_REACTION</a></li>
+                                                    <li class=""><a href="classes/Telegram-Events-Event.html#constant_MESSAGE_REACTION_COUNT">MESSAGE_REACTION_COUNT</a></li>
+                                                    <li class=""><a href="classes/Telegram-Events-Event.html#constant_MY_CHAT_MEMBER">MY_CHAT_MEMBER</a></li>
+                                                    <li class=""><a href="classes/Telegram-Events-Event.html#constant_PAYLOAD_TYPES">PAYLOAD_TYPES</a></li>
+                                                    <li class=""><a href="classes/Telegram-Events-Event.html#constant_POLL">POLL</a></li>
+                                                    <li class=""><a href="classes/Telegram-Events-Event.html#constant_POLL_ANSWER">POLL_ANSWER</a></li>
+                                                    <li class=""><a href="classes/Telegram-Events-Event.html#constant_PRE_CHECKOUT_QUERY">PRE_CHECKOUT_QUERY</a></li>
+                                                    <li class=""><a href="classes/Telegram-Events-Event.html#constant_PURCHASED_PAID_MEDIA">PURCHASED_PAID_MEDIA</a></li>
+                                                    <li class=""><a href="classes/Telegram-Events-Event.html#constant_READY">READY</a></li>
+                                                    <li class=""><a href="classes/Telegram-Events-Event.html#constant_REMOVED_CHAT_BOOST">REMOVED_CHAT_BOOST</a></li>
+                                                    <li class=""><a href="classes/Telegram-Events-Event.html#constant_SHIPPING_QUERY">SHIPPING_QUERY</a></li>
+                                                    <li class=""><a href="classes/Telegram-Events-Event.html#constant_STOPPED_MESSAGE_GENERATION">STOPPED_MESSAGE_GENERATION</a></li>
+                                                    <li class=""><a href="classes/Telegram-Events-Event.html#constant_SUBSCRIPTION">SUBSCRIPTION</a></li>
+                                                    <li class=""><a href="classes/Telegram-Events-Event.html#constant_UPDATE">UPDATE</a></li>
+                                            </ul>
+                </li>
+            
+            
+                        <li class="phpdocumentor-on-this-page-section__title">Methods</li>
+            <li>
+                <ul class="phpdocumentor-list -clean">
+                                            <li class=""><a href="classes/Telegram-Events-Event.html#method_all">all()</a></li>
+                                    </ul>
+            </li>
+                    </ul>
+    </section>
+
+                </section>
+                            </div>
+            <section data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
+    <section class="phpdocumentor-search-results__dialog">
+        <header class="phpdocumentor-search-results__header">
+            <h2 class="phpdocumentor-search-results__title">Search results</h2>
+            <button class="phpdocumentor-search-results__close"><i class="fas fa-times"></i></button>
+        </header>
+        <section class="phpdocumentor-search-results__body">
+            <ul class="phpdocumentor-search-results__entries"></ul>
+        </section>
+    </section>
+</section>
+        </div>
+        <a href="classes/Telegram-Events-Event.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+
+    </main>
+
+    <script>
+        cssVars({});
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/prism.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/autoloader/prism-autoloader.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-numbers/prism-line-numbers.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-highlight/prism-line-highlight.min.js"></script>
+</body>
+</html>

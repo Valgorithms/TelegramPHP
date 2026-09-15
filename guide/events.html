@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+            <title>TelegramPHP Documentation</title>
+    
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="../">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png"/>
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png"/>
+    <link rel="icon" href="images/favicon.ico"/>
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png"/>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/base.css">
+            <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/template.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/themes/prism-okaidia.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-numbers/prism-line-numbers.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-highlight/prism-line-highlight.css">
+                <script src="https://cdn.jsdelivr.net/npm/fuse.js@3.4.6"></script>
+        <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+        <script src="js/template.js"></script>
+        <script src="js/search.js"></script>
+        <script defer src="js/searchIndex.js"></script>
+    </head>
+<body id="top">
+    <header class="phpdocumentor-header phpdocumentor-section">
+    <h1 class="phpdocumentor-title"><a href="" class="phpdocumentor-title__link">TelegramPHP Documentation</a></h1>
+    <input class="phpdocumentor-header__menu-button" type="checkbox" id="menu-button" name="menu-button" />
+    <label class="phpdocumentor-header__menu-icon" for="menu-button">
+        <i class="fas fa-bars"></i>
+    </label>
+    <section data-search-form class="phpdocumentor-search">
+    <label>
+        <span class="visually-hidden">Search for</span>
+        <svg class="phpdocumentor-search__icon" width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="7.5" cy="7.5" r="6.5" stroke="currentColor" stroke-width="2"/>
+            <line x1="12.4892" y1="12.2727" x2="19.1559" y2="18.9393" stroke="currentColor" stroke-width="3"/>
+        </svg>
+        <input type="search" class="phpdocumentor-field phpdocumentor-search__field" placeholder="Loading .." disabled />
+    </label>
+</section>
+
+    <nav class="phpdocumentor-topnav">
+    <ul class="phpdocumentor-topnav__menu">
+        </ul>
+</nav>
+</header>
+
+    <main class="phpdocumentor">
+        <div class="phpdocumentor-section">
+            <input class="phpdocumentor-sidebar__menu-button" type="checkbox" id="sidebar-button" name="sidebar-button" />
+<label class="phpdocumentor-sidebar__menu-icon" for="sidebar-button">
+    Menu
+</label>
+<aside class="phpdocumentor-column -three phpdocumentor-sidebar">
+                    <section class="phpdocumentor-sidebar__category -guide">
+            <h2 class="phpdocumentor-sidebar__category-header">Guide</h2>
+                                    <h4 class="phpdocumentor-sidebar__root-namespace">
+    <a href="guide/basics.html#basics" class="">Basics</a>
+</h4>
+
+                                    <h4 class="phpdocumentor-sidebar__root-namespace">
+    <a href="guide/calling.html#calling-the-api" class="">Calling the API</a>
+</h4>
+
+                                    <h4 class="phpdocumentor-sidebar__root-namespace">
+    <a href="guide/events.html#updates-and-events" class="">Updates and events</a>
+</h4>
+
+                                    <h4 class="phpdocumentor-sidebar__root-namespace">
+    <a href="guide/parts.html#parts" class="">Parts</a>
+</h4>
+
+                                    <h4 class="phpdocumentor-sidebar__root-namespace">
+    <a href="guide/builders.html#keyboards-and-files" class="">Keyboards and files</a>
+</h4>
+
+                                    <h4 class="phpdocumentor-sidebar__root-namespace">
+    <a href="guide/commands.html#commands" class="">Commands</a>
+</h4>
+
+                                    <h4 class="phpdocumentor-sidebar__root-namespace">
+    <a href="guide/webhooks.html#webhooks" class="">Webhooks</a>
+</h4>
+
+                                    <h4 class="phpdocumentor-sidebar__root-namespace">
+    <a href="guide/errors.html#handling-errors" class="">Handling errors</a>
+</h4>
+
+                                    <h4 class="phpdocumentor-sidebar__root-namespace">
+    <a href="guide/caches.html#chats-and-users" class="">Chats and users</a>
+</h4>
+
+                                    <h4 class="phpdocumentor-sidebar__root-namespace">
+    <a href="guide/generated.html#generated-from-the-spec" class="">Generated from the spec</a>
+</h4>
+
+                                    <h4 class="phpdocumentor-sidebar__root-namespace">
+    <a href="guide/faq.html#faq" class="">FAQ</a>
+</h4>
+
+                        </section>
+                <section class="phpdocumentor-sidebar__category -namespaces">
+            <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
+                                    <h4 class="phpdocumentor-sidebar__root-namespace">
+    <a href="namespaces/telegram.html" class="">Telegram</a>
+</h4>
+    <ul class="phpdocumentor-list">
+                    <li>
+                <a href="namespaces/telegram-api.html" class="">Api</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/telegram-builders.html" class="">Builders</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/telegram-commandclient.html" class="">CommandClient</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/telegram-events.html" class="">Events</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/telegram-exceptions.html" class="">Exceptions</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/telegram-factory.html" class="">Factory</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/telegram-http.html" class="">Http</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/telegram-parts.html" class="">Parts</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/telegram-polling.html" class="">Polling</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/telegram-repository.html" class="">Repository</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/telegram-webhook.html" class="">Webhook</a>
+                
+            </li>
+            </ul>
+
+                        </section>
+                <section class="phpdocumentor-sidebar__category -packages">
+            <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
+                                    <h4 class="phpdocumentor-sidebar__root-namespace">
+    <a href="packages/Application.html" class="">Application</a>
+</h4>
+
+                        </section>
+            
+    <section class="phpdocumentor-sidebar__category -reports">
+        <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
+                <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/deprecated.html">Deprecated</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/errors.html">Errors</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/markers.html">Markers</a></h3>
+    </section>
+
+    <section class="phpdocumentor-sidebar__category -indices">
+        <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="indices/files.html">Files</a></h3>
+    </section>
+</aside>
+
+            <div class="phpdocumentor-column -nine phpdocumentor-content">
+                                        <section class="section " id="updates-and-events">
+            <a id="events"></a>
+
+            <h1>Updates and events</h1>
+
+            
+    <p>An <em>update</em>
+ is Telegram telling your bot that something happened. Whether they arrive by long polling
+or by webhook, they reach your code the same way: as events.</p>
+
+            
+    <p>Each update is emitted twice - once as <code>Event::UPDATE</code>
+ carrying the whole <code>Update</code>
+ part, and once
+under its own type carrying just that payload. The second form is what most handlers want:</p>
+
+            <pre><code class="language-php">use Telegram\Events\Event;
+use Telegram\Parts\CallbackQuery;
+use Telegram\Parts\Message;
+
+$telegram-&gt;on(Event::MESSAGE, function (Message $message) {
+    // a new message of any kind
+});
+
+$telegram-&gt;on(Event::CALLBACK_QUERY, function (CallbackQuery $query) {
+    // someone pressed an inline button
+});
+
+$telegram-&gt;on(Event::UPDATE, function (Update $update) {
+    // every update, whatever its type
+});</code></pre>
+
+            
+    <p>Handlers also receive the client as a second argument, so a static closure can still reach it:</p>
+
+            <pre><code class="language-php">$telegram-&gt;on(Event::MESSAGE, static function (Message $message, Telegram $telegram) {
+    $telegram-&gt;sendChatAction($message-&gt;chat-&gt;id, &#039;typing&#039;);
+});</code></pre>
+
+            <section class="section " id="the-update-types">
+            <h2>The update types</h2>
+
+            
+    <p>The constants on <code>Telegram\Events\Event</code>
+ are generated from the <code>Update</code>
+ object itself, so they
+are exactly the types this Bot API version defines:</p>
+
+            <table>
+                <thead>
+            <tr>
+                            <th>Constant</th>
+                            <th>Update type</th>
+                            <th>Carries</th>
+                    </tr>
+        </thead>
+    <tbody>
+    <tr>
+            <td><code>Event::MESSAGE</code>
+</td>
+            <td><code>message</code>
+</td>
+            <td><code>Message</code>
+</td>
+    </tr>
+    <tr>
+            <td><code>Event::EDITED_MESSAGE</code>
+</td>
+            <td><code>edited_message</code>
+</td>
+            <td><code>Message</code>
+</td>
+    </tr>
+    <tr>
+            <td><code>Event::CHANNEL_POST</code>
+</td>
+            <td><code>channel_post</code>
+</td>
+            <td><code>Message</code>
+</td>
+    </tr>
+    <tr>
+            <td><code>Event::EDITED_CHANNEL_POST</code>
+</td>
+            <td><code>edited_channel_post</code>
+</td>
+            <td><code>Message</code>
+</td>
+    </tr>
+    <tr>
+            <td><code>Event::BUSINESS_CONNECTION</code>
+</td>
+            <td><code>business_connection</code>
+</td>
+            <td><code>BusinessConnection</code>
+</td>
+    </tr>
+    <tr>
+            <td><code>Event::BUSINESS_MESSAGE</code>
+</td>
+            <td><code>business_message</code>
+</td>
+            <td><code>Message</code>
+</td>
+    </tr>
+    <tr>
+            <td><code>Event::EDITED_BUSINESS_MESSAGE</code>
+</td>
+            <td><code>edited_business_message</code>
+</td>
+            <td><code>Message</code>
+</td>
+    </tr>
+    <tr>
+            <td><code>Event::DELETED_BUSINESS_MESSAGES</code>
+</td>
+            <td><code>deleted_business_messages</code>
+</td>
+            <td><code>BusinessMessagesDeleted</code>
+</td>
+    </tr>
+    <tr>
+            <td><code>Event::GUEST_MESSAGE</code>
+</td>
+            <td><code>guest_message</code>
+</td>
+            <td><code>Message</code>
+</td>
+    </tr>
+    <tr>
+            <td><code>Event::MESSAGE_REACTION</code>
+</td>
+            <td><code>message_reaction</code>
+</td>
+            <td><code>MessageReactionUpdated</code>
+</td>
+    </tr>
+    <tr>
+            <td><code>Event::MESSAGE_REACTION_COUNT</code>
+</td>
+            <td><code>message_reaction_count</code>
+</td>
+            <td><code>MessageReactionCountUpdated</code>
+</td>
+    </tr>
+    <tr>
+            <td><code>Event::INLINE_QUERY</code>
+</td>
+            <td><code>inline_query</code>
+</td>
+            <td><code>InlineQuery</code>
+</td>
+    </tr>
+    <tr>
+            <td><code>Event::CHOSEN_INLINE_RESULT</code>
+</td>
+            <td><code>chosen_inline_result</code>
+</td>
+            <td><code>ChosenInlineResult</code>
+</td>
+    </tr>
+    <tr>
+            <td><code>Event::CALLBACK_QUERY</code>
+</td>
+            <td><code>callback_query</code>
+</td>
+            <td><code>CallbackQuery</code>
+</td>
+    </tr>
+    <tr>
+            <td><code>Event::SHIPPING_QUERY</code>
+</td>
+            <td><code>shipping_query</code>
+</td>
+            <td><code>ShippingQuery</code>
+</td>
+    </tr>
+    <tr>
+            <td><code>Event::PRE_CHECKOUT_QUERY</code>
+</td>
+            <td><code>pre_checkout_query</code>
+</td>
+            <td><code>PreCheckoutQuery</code>
+</td>
+    </tr>
+    <tr>
+            <td><code>Event::PURCHASED_PAID_MEDIA</code>
+</td>
+            <td><code>purchased_paid_media</code>
+</td>
+            <td><code>PaidMediaPurchased</code>
+</td>
+    </tr>
+    <tr>
+            <td><code>Event::POLL</code>
+</td>
+            <td><code>poll</code>
+</td>
+            <td><code>Poll</code>
+</td>
+    </tr>
+    <tr>
+            <td><code>Event::POLL_ANSWER</code>
+</td>
+            <td><code>poll_answer</code>
+</td>
+            <td><code>PollAnswer</code>
+</td>
+    </tr>
+    <tr>
+            <td><code>Event::MY_CHAT_MEMBER</code>
+</td>
+            <td><code>my_chat_member</code>
+</td>
+            <td><code>ChatMemberUpdated</code>
+</td>
+    </tr>
+    <tr>
+            <td><code>Event::CHAT_MEMBER</code>
+</td>
+            <td><code>chat_member</code>
+</td>
+            <td><code>ChatMemberUpdated</code>
+</td>
+    </tr>
+    <tr>
+            <td><code>Event::CHAT_JOIN_REQUEST</code>
+</td>
+            <td><code>chat_join_request</code>
+</td>
+            <td><code>ChatJoinRequest</code>
+</td>
+    </tr>
+    <tr>
+            <td><code>Event::CHAT_BOOST</code>
+</td>
+            <td><code>chat_boost</code>
+</td>
+            <td><code>ChatBoostUpdated</code>
+</td>
+    </tr>
+    <tr>
+            <td><code>Event::REMOVED_CHAT_BOOST</code>
+</td>
+            <td><code>removed_chat_boost</code>
+</td>
+            <td><code>ChatBoostRemoved</code>
+</td>
+    </tr>
+    <tr>
+            <td><code>Event::MANAGED_BOT</code>
+</td>
+            <td><code>managed_bot</code>
+</td>
+            <td><code>ManagedBotUpdated</code>
+</td>
+    </tr>
+    <tr>
+            <td><code>Event::SUBSCRIPTION</code>
+</td>
+            <td><code>subscription</code>
+</td>
+            <td><code>BotSubscriptionUpdated</code>
+</td>
+    </tr>
+    <tr>
+            <td><code>Event::STOPPED_MESSAGE_GENERATION</code>
+</td>
+            <td><code>stopped_message_generation</code>
+</td>
+            <td><code>MessageGenerationStopped</code>
+</td>
+    </tr>
+</tbody>
+</table>
+
+
+            
+    <p>That table is generated from the spec along with the constants themselves, so it lists exactly what
+this build supports. The same information is available at runtime:</p>
+
+            <pre><code class="language-php">Event::all();            // [&#039;message&#039;, &#039;edited_message&#039;, &#039;channel_post&#039;, ...]
+Event::PAYLOAD_TYPES;    // [&#039;message&#039; =&gt; &#039;Message&#039;, &#039;callback_query&#039; =&gt; &#039;CallbackQuery&#039;, ...]</code></pre>
+
+    </section>
+
+            <section class="section " id="choosing-what-to-receive">
+            <h2>Choosing what to receive</h2>
+
+            
+    <p>Telegram withholds some update types unless you ask for them - <code>chat_member</code>
+ and the reaction types
+among them - and sends everything else whether you use it or not. Asking for only what you handle
+cuts both traffic and the work of hydrating payloads you throw away:</p>
+
+            <pre><code class="language-php">$telegram = new Telegram([
+    &#039;token&#039; =&gt; $token,
+    &#039;allowed_updates&#039; =&gt; [Event::MESSAGE, Event::CALLBACK_QUERY, Event::CHAT_MEMBER],
+]);</code></pre>
+
+            
+    <p>The same list goes to <code>setWebhook</code>
+ when you are using one.</p>
+
+            <div class="phpdocumentor-admonition warning">
+                <svg class="phpdocumentor-admonition__icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
+                <article>
+        
+    <p><code>allowed_updates</code>
+ is remembered by Telegram between calls. Passing <code>null</code>
+ keeps whatever was
+set last rather than resetting it - pass an explicit list to change it.</p>
+
+    </article>
+</div>
+
+    </section>
+
+            <section class="section " id="long-polling">
+            <h2>Long polling</h2>
+
+            
+    <p>Polling is the default and needs no public address. Each round calls <code>getUpdates</code>
+ with a timeout, so
+the connection is held open until Telegram has something to say. Updates are acknowledged by the
+<em>next</em>
+ round asking for everything past the highest <code>update_id</code>
+ handled, which means an update your
+handler threw on is not redelivered - it is logged and emitted as <code>Event::ERROR</code>
+ instead.</p>
+
+            <pre><code class="language-php">$telegram = new Telegram([
+    &#039;token&#039; =&gt; $token,
+    &#039;poll_timeout&#039; =&gt; 50,          // seconds to hold the connection open
+    &#039;poll_limit&#039; =&gt; 100,           // updates per round
+    &#039;drop_pending_updates&#039; =&gt; true, // ignore the backlog from while the bot was down
+]);</code></pre>
+
+            
+    <p>A failed round backs off - one second, then two, four, up to thirty - rather than hammering a server
+that is already unhappy, and a <code>retry_after</code>
+ from Telegram is honoured exactly. The poller is
+reachable while it runs:</p>
+
+            <pre><code class="language-php">$telegram-&gt;getPoller()-&gt;getOffset();    // the update_id the next round asks from
+$telegram-&gt;getPoller()-&gt;isRunning();</code></pre>
+
+            <div class="phpdocumentor-admonition note">
+            <svg class="phpdocumentor-admonition__icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z"></path></svg>
+                    <article>
+        
+    <p>Only one poller may hold a token at a time, and a webhook excludes polling entirely. A second one
+gets a <code>409 Conflict</code>
+ - see <a href="guide/errors.html">Handling errors</a>.</p>
+
+    </article>
+</div>
+
+    </section>
+
+            <section class="section " id="handlers-that-throw">
+            <h2>Handlers that throw</h2>
+
+            
+    <p>An exception out of your handler does not stop the bot. It is logged, emitted as <code>Event::ERROR</code>
+,
+and the next update is processed:</p>
+
+            <pre><code class="language-php">$telegram-&gt;on(Event::ERROR, function (Throwable $e, Telegram $telegram) {
+    $logger-&gt;error(&#039;handler failed&#039;, [&#039;exception&#039; =&gt; $e]);
+});</code></pre>
+
+            
+    <p>This applies to exceptions thrown <em>synchronously</em>
+. A rejected promise inside a handler is not an
+exception anyone sees unless you handle it - see <a href="guide/errors.html">Handling errors</a>.</p>
+
+    </section>
+
+    </section>
+
+                            </div>
+            <section data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
+    <section class="phpdocumentor-search-results__dialog">
+        <header class="phpdocumentor-search-results__header">
+            <h2 class="phpdocumentor-search-results__title">Search results</h2>
+            <button class="phpdocumentor-search-results__close"><i class="fas fa-times"></i></button>
+        </header>
+        <section class="phpdocumentor-search-results__body">
+            <ul class="phpdocumentor-search-results__entries"></ul>
+        </section>
+    </section>
+</section>
+        </div>
+        <a href="#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+
+    </main>
+
+    <script>
+        cssVars({});
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/prism.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/autoloader/prism-autoloader.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-numbers/prism-line-numbers.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-highlight/prism-line-highlight.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+            <title>TelegramPHP Documentation</title>
+    
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="../">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png"/>
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png"/>
+    <link rel="icon" href="images/favicon.ico"/>
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png"/>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/base.css">
+            <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/template.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/themes/prism-okaidia.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-numbers/prism-line-numbers.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-highlight/prism-line-highlight.css">
+                <script src="https://cdn.jsdelivr.net/npm/fuse.js@3.4.6"></script>
+        <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+        <script src="js/template.js"></script>
+        <script src="js/search.js"></script>
+        <script defer src="js/searchIndex.js"></script>
+    </head>
+<body id="top">
+    <header class="phpdocumentor-header phpdocumentor-section">
+    <h1 class="phpdocumentor-title"><a href="" class="phpdocumentor-title__link">TelegramPHP Documentation</a></h1>
+    <input class="phpdocumentor-header__menu-button" type="checkbox" id="menu-button" name="menu-button" />
+    <label class="phpdocumentor-header__menu-icon" for="menu-button">
+        <i class="fas fa-bars"></i>
+    </label>
+    <section data-search-form class="phpdocumentor-search">
+    <label>
+        <span class="visually-hidden">Search for</span>
+        <svg class="phpdocumentor-search__icon" width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="7.5" cy="7.5" r="6.5" stroke="currentColor" stroke-width="2"/>
+            <line x1="12.4892" y1="12.2727" x2="19.1559" y2="18.9393" stroke="currentColor" stroke-width="3"/>
+        </svg>
+        <input type="search" class="phpdocumentor-field phpdocumentor-search__field" placeholder="Loading .." disabled />
+    </label>
+</section>
+
+    <nav class="phpdocumentor-topnav">
+    <ul class="phpdocumentor-topnav__menu">
+        </ul>
+</nav>
+</header>
+
+    <main class="phpdocumentor">
+        <div class="phpdocumentor-section">
+            <input class="phpdocumentor-sidebar__menu-button" type="checkbox" id="sidebar-button" name="sidebar-button" />
+<label class="phpdocumentor-sidebar__menu-icon" for="sidebar-button">
+    Menu
+</label>
+<aside class="phpdocumentor-column -three phpdocumentor-sidebar">
+                    <section class="phpdocumentor-sidebar__category -guide">
+            <h2 class="phpdocumentor-sidebar__category-header">Guide</h2>
+                                    <h4 class="phpdocumentor-sidebar__root-namespace">
+    <a href="guide/basics.html#basics" class="">Basics</a>
+</h4>
+
+                                    <h4 class="phpdocumentor-sidebar__root-namespace">
+    <a href="guide/calling.html#calling-the-api" class="">Calling the API</a>
+</h4>
+
+                                    <h4 class="phpdocumentor-sidebar__root-namespace">
+    <a href="guide/events.html#updates-and-events" class="">Updates and events</a>
+</h4>
+
+                                    <h4 class="phpdocumentor-sidebar__root-namespace">
+    <a href="guide/parts.html#parts" class="">Parts</a>
+</h4>
+
+                                    <h4 class="phpdocumentor-sidebar__root-namespace">
+    <a href="guide/builders.html#keyboards-and-files" class="">Keyboards and files</a>
+</h4>
+
+                                    <h4 class="phpdocumentor-sidebar__root-namespace">
+    <a href="guide/commands.html#commands" class="">Commands</a>
+</h4>
+
+                                    <h4 class="phpdocumentor-sidebar__root-namespace">
+    <a href="guide/webhooks.html#webhooks" class="">Webhooks</a>
+</h4>
+
+                                    <h4 class="phpdocumentor-sidebar__root-namespace">
+    <a href="guide/errors.html#handling-errors" class="">Handling errors</a>
+</h4>
+
+                                    <h4 class="phpdocumentor-sidebar__root-namespace">
+    <a href="guide/caches.html#chats-and-users" class="">Chats and users</a>
+</h4>
+
+                                    <h4 class="phpdocumentor-sidebar__root-namespace">
+    <a href="guide/generated.html#generated-from-the-spec" class="">Generated from the spec</a>
+</h4>
+
+                                    <h4 class="phpdocumentor-sidebar__root-namespace">
+    <a href="guide/faq.html#faq" class="">FAQ</a>
+</h4>
+
+                        </section>
+                <section class="phpdocumentor-sidebar__category -namespaces">
+            <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
+                                    <h4 class="phpdocumentor-sidebar__root-namespace">
+    <a href="namespaces/telegram.html" class="">Telegram</a>
+</h4>
+    <ul class="phpdocumentor-list">
+                    <li>
+                <a href="namespaces/telegram-api.html" class="">Api</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/telegram-builders.html" class="">Builders</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/telegram-commandclient.html" class="">CommandClient</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/telegram-events.html" class="">Events</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/telegram-exceptions.html" class="">Exceptions</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/telegram-factory.html" class="">Factory</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/telegram-http.html" class="">Http</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/telegram-parts.html" class="">Parts</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/telegram-polling.html" class="">Polling</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/telegram-repository.html" class="">Repository</a>
+                
+            </li>
+                    <li>
+                <a href="namespaces/telegram-webhook.html" class="">Webhook</a>
+                
+            </li>
+            </ul>
+
+                        </section>
+                <section class="phpdocumentor-sidebar__category -packages">
+            <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
+                                    <h4 class="phpdocumentor-sidebar__root-namespace">
+    <a href="packages/Application.html" class="">Application</a>
+</h4>
+
+                        </section>
+            
+    <section class="phpdocumentor-sidebar__category -reports">
+        <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
+                <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/deprecated.html">Deprecated</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/errors.html">Errors</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/markers.html">Markers</a></h3>
+    </section>
+
+    <section class="phpdocumentor-sidebar__category -indices">
+        <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="indices/files.html">Files</a></h3>
+    </section>
+</aside>
+
+            <div class="phpdocumentor-column -nine phpdocumentor-content">
+                                        <section class="section " id="parts">
+            <h1>Parts</h1>
+
+            
+    <p>Every object the Bot API describes has a <em>part</em>
+: a small model class under <code>Telegram\Parts</code>
+ that
+holds the attributes Telegram sent and knows how to turn them back into what Telegram expects. They
+are the same idea as DiscordPHP&#039;s parts, and there are 400 of them, one per documented type.</p>
+
+            
+    <p>You rarely construct one yourself - they arrive from calls and from updates.</p>
+
+            <section class="section " id="reading-attributes">
+            <h2>Reading attributes</h2>
+
+            
+    <p>Attributes are readable as properties or as array keys, whichever reads better at the call site:</p>
+
+            <pre><code class="language-php">$message-&gt;message_id;
+$message-&gt;chat-&gt;title;
+$message[&#039;from&#039;][&#039;username&#039;];
+
+isset($message-&gt;text);        // false when Telegram omitted it</code></pre>
+
+            
+    <p>Attribute names are Telegram&#039;s own - <code>message_id</code>
+, not <code>messageId</code>
+ - so the documentation and
+your code say the same thing. Every part declares its attributes as <code>@property</code>
+ tags, so an editor
+completes them and tells you the type and whether it is optional.</p>
+
+            
+    <p>An attribute Telegram did not send is <code>null</code>
+ rather than an error, which is what makes the optional
+fields of <code>Message</code>
+ bearable:</p>
+
+            <pre><code class="language-php">if ($message-&gt;photo !== null) {
+    // a photo message
+}</code></pre>
+
+    </section>
+
+            <section class="section " id="nested-objects">
+            <h2>Nested objects</h2>
+
+            
+    <p>Nested objects are hydrated into parts, recursively, and arrays of them into a
+<code>Discord\Helpers\Collection</code>
+:</p>
+
+            <pre><code class="language-php">$message-&gt;chat;                     // Telegram\Parts\Chat
+$message-&gt;from;                     // Telegram\Parts\User
+$message-&gt;entities;                 // Collection of MessageEntity
+$message-&gt;entities-&gt;first()-&gt;type;  // &#039;bold&#039;
+$message-&gt;photo-&gt;last()-&gt;file_id;   // the largest size Telegram made</code></pre>
+
+    </section>
+
+            <section class="section " id="timestamps">
+            <h2>Timestamps</h2>
+
+            
+    <p>Fields the Bot API sends as Unix timestamps read back as
+<a href="https://carbon.nesbot.com/">CarbonImmutable</a>:</p>
+
+            <pre><code class="language-php">$message-&gt;date-&gt;toIso8601String();
+$message-&gt;date-&gt;diffForHumans();
+$member-&gt;until_date?-&gt;isPast();</code></pre>
+
+            
+    <p>Serialisation keeps the original integer, so a part that goes back to Telegram is byte-identical to
+the one that arrived:</p>
+
+            <pre><code class="language-php">$message-&gt;jsonSerialize()[&#039;date&#039;];   // 1700000000
+json_encode($message);               // the payload Telegram sent</code></pre>
+
+    </section>
+
+            <section class="section " id="union-types">
+            <h2>Union types</h2>
+
+            
+    <p>A few Bot API types are really a choice between several - <code>ChatMember</code>
+ is one of six, <code>InputMedia</code>
+
+one of six, <code>ReactionType</code>
+ one of three. Those are abstract parts, and an incoming payload resolves
+to the concrete one:</p>
+
+            <pre><code class="language-php">use Telegram\Parts\ChatMemberAdministrator;
+
+$telegram-&gt;getChatMember($chatId, $userId)-&gt;then(function (ChatMember $member) {
+    if ($member instanceof ChatMemberAdministrator) {
+        $member-&gt;can_delete_messages;
+    }
+
+    $member-&gt;status;   // &#039;administrator&#039;
+});</code></pre>
+
+            
+    <p>Resolution is by the field Telegram tags the union with - <code>status</code>
+ here, <code>type</code>
+ for most others.
+A tag this build has never seen, because Telegram added a member since it was generated, resolves to
+the closest match by shape rather than failing the whole update.</p>
+
+    </section>
+
+            <section class="section " id="behaviour">
+            <h2>Behaviour</h2>
+
+            
+    <p>Parts are not only data. The ones worth acting on carry methods that use the client they came from,
+so the ids come off the object instead of out of your variables.</p>
+
+            
+    <p><strong>Message</strong>
+</p>
+
+            <pre><code class="language-php">$message-&gt;reply(&#039;on it&#039;);                       // quotes the message
+$message-&gt;say(&#039;anyone there?&#039;);                 // same chat, no quote
+$message-&gt;replyWithPhoto(InputFile::fromPath(&#039;cat.jpg&#039;));
+$message-&gt;edit(&#039;changed&#039;);                      // bot&#039;s own messages only
+$message-&gt;editCaption(&#039;a better caption&#039;);
+$message-&gt;editReplyMarkup($keyboard);
+$message-&gt;react(&#039;👍&#039;);                          // or react(null) to clear
+$message-&gt;pin();
+$message-&gt;unpin();
+$message-&gt;forward($otherChatId);
+$message-&gt;copy($otherChatId);                   // no link back to the original
+$message-&gt;delete();</code></pre>
+
+            
+    <p>Each takes an <code>$options</code>
+ array for any other field of the underlying method, and what you pass wins
+over what the part filled in:</p>
+
+            <pre><code class="language-php">$message-&gt;reply(&#039;&lt;b&gt;on it&lt;/b&gt;&#039;, [&#039;parse_mode&#039; =&gt; &#039;HTML&#039;]);</code></pre>
+
+            
+    <p><strong>Chat</strong>
+</p>
+
+            <pre><code class="language-php">$chat-&gt;sendMessage(&#039;hello&#039;);
+$chat-&gt;sendPhoto(InputFile::fromPath(&#039;cat.jpg&#039;));
+$chat-&gt;sendAction(&#039;typing&#039;);
+$chat-&gt;fetch();                    // the full ChatFullInfo record
+$chat-&gt;getMember($userId);
+$chat-&gt;countMembers();
+$chat-&gt;ban($userId, [&#039;until_date&#039; =&gt; time() + 3600]);
+$chat-&gt;unban($userId);
+$chat-&gt;leave();</code></pre>
+
+            
+    <p><strong>User</strong>
+</p>
+
+            <pre><code class="language-php">$user-&gt;getFullName();     // &#039;Ada Lovelace&#039;
+$user-&gt;getHandle();       // &#039;@ada&#039;, or the full name when they have no username
+$user-&gt;mention();         // an HTML link that works even without a username
+$user-&gt;mention(&#039;Markdown&#039;);
+$user-&gt;sendMessage(&#039;hi&#039;); // only works if they started the bot first
+$user-&gt;getProfilePhotos();</code></pre>
+
+            
+    <p><strong>CallbackQuery</strong>
+</p>
+
+            <pre><code class="language-php">$query-&gt;answer();                        // always answer - the button spins until you do
+$query-&gt;answer(&#039;Done&#039;, showAlert: true);
+$query-&gt;answerWithUrl(&#039;https://t.me/...&#039;);
+$query-&gt;editMessage(&#039;Deployed.&#039;);        // edits whichever message the button is under</code></pre>
+
+            
+    <p><strong>File</strong>
+</p>
+
+            <pre><code class="language-php">$file-&gt;getUrl();              // includes the bot token - do not log it
+$file-&gt;download();            // promise of the bytes
+$file-&gt;save(&#039;/tmp/photo.jpg&#039;);</code></pre>
+
+            
+    <p><strong>Others</strong>
+</p>
+
+            
+    <p><code>InlineQuery::answer()</code>
+, <code>ChatJoinRequest::approve()</code>
+ and <code>decline()</code>
+,
+<code>PreCheckoutQuery::answer()</code>
+, <code>ShippingQuery::answer()</code>
+.</p>
+
+    </section>
+
+            <section class="section " id="building-a-part-yourself">
+            <h2>Building a part yourself</h2>
+
+            
+    <p>When you need one - to pass a structured object to a method, say - the factory builds it:</p>
+
+            <pre><code class="language-php">use Telegram\Parts\Message;
+
+$message = $telegram-&gt;getFactory()-&gt;part(Message::class, $rawArray);</code></pre>
+
+            
+    <p>Though for arguments you can equally pass a plain array: every field the API types as an object
+accepts an array, a part, or anything else that is <code>JsonSerializable</code>
+.</p>
+
+    </section>
+
+    </section>
+
+                            </div>
+            <section data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
+    <section class="phpdocumentor-search-results__dialog">
+        <header class="phpdocumentor-search-results__header">
+            <h2 class="phpdocumentor-search-results__title">Search results</h2>
+            <button class="phpdocumentor-search-results__close"><i class="fas fa-times"></i></button>
+        </header>
+        <section class="phpdocumentor-search-results__body">
+            <ul class="phpdocumentor-search-results__entries"></ul>
+        </section>
+    </section>
+</section>
+        </div>
+        <a href="#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+
+    </main>
+
+    <script>
+        cssVars({});
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/prism.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/autoloader/prism-autoloader.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-numbers/prism-line-numbers.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-highlight/prism-line-highlight.min.js"></script>
+</body>
+</html>
