@@ -30,6 +30,7 @@ use Telegram\Http\DriverInterface;
 use Telegram\Http\Drivers\React as ReactDriver;
 use Telegram\Http\Http;
 use Telegram\Http\HttpInterface;
+use Telegram\Http\LocalFiles;
 use Telegram\Parts\File;
 use Telegram\Parts\Part;
 use Telegram\Parts\Update;
@@ -96,6 +97,9 @@ class Telegram implements EventEmitterInterface
 
     protected HttpInterface $http;
 
+    /** Where a local Bot API server's files are, as this process sees them. */
+    protected LocalFiles $localFiles;
+
     protected Factory $factory;
 
     protected ?Poller $poller = null;
@@ -130,6 +134,8 @@ class Telegram implements EventEmitterInterface
             $this->options['driver'] ?? new ReactDriver($this->loop, $this->options['socket_options']),
             $this->options['base_url'],
         );
+
+        $this->localFiles = new LocalFiles($this->options['local_files'], $this->loop);
     }
 
     /**
@@ -163,6 +169,7 @@ class Telegram implements EventEmitterInterface
                 'poll_limit' => 100,
                 'allowed_updates' => null,
                 'drop_pending_updates' => false,
+                'local_files' => [],
             ])
             ->setRequired('token')
             ->setAllowedTypes('token', 'string')
@@ -176,6 +183,7 @@ class Telegram implements EventEmitterInterface
             ->setAllowedTypes('poll_limit', 'int')
             ->setAllowedTypes('allowed_updates', ['null', 'string[]'])
             ->setAllowedTypes('drop_pending_updates', 'bool')
+            ->setAllowedTypes('local_files', 'string[]')
             ->setAllowedTypes('webhook', ['null', 'array']);
     }
 
@@ -397,8 +405,36 @@ class Telegram implements EventEmitterInterface
                 throw new Exceptions\TelegramException('Telegram did not return a file_path for this file.');
             }
 
-            return $this->http->download($filePath);
+            // A local Bot API server answers with a path on its own disk, and
+            // serves nothing over HTTP; read it from there instead.
+            return LocalFiles::isLocalPath($filePath)
+                ? $this->localFiles->read($this->localFiles->toLocal($filePath))
+                : $this->http->download($filePath);
         });
+    }
+
+    /**
+     * Where a file is on this process's disk, when the server is a local one
+     * running with `--local`.
+     *
+     * For the files a local server exists to allow — up to 2000 MB — reading
+     * them into a string is the wrong move; open or copy the path instead, or
+     * use {@see \Telegram\Parts\File::save()}, which copies without holding the
+     * file in memory.
+     *
+     * @return PromiseInterface<?string> The path, or `null` when the file is on
+     *                                   Telegram's own servers and has to be
+     *                                   downloaded.
+     */
+    public function localFilePath(File|string $file): PromiseInterface
+    {
+        $path = $file instanceof File
+            ? resolve($file->file_path)
+            : $this->getFile($file)->then(static fn (File $resolved): ?string => $resolved->file_path);
+
+        return $path->then(fn (?string $filePath): ?string => LocalFiles::isLocalPath($filePath)
+            ? $this->localFiles->toLocal((string) $filePath)
+            : null);
     }
 
     // -- Accessors ----------------------------------------------------------
@@ -416,6 +452,15 @@ class Telegram implements EventEmitterInterface
     public function getHttp(): HttpInterface
     {
         return $this->http;
+    }
+
+    /**
+     * The files a local Bot API server shares with this process — for turning
+     * a local path into the `file://` URI an upload can use instead of bytes.
+     */
+    public function getLocalFiles(): LocalFiles
+    {
+        return $this->localFiles;
     }
 
     public function getFactory(): Factory

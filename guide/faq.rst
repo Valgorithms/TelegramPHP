@@ -136,3 +136,8 @@ files without going through Telegram's servers:
 .. code-block:: php
 
    $telegram = new Telegram(['token' => $token, 'base_url' => 'http://127.0.0.1:8081']);
+
+A server started with ``--local`` also needs ``local_files``, saying where its files are on this
+machine; without it a download fails with an error naming the option. See
+:doc:`builders` for the details, and call ``logOut()`` once against Telegram's own server before
+the first request to a local one.

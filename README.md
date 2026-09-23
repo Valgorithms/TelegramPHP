@@ -213,6 +213,52 @@ Downloads go the other way:
 $telegram->downloadFile($photo->file_id)->then(fn (string $bytes) => file_put_contents('photo.jpg', $bytes));
 ```
 
+### A local Bot API server
+
+Telegram's servers cap downloads at 20 MB and uploads at 50 MB. A
+[local Bot API server](https://core.telegram.org/bots/api#using-a-local-bot-api-server) —
+[`telegram-bot-api`](https://github.com/tdlib/telegram-bot-api), run with `--local` — lifts both
+(uploads up to 2000 MB) by working with files on its own disk: `getFile` answers with an absolute
+path there instead of a download link, and an upload can name a file there instead of sending it.
+
+Point `base_url` at the server, and `local_files` at where its files are **as this process sees
+them**:
+
+```php
+$telegram = new Telegram([
+    'token' => getenv('TELEGRAM_TOKEN'),
+    'base_url' => 'http://localhost:8081',
+
+    // The same machine: the server's paths are this process's.
+    'local_files' => ['C:\telegram-bot-api'],
+
+    // Or in Docker: the server's path => the volume it is mounted from.
+    // 'local_files' => ['/var/lib/telegram-bot-api' => 'D:\telegram-bot-api'],
+]);
+```
+
+Then nothing else changes for downloads. `downloadFile()` and `File::download()` read the file from
+disk rather than over HTTP, and `File::save()` copies it without holding it in memory — which is
+the point, at these sizes. For a file too big to want as a string at all, ask for its path:
+
+```php
+$telegram->localFilePath($document->file_id)->then(fn (?string $path) => rename($path, 'D:\archive\big.mkv'));
+```
+
+To upload a file the server can see without sending its bytes, pass its `file://` URI:
+
+```php
+$telegram->sendDocument($chatId, $telegram->getLocalFiles()->toUri('D:\telegram-bot-api\big.mkv'));
+```
+
+Only files under `local_files` are ever read or offered. The path comes from the server, and a
+client that followed wherever it pointed would read any file this process can open.
+
+**Switching a bot over.** Call `$telegram->logOut()` once against Telegram's own server before
+the first request to a local one; otherwise Telegram does not guarantee the bot receives its
+updates there. After that the bot cannot log back in to Telegram's server for ten minutes. Moving
+between two local servers, call `close()` on the old one first.
+
 ## Commands
 
 `TelegramCommandClient` is a client that routes slash commands — the counterpart of DiscordPHP's
@@ -285,6 +331,7 @@ transport failures back off and retry. Only what is still failing afterwards rea
 | `loop` | shared loop | The ReactPHP event loop to run on. |
 | `logger` | `NullLogger` | A PSR-3 logger for the client's debug output. |
 | `base_url` | `https://api.telegram.org` | Point this at a [local Bot API server](https://core.telegram.org/bots/api#using-a-local-bot-api-server). |
+| `local_files` | `[]` | Where a `--local` server's files are, as this process sees them: a list of shared directories, or the server's path => the local one. See [A local Bot API server](#a-local-bot-api-server). |
 | `socket_options` | `[]` | Passed to `React\Socket\Connector` (see [Windows and SSL](#windows-and-ssl)). |
 | `poll_timeout` | `50` | Seconds `getUpdates` holds the connection open. |
 | `poll_limit` | `100` | Updates per round. |

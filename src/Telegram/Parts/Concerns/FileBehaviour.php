@@ -12,7 +12,11 @@
 namespace Telegram\Parts\Concerns;
 
 use React\Promise\PromiseInterface;
+
+use function React\Promise\reject;
+
 use Telegram\Exceptions\TelegramException;
+use Telegram\Http\LocalFiles;
 
 /**
  * Getting the bytes behind a {@see \Telegram\Parts\File}.
@@ -24,18 +28,48 @@ use Telegram\Exceptions\TelegramException;
  */
 trait FileBehaviour
 {
-    /** The download URL for this file, bot token included - so do not log it. */
+    /**
+     * The download URL for this file, bot token included - so do not log it.
+     *
+     * @throws TelegramException For a file on a local Bot API server, which has
+     *                           no URL - see {@see localPath()}.
+     */
     public function getUrl(): string
     {
         if ($this->file_path === null) {
             throw new TelegramException('This File has no file_path; call getFile() with its file_id first.');
         }
 
+        if ($this->isLocal()) {
+            throw new TelegramException('This file is on a local Bot API server, which does not serve it over HTTP; use localPath().');
+        }
+
         return $this->telegram->getHttp()->fileUrl($this->file_path);
     }
 
+    /** Whether the file is on a local Bot API server's disk rather than Telegram's. */
+    public function isLocal(): bool
+    {
+        return LocalFiles::isLocalPath($this->file_path);
+    }
+
     /**
-     * Downloads the file.
+     * Where the file is on this process's disk, for a local Bot API server.
+     *
+     * @throws TelegramException When it is not a local file, or not under the
+     *                           client's `local_files` option.
+     */
+    public function localPath(): string
+    {
+        if (! $this->isLocal()) {
+            throw new TelegramException('This file is on Telegram\'s servers; download() it instead.');
+        }
+
+        return $this->telegram->getLocalFiles()->toLocal((string) $this->file_path);
+    }
+
+    /**
+     * Downloads the file - or, from a local Bot API server, reads it.
      *
      * @return PromiseInterface<string> The file's bytes.
      */
@@ -45,7 +79,7 @@ trait FileBehaviour
             throw new TelegramException('This File has no file_path; call getFile() with its file_id first.');
         }
 
-        return $this->telegram->getHttp()->download($this->file_path);
+        return $this->telegram->downloadFile($this);
     }
 
     /**
@@ -58,7 +92,19 @@ trait FileBehaviour
     public function save(string $path): PromiseInterface
     {
         if (is_dir($path)) {
-            $path = rtrim($path, '/\\') . DIRECTORY_SEPARATOR . basename((string) $this->file_path);
+            $path = rtrim($path, '/\\') . DIRECTORY_SEPARATOR . basename(str_replace('\\', '/', (string) $this->file_path));
+        }
+
+        // A local server's file can be copied without ever being held in
+        // memory, which matters for the sizes a local server allows.
+        if ($this->isLocal()) {
+            try {
+                $source = $this->localPath();
+            } catch (\Throwable $e) {
+                return reject($e);
+            }
+
+            return $this->telegram->getLocalFiles()->copy($source, $path);
         }
 
         return $this->download()->then(static function (string $contents) use ($path): string {

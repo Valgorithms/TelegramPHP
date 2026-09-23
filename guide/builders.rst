@@ -151,3 +151,34 @@ step from the client, or in two if you want the ``File`` record:
 
 A ``file_path`` is valid for at least an hour. After that, call ``getFile`` again with the same
 ``file_id``.
+
+From a local Bot API server
+---------------------------
+
+A `local Bot API server <https://core.telegram.org/bots/api#using-a-local-bot-api-server>`_ run with
+``--local`` serves no files over HTTP. ``getFile`` answers with the file's absolute path on the
+server's disk instead, which is how it lifts the 20 MB download limit. Tell the client where that disk
+is, as this process sees it, with ``local_files``:
+
+.. code-block:: php
+
+   $telegram = new Telegram([
+       'token' => $token,
+       'base_url' => 'http://127.0.0.1:8081',
+       'local_files' => ['/var/lib/telegram-bot-api' => 'D:\telegram-bot-api'],  // server path => local
+   ]);
+
+Downloads then need no changes: ``downloadFile()`` and ``File::download()`` read the file from disk,
+and ``File::save()`` copies it without holding it in memory. For a file too big to want as a string,
+``$telegram->localFilePath($fileId)`` resolves to its path instead.
+
+Uploads can go the other way - a ``file://`` URI rather than the bytes:
+
+.. code-block:: php
+
+   $telegram->sendDocument($chatId, $telegram->getLocalFiles()->toUri('D:\telegram-bot-api\big.mkv'));
+
+.. note::
+
+   Only files under ``local_files`` are read or offered, whatever path the server reports. A client
+   that followed any path it was given would read any file the process can open.

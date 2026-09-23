@@ -6,6 +6,16 @@ All notable changes to this project are documented here.
 
 ### Added
 
+- Local Bot API server files: the `local_files` option says where a `--local`
+  server's disk is as this process sees it — shared directories, or the
+  server's path mapped to a local one for Docker. `downloadFile()`,
+  `File::download()` and `File::save()` then read the file from disk instead of
+  over HTTP (`save()` copies without holding it in memory), `localFilePath()`
+  resolves a file to its local path, and `LocalFiles::toUri()` turns a local
+  file into the `file://` URI an upload can use instead of its bytes. Only files
+  under `local_files` are ever read, whatever path the server reports; reads are
+  chunked across loop ticks, which is also what works on Windows.
+
 - Documentation: a twelve-page guide under `guide/` (getting started, calling the
   API, updates and events, parts, keyboards and files, commands, webhooks, error
   handling, the caches, the generated code, and an FAQ) alongside the
